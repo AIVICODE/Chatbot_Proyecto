@@ -98,7 +98,7 @@ class ChatbotService:
         # Search for relevant SQL examples/patterns
         sql_results = self.vector_service.intent_collection.query(
             query_embeddings=message_embedding.tolist(),
-            n_results=3,
+            n_results=3, # + instructions about database structure
             where={"intent": "sql"},
             include=["documents", "metadatas"]
         )
@@ -146,17 +146,17 @@ class ChatbotService:
         prompt_parts = []
         
         # System instructions
-        prompt_parts.append("You are a helpful AI assistant.")
-        prompt_parts.append(f"Intent detected: {intent}")
-        prompt_parts.append(f"Instructions: {context['instructions']}")
+        prompt_parts.append("Eres el asistente chatbot de la empresa WIS, encargada de logistica y te creamos para ayudarlos en sus consultas.")
+        prompt_parts.append(f"Intención: {intent}")
+        prompt_parts.append(f"Instrucciones: {context['instructions']}")
         
         # Add specific guidance if available
         if context.get('specific_guidance'):
-            prompt_parts.append(f"Specific guidance: {context['specific_guidance']}")
+            prompt_parts.append(f"Orientación específica: {context['specific_guidance']}")
         
         # Add relevant documentation if available
         if context.get('relevant_docs'):
-            prompt_parts.append("\nRelevant documentation:")
+            prompt_parts.append("\nDocumentación relevante:")
             for i, doc in enumerate(context['relevant_docs'], 1):
                 prompt_parts.append(f"Doc {i} (Source: {doc['source']}, Page: {doc['page']}):")
                 prompt_parts.append(doc['content'])
@@ -164,7 +164,7 @@ class ChatbotService:
         
         # Add examples if available
         if context.get('examples'):
-            prompt_parts.append("\nRelevant examples:")
+            prompt_parts.append("\nEjemplos relevantes:")
             for i, example in enumerate(context['examples'], 1):
                 prompt_parts.append(f"Example {i}: {example}")
         
