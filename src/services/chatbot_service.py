@@ -3,10 +3,9 @@ Chatbot service
 Contains the main business logic
 """
 from typing import Dict, Any
-from .vector_service import VectorService
+from persistence.db_start import db_start
 from sentence_transformers import SentenceTransformer
-from ..models import llm
-import numpy as np
+from llm import llm
 
 
 class ChatbotService:
@@ -14,9 +13,9 @@ class ChatbotService:
     
     def __init__(self):
         """Initialize the chatbot service"""
-        self.vector_service = VectorService()
+        self.db_start = db_start()
         self.model = SentenceTransformer('all-mpnet-base-v2')
-        self.ambiguous_threshold = 0.3  # Threshold for determining ambiguous intent
+        self.ambiguous_threshold = 0.5  # Threshold for determining ambiguous intent
     
     def prerouting(self, message: str) -> str:
         """Determine intent using vector database and distance analysis"""
@@ -25,7 +24,7 @@ class ChatbotService:
             message_embedding = self.model.encode([message], normalize_embeddings=True)
             
             # Search for similar intents in the vector database
-            results = self.vector_service.intent_collection.query(
+            results = self.db_start.intent_collection.query(
                 query_embeddings=message_embedding.tolist(),
                 n_results=3,  # Get top 3 matches to check for ambiguity
                 include=["metadatas", "distances"]
@@ -67,7 +66,7 @@ class ChatbotService:
             if intent == "ambiguo":
                 return {
                     "context_type": "general",
-                    "instructions": "Provide a helpful general response. Ask clarifying questions to better understand the user's needs.",
+                    "instructions": "Dado la ambigüedad, repregunta al usuario de manera amable para clarificar su intención.",
                     "relevant_docs": [],
                     "examples": []
                 }
@@ -96,7 +95,7 @@ class ChatbotService:
     def _get_sql_context(self, message_embedding) -> Dict[str, Any]:
         """Get SQL-specific context and examples"""
         # Search for relevant SQL examples/patterns
-        sql_results = self.vector_service.intent_collection.query(
+        sql_results = self.db_start.intent_collection.query(
             query_embeddings=message_embedding.tolist(),
             n_results=3, # + instructions about database structure
             where={"intent": "sql"},
@@ -115,12 +114,12 @@ class ChatbotService:
             "specific_guidance": "Focus on SQL syntax, query optimization, and practical examples."
         }
     
-    def _get_docs_context(self, message: str, message_embedding) -> Dict[str, Any]:
+    def _get_docs_context(self, message_embedding) -> Dict[str, Any]:
         """Get documentation-specific context"""
         # Search for relevant documentation chunks
-        docs_results = self.vector_service.docs_collection.query(
+        docs_results = self.db_start.docs_collection.query(
             query_embeddings=message_embedding.tolist(),
-            n_results=3,
+            n_results=15,
             include=["documents", "metadatas"]
         )
         
