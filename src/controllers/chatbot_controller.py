@@ -3,7 +3,7 @@ Chatbot controller
 Handles control logic and orchestration
 """
 from typing import Dict, Any
-from ..services.chatbot_service import ChatbotService
+from services.chatbot_service import ChatbotService
 
 
 class ChatbotController:
