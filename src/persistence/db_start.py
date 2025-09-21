@@ -3,16 +3,16 @@ Start script to initialize ChromaDB with embeddings
 """
 import os
 from pathlib import Path
-from sentence_transformers import SentenceTransformer
 import chromadb
 from .db_setup.docs_to_embed_service import DocsToEmbedService
 from .db_setup.intent_to_embed_service import IntentToEmbedService
+from llm import embed_model
 
 class db_start:
     """Service for managing vector embeddings with ChromaDB"""
 
-    def __init__(self, setup_mode: bool = False):
-        self.model = SentenceTransformer('all-MiniLM-L6-v2')
+    def __init__(self, setup_mode: bool = True):
+        self.model = embed_model
 
         BASE_DIR = os.path.dirname(os.path.abspath(__file__))
         DB_DIR = os.path.join(BASE_DIR, "chroma_db")

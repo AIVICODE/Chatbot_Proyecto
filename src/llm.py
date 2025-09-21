@@ -1,6 +1,6 @@
 # models.py
-from llama_index.embeddings.google_genai import GoogleGenAIEmbedding
 from llama_index.llms.google_genai import GoogleGenAI
+from sentence_transformers import SentenceTransformer
 import os
 from dotenv import load_dotenv
 
@@ -12,10 +12,7 @@ if not google_api_key:
     raise ValueError("❌ GOOGLE_API_KEY no encontrada en el archivo .env")
 
 # Instancia global de embeddings
-embed_model = GoogleGenAIEmbedding(
-    model_name="text-embedding-004",
-    api_key=google_api_key
-)
+embed_model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-mpnet-base-v2')
 
 # Instancia global de LLM
 llm = GoogleGenAI(

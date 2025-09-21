@@ -4,8 +4,8 @@ Contains the main business logic
 """
 from typing import Dict, Any
 from persistence.db_start import db_start
-from sentence_transformers import SentenceTransformer
 from llm import llm
+from llm import embed_model
 
 
 class ChatbotService:
@@ -14,7 +14,7 @@ class ChatbotService:
     def __init__(self):
         """Initialize the chatbot service"""
         self.db_start = db_start()
-        self.model = SentenceTransformer('all-mpnet-base-v2')
+        self.model = embed_model
         self.ambiguous_threshold = 0.5  # Threshold for determining ambiguous intent
     
     def prerouting(self, message: str) -> str:
@@ -119,7 +119,7 @@ class ChatbotService:
         # Search for relevant documentation chunks
         docs_results = self.db_start.docs_collection.query(
             query_embeddings=message_embedding.tolist(),
-            n_results=15,
+            n_results=5,
             include=["documents", "metadatas"]
         )
         
@@ -180,20 +180,6 @@ class ChatbotService:
                 # Use the generated prompt for LLM
                 response = llm.complete(prompt)
                 return str(response)
-            else:
-                # Fallback to simple responses if no prompt provided
-                message_lower = message.lower()
-                
-                if "hello" in message_lower or "hi" in message_lower or "hola" in message_lower:
-                    return "Hello! How can I help you today?"
-                elif "how are you" in message_lower or "como estas" in message_lower:
-                    return "I'm doing great, thank you for asking! How are you?"
-                elif "bye" in message_lower or "goodbye" in message_lower or "adios" in message_lower:
-                    return "Goodbye! Have a great day!"
-                elif "?" in message:
-                    return f"Interesting question about '{message}'. Let me help you think about that."
-                else:
-                    return f"I received your message: '{message}'. Is there something specific I can help you with?"
         except Exception as e:
             print(f"Error in LLM processing: {str(e)}")
             return "I'm sorry, I encountered an error while processing your request. Please try again."

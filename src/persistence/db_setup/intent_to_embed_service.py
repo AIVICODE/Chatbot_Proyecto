@@ -3,7 +3,7 @@ Service for processing intent data and converting them to embeddings
 """
 import os
 import sys
-from sentence_transformers import SentenceTransformer
+from llm import embed_model
 
 # Add the project root to the path to import from chroma_utils
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
@@ -15,7 +15,7 @@ class IntentToEmbedService:
     
     def __init__(self):
         """Initialize the intent embedding service"""
-        self.model = SentenceTransformer('all-mpnet-base-v2')
+        self.model = embed_model
         self.chunk_counter = 0
     
     def process_intents(self):

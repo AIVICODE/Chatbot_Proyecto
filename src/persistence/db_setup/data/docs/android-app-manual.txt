@@ -1,0 +1,1390 @@
+WIS Tracking – Aplicación Android
+Manual de Usuario
+Índice
+Instalación y configuración
+La aplicación Wis Tracking para dispositivos Android está disponible de forma gratuita en la tienda oficial de aplicaciones Google Play.
+Para instalarla, siga estos pasos:
+Abra la aplicación Google Play en su dispositivo Android.
+En la barra de búsqueda, escriba "Wis Tracking".
+Ubique la aplicación identificada como Wis Tracking y seleccione el botón "Instalar".
+Una vez finalizada la descarga, la aplicación estará lista para ser utilizada desde el menú de aplicaciones de su dispositivo.
+Configuración básica
+Configuración recomendada para funcionamiento óptimo.
+Una vez instalada la aplicación Wis Tracking, es importante realizar algunos ajustes en el dispositivo para asegurar un correcto funcionamiento del sistema de rastreo y mejorar la precisión del GPS. Estos pasos ayudan a mantener una sincronización constante de los datos con el panel de seguimiento y evitar interrupciones causadas por las funciones de ahorro de batería del sistema operativo.
+Ajustes de ahorro de batería
+Se recomienda desactivar las siguientes funciones en el dispositivo:
+Ahorro de batería general del dispositivo
+Ahorro de datos
+Ahorro de batería automático
+Estas funciones pueden limitar la capacidad de la aplicación para operar en segundo plano y enviar datos de manera continua.
+Desactivar la optimización de batería para Wis Tracking
+Para asegurar que la aplicación no sea restringida por el sistema, siga estos pasos:
+Ingrese a Configuración o Ajustes del dispositivo.
+Seleccione Aplicaciones y notificaciones.
+Toque en Acceso especial a apps o Aplicaciones especiales (puede variar según el fabricante del dispositivo).
+Ingrese en Optimización de batería.
+En el buscador, escriba Lis Mobile (nombre técnico de la aplicación Wis Tracking).
+Seleccione la aplicación y elija la opción No optimizar.
+Este ajuste permite que la aplicación funcione correctamente en segundo plano, incluso cuando la pantalla del dispositivo está apagada o el sistema intenta ahorrar batería.
+Configuración inicial para uso
+Una vez aplicadas las configuraciones recomendadas de ahorro de batería, el dispositivo está listo para iniciar el uso de la aplicación Wis Tracking.
+Al acceder por primera vez, es necesario realizar una configuración inicial que permitirá vincular el dispositivo Android con la instancia de Wis Tracking correspondiente al cliente.
+Otorgar permisos necesarios
+Durante el primer ingreso a la aplicación, se solicitarán ciertos permisos esenciales para su correcto funcionamiento:
+Permiso de acceso a la ubicación (GPS)
+Permiso para trabajar en segundo plano
+Es fundamental aceptar y otorgar todos los permisos solicitados. Esto garantiza que la aplicación pueda rastrear la ubicación del vehículo de forma continua, incluso cuando la pantalla del dispositivo esté apagada o cuando la app no esté en primer plano.
+Si en algún momento el sistema solicita permisos adicionales, asegúrese de otorgarlos para evitar interrupciones en el servicio de rastreo.
+Permiso de ubicación:
+Permiso cámara:
+Antes de poder iniciar sesión en la aplicación Wis Tracking, es necesario vincular el dispositivo Android con la instancia del cliente correspondiente.
+Pasos para asociar el dispositivo
+Ingrese a la aplicación y diríjase a la sección “Ajustes”.
+La aplicación solicitará acceso a la cámara del dispositivo. Es importante otorgar este permiso para continuar con el proceso de vinculación.
+Presione la opción “Asociar dispositivo”.
+Se abrirá la cámara para escanear el código QR de asociación.
+Nota: El código QR debe obtenerse desde el panel web de Wis Tracking. Consulte la sección “Asociar dispositivos” en el manual de usuario del panel web para más detalles sobre cómo generar este código.
+Una vez escaneado correctamente el código QR, el dispositivo quedará asociado a la instancia del cliente. En el panel web se mostrará un mensaje de confirmación indicando que la vinculación se realizó con éxito.
+Inicio de sesión
+Con el dispositivo ya asociado, el usuario puede acceder a la aplicación:
+Seleccione la opción “Iniciar sesión”.
+Ingrese su correo electrónico y contraseña.
+Para poder iniciar sesión en la aplicación móvil, el usuario debe haber accedido previamente al panel web de Wis Tracking. Este primer acceso es necesario para que el usuario sea dado de alta en el sistema.
+Trabajar viajes
+Una vez completadas las configuraciones iniciales y vinculada la aplicación al dispositivo, el conductor está listo para comenzar a trabajar con los viajes asignados desde la plataforma Wis Tracking.
+Viajes disponibles
+Acceso a los viajes disponibles
+Al iniciar sesión en la aplicación (siempre que el usuario no tenga un viaje activo), se mostrará automáticamente una lista de viajes disponibles. Esta lista puede incluir:
+Viajes asignados directamente al conductor, pendientes de ser iniciados.
+Viajes no asignados, disponibles para ser tomados por cualquier conductor autorizado.
+Información mostrada por cada viaje
+En la vista de viajes disponibles, cada elemento de la lista incluye los siguientes datos:
+Identificador numérico del viaje
+Nombre y descripción del vehículo asignado
+Matrícula del vehículo
+Un botón "Ir", que permite al conductor tomar el viaje y comenzar su ejecución.
+En cualquier momento, el conductor puede actualizar la lista de viajes disponibles para verificar si hay nuevos viajes asignados o disponibles. Para hacerlo, simplemente deslice hacia abajo desde la parte superior de la pantalla hasta que aparezca el ícono de refresco.
+Al soltar, la lista se actualizará automáticamente con los viajes más recientes.
+Cuando el conductor seleccione un viaje presionando el botón “Ir”, aparecerá un mensaje de confirmación preguntando si desea comenzar el viaje seleccionado.
+Si el conductor acepta, el viaje comenzará inmediatamente.
+Es importante tener en cuenta que esta acción no es reversible: una vez que el viaje es tomado, debe ser completado.
+Trabajar un viaje
+Una vez seleccionado un viaje, Wis Tracking sincronizará los datos relacionados, incluyendo:
+Visitas
+Direcciones
+Tareas
+Objetos a entregar y recibir
+Al completar la sincronización, se mostrará la pantalla de trabajo principal, donde el conductor podrá ver toda la información relevante para el viaje.
+Modos de trabajo durante el viaje
+Wis Tracking ofrece dos modalidades de trabajo mientras el conductor se encuentra en camino hacia una visita:
+Modo "Mapa" (por defecto):
+Muestra un mapa interactivo con las rutas, paradas y direcciones a seguir, ideal para una navegación detallada en tiempo real.
+Modo "Puntos":
+Presenta una interfaz más simple y directa, centrada en los puntos clave del viaje sin necesidad de mostrar el mapa, para aquellos que prefieren una vista más minimalista.
+En todo momento, el conductor puede alternar entre ambos modos utilizando el ícono en la parte superior izquierda de la pantalla. Esto permite cambiar entre el modo Mapa y el modo Puntos según las necesidades del viaje.
+Modo Mapa
+En el modo mapa, la pantalla de trabajo principal incluye indicadores visuales que muestran el estado de las visitas:
+Visitas pendientes: Representadas por una bandera amarilla.
+Visitas completadas: Representadas por una bandera verde.
+Visitas canceladas: Representadas por una bandera roja.
+Estos indicadores se encuentran en la parte superior de la pantalla, permitiendo un acceso rápido y claro al estado de cada visita.
+En la parte central de la pantalla, se visualiza un mapa interactivo que muestra:
+La ubicación actual del vehículo.
+La velocidad a la que se está desplazando el vehículo.
+Un botón para centrar el mapa en la ubicación actual del vehículo, asegurando que el conductor siempre pueda ver su posición en tiempo real.
+Debajo del mapa, se encuentran las acciones rápidas a realizar durante el viaje entre visitas.
+Lo primero que se visualiza es la dirección de la siguiente parada, es decir, el destino al que se está dirigiendo. Junto a esta dirección, se encuentra el botón de navegación, que abrirá Google Maps con las indicaciones para llegar a la parada a la que se está viajando.
+Debajo de estas acciones, se visualizan las acciones de selección de visita, que incluyen:
+El nombre de la parada a la que se está viajando.
+Botones para saltear parada (izquierda y derecha):
+El botón izquierda permite viajar a una parada salteada.
+El botón derecha permite saltear la parada actual y viajar directamente a la siguiente.
+Por último, la confirmación de llegada, donde el conductor podrá confirmar que ha llegado a la parada.
+Debajo de las acciones, se podrán visualizar los “Post-its”, estos son mensajes o consideraciones a tener en cuenta sobre la visita a la que estamos viajando.
+Modo Puntos
+En la modalidad “Puntos”, se dispone de las mismas acciones e información que en el modo Mapa, pero sin mostrar el mapa interactivo. Esta modalidad está pensada para quienes prefieren una interfaz más simple, centrada en listas desplegables.
+Al ingresar a esta modalidad, se muestra:
+La parada a la que se está viajando actualmente, incluyendo:
+Su dirección
+La descripción de la tarea asignada en esa parada
+Dos botones de acción:
+■ Confirmar llegada
+■ Cancelar visita
+Post-its con mensajes y consideraciones sobre la parada
+Debajo de la parada activa, se visualizan tres listas desplegables:
+Puntos pendientes:
+Muestra todas las visitas que aún no se han realizado.
+Al desplegar la lista, cada punto permite:
+■ Seleccionar como destino (salta la visita actual y se selecciona la elegida como próxima parada).
+■ Cancelar visita.
+Puntos confirmados:
+Lista las visitas que ya han sido completadas satisfactoriamente.
+Puntos cancelados:
+Muestra las visitas que fueron canceladas por el usuario.
+Tanto la lista de puntos pendientes como la de puntos cancelados pueden ser desplegadas para revisar y gestionar cada parada de forma individual, los puntos ya procesados pueden pasar nuevamente a pendientes mediante el uso de la acción “Retomar punto”.
+Acciones disponibles durante el viaje entre visitas
+Durante el trayecto entre una parada y otra, Wis Tracking permite realizar una serie de acciones complementarias que asisten al conductor en la gestión del viaje. Estas acciones están disponibles tanto en el modo Mapa como en el modo Puntos, aunque la forma de acceder a ellas puede variar levemente según la modalidad utilizada.
+A continuación, se describen de forma general las acciones disponibles durante el viaje, independientemente del modo de visualización:
+Cambiar orden de visita
+Cada viaje cuenta con un orden predeterminado de visitas a las distintas paradas. Este orden es definido por Wis Tracking y comunicado al chofer responsable del viaje. Por defecto, la aplicación gestiona automáticamente la sucesión de visitas respetando este orden.
+Sin embargo, el chofer tiene la posibilidad de alterar el orden de las visitas, permitiendo saltear una parada o retroceder a una anterior.
+Esta acción genera una alerta en el sistema de seguimiento del viaje, indicando que el chofer modificó el orden predefinido. La alerta registra:
+Las coordenadas geográficas en el momento de la acción.
+La visita salteada.
+Esta información podrá consultarse posteriormente en el historial de alertas del viaje y visualizarse en tiempo real en las pantallas de monitoreo.
+Cómo cambiar el orden según la modalidad de uso
+Modo Mapa:
+En la parte inferior de la pantalla se encuentran los botones de saltear parada.
+Botón izquierdo: permite regresar a una parada anterior.
+○ Botón derecho: permite avanzar y saltear la parada actual.
+Al presionar cualquiera de estas opciones, se mostrará un mensaje de confirmación.
+Al aceptar, se cambiará el destino activo del viaje y se generará la alerta correspondiente.
+Modo Puntos:
+Para cambiar el destino activo del viaje, se debe desplegar la lista de "Puntos pendientes".
+Al presionar el botón triangular junto a una parada, se mostrará un mensaje de confirmación.
+○ Si se acepta, esa parada se establecerá como el nuevo destino activo del viaje.
+Confirmación de llegada a una visita
+Wis Tracking permite confirmar la llegada a una parada de forma automática o manual, según la situación y preferencia del chofer. Ambas modalidades están disponibles tanto en el modo Mapa como en el modo Puntos.
+Confirmación automática
+El sistema evalúa constantemente la distancia entre el chofer y la parada a la que se está viajando. Cuando el vehículo se encuentra dentro del radio de trabajo configurado, la aplicación mostrará una notificación automática en el dispositivo, sugiriendo comenzar a trabajar la visita.
+El chofer podrá:
+Aceptar la sugerencia, lo que iniciará la pantalla de trabajo de la visita.
+Desestimar la sugerencia y continuar el viaje.
+Confirmación manual
+Es posible confirmar la llegada a una parada en cualquier momento, sin depender de la sugerencia automática del sistema.
+Modo Mapa
+En la parte inferior derecha de la pantalla, junto a la descripción de la parada, se encuentra el botón de acciones sobre la visita. Al presionarlo, se desplegarán dos opciones:
+“Marcar llegada a este punto”
+“Cancelar este punto”
+Al seleccionar “Marcar llegada”, se mostrará un mensaje de confirmación con la dirección y descripción de la parada.
+Si se está fuera del radio de distancia permitido, el sistema informará que esta acción generará una alerta. Al confirmar, se accederá a la pantalla de trabajo de la visita.
+Modo Puntos
+En la parte superior de la pantalla se visualiza en todo momento la parada a la que se está viajando, junto a dos botones:
+Marcar llegada a este punto
+Cancelar este punto
+Al presionar el botón de llegada, se mostrará el mismo mensaje de confirmación que en el modo mapa. Al aceptarlo, se iniciará la pantalla de trabajo correspondiente.
+Alertas por confirmación fuera de radio
+No importa la modalidad utilizada (Mapa o Puntos):
+Si la llegada se confirma fuera del radio de distancia configurado, se generará una alerta, indicando que el chofer comenzó a trabajar una visita fuera del área permitida.
+Esta alerta será:
+Visible en tiempo real en el panel de seguimiento del viaje.
+Registrada automáticamente en el historial de alertas del viaje.
+Cancelar visita
+Durante la ejecución de un viaje, pueden surgir situaciones en las que el chofer no pueda realizar una parada programada. Estas situaciones pueden deberse a múltiples motivos, como horarios fuera de rango, problemas mecánicos, falta de mercadería, o causas imprevistas.
+El sistema permite cancelar visitas desde diferentes interfaces, dependiendo del estado de la visita y de la modalidad de trabajo utilizada (Mapa o Puntos).
+Registro del motivo
+Sin importar desde dónde se realice la cancelación, siempre será obligatorio que el chofer seleccione un motivo de cancelación.
+Este motivo se elige de una lista configurable desde el panel web de Wis Tracking y queda registrado en el historial del viaje, pudiendo consultarse tanto en la pantalla de seguimiento en tiempo real como en el historial del viaje.
+Cómo cancelar una visita
+Desde el modo Mapa
+En el modo Mapa, la cancelación se realiza a través del botón “Acciones sobre visita”, ubicado en la parte inferior derecha de la pantalla.
+Al presionar el botón, se desplegarán dos opciones:
+Marcar llegada a este punto
+Cancelar este punto
+Seleccionando “Cancelar este punto”, se mostrará un mensaje de confirmación solicitando el motivo de la cancelación.
+Una vez confirmado, el sistema registrará la cancelación, cambiará el destino activo del viaje a la siguiente visita pendiente y generará el registro correspondiente.
+Desde el modo Puntos
+En el modo Puntos, la cancelación se realiza desde las acciones junto al destino activo, mediante el botón “Cancelar este punto”, identificado con una cruz roja.
+Al igual que en el modo Mapa:
+Se solicitará el motivo de cancelación.
+Se registrará el evento en el historial.
+El sistema cambiará automáticamente el destino activo a la siguiente parada pendiente.
+Restricciones y excepciones
+No se puede cancelar una parada ya trabajada.
+En ese caso, es necesario acceder a la pantalla de trabajo de la visita para gestionarla desde allí.
+Además de los modos mencionados, también es posible cancelar una visita desde la pantalla de trabajo, donde se ejecutan las acciones programadas para cada parada. Esto se detalla en la sección “Trabajar visita”.
+Viajar a visita realizada, cancelada o salteada
+El sistema permite que el chofer pueda regresar a una visita previamente realizada, cancelada o salteada. Esta funcionalidad es útil en casos donde hayan quedado acciones pendientes o donde no se haya completado correctamente el trabajo en esa parada.
+La forma de realizar esta acción varía según la modalidad de trabajo utilizada (Mapa o Puntos).
+Desde el modo Mapa
+En el modo Mapa, para viajar nuevamente a una visita que ya fue ejecutada, cancelada o salteada, se deben utilizar los botones de cambio de visita activa, ubicados en la parte inferior de la pantalla.
+Si la visita deseada está antes en el orden del viaje, se debe utilizar el botón de retroceso.
+Si está después, se debe utilizar el botón de avance.
+En ambos casos:
+Se mostrará un mensaje de confirmación.
+Al confirmar, se generará una alerta en el sistema, indicando que el chofer ha salteado su destino activo actual.
+Esto asegura el correcto registro de alteraciones en la secuencia de trabajo del viaje.
+Desde el modo Puntos
+En el modo Puntos, si la visita ya fue confirmada o cancelada, primero es necesario marcarla nuevamente como pendiente antes de poder viajar a ella.
+Este proceso se realiza de la siguiente manera:
+Localizar la visita deseada en las listas de “Puntos confirmados” o “Puntos cancelados”.
+Utilizar la opción “Restaurar visita”, identificada con un ícono de flecha de retroceso.
+Confirmar la acción mediante el mensaje de confirmación mostrado en pantalla.
+Una vez restaurada, la visita pasará a estar listada como pendiente.
+Desde allí, se podrá marcar como destino activo, siguiendo el procedimiento detallado en la sección “Cambiar orden de visita”.
+Trabajar una visita
+Una vez confirmada la llegada a una visita, el chofer accede a la pantalla de trabajo, desde donde deberá ejecutar las distintas acciones asociadas a esa parada.
+Estas acciones pueden variar dependiendo del tipo de visita y de la configuración del viaje. Algunas son fijas y están presentes en todas las paradas, mientras que otras pueden estar habilitadas o deshabilitadas según las necesidades del cliente.
+La pantalla de trabajo presenta todas las acciones disponibles para la visita, mostrando la cantidad de tareas planificadas y cuántas de ellas ya fueron realizadas para cada tipo. Cada categoría de acción es accesible individualmente, permitiendo al chofer ingresar y completar las tareas correspondientes. Las acciones disponibles son:
+Entregar objetos
+Permite al chofer registrar la entrega de mercadería u objetos planificados.
+En esta sección se detallan los elementos que deben ser entregados en la parada, indicando cantidades, descripciones y otros datos relevantes.
+Recibir objetos
+Permite registrar la recepción de mercadería, ya sea:
+Planificada: mercadería que estaba previamente indicada como parte del viaje.
+Inesperada: mercadería no prevista, que el sistema permite registrar adicionalmente como parte del flujo del viaje.
+Sacar fotografía
+El sistema permite capturar evidencia fotográfica desde la aplicación móvil.
+Estas fotos quedan asociadas a la parada y permiten documentar condiciones de entrega, problemas, o cualquier aspecto relevante de la visita.
+Firmar
+Permite capturar los datos de la persona que entrega o recibe la mercadería, junto con su firma digital.
+Los datos registrados suelen incluir:
+Nombre completo
+Documento de identidad
+Firma manuscrita capturada desde la pantalla táctil del dispositivo móvil
+Agregar comentarios
+Permite al chofer registrar notas relacionadas con la visita. Estas observaciones pueden incluir eventos ocurridos durante la parada, situaciones particulares o cualquier detalle que se considere relevante para dejar constancia en el historial del viaje.
+Entregar objetos
+La acción Entregar objetos permite realizar la entrega de la mercadería planificada para la visita. El chofer dispone de dos listados de objetos: objetos de entrega con escáner y objetos de entrega manual. Ambos listados reflejan el estado de entrega de la mercadería, indicando cuáles objetos fueron entregados, cuáles están pendientes y cuáles fueron cancelados.
+Cada objeto en los listados muestra la cantidad de bultos, su número o identificador, y su descripción.
+Entregas con escáner
+Las entregas con escáner requieren la lectura de un código de barras, la cual puede realizarse de tres formas:
+Utilizando la cámara del dispositivo.
+Mediante un lector de código de barras incorporado o un escáner externo conectado al dispositivo.
+Digitando manualmente el código.
+Para confirmar la entrega mediante lectura, simplemente se debe escanear el código. El sistema validará si el código leído corresponde a un objeto pendiente de entrega.
+En el caso de digitación manual, una vez ingresado el código, debe confirmarse presionando el botón correspondiente junto al campo de ingreso.
+Para usar la cámara del dispositivo, se accede a la opción “Cámara” junto al campo de código; al apuntar a un código válido, la lectura se confirmará automáticamente.
+Si el código leído coincide con uno de los objetos pendientes, este se marcará como entregado. Si no coincide con ningún objeto planificado para la visita, el sistema mostrará una alerta informando que el código es inválido o pertenece a otra visita.
+Entregas manuales
+Las entregas manuales no requieren lectura de código de barras. Para confirmar estos objetos, basta con desplegar la sección de “Objetos pendientes” y marcar el checkbox ubicado a la izquierda del objeto a entregar.
+Cancelación de objetos
+Los objetos pendientes —tanto con escáner como manuales— pueden ser cancelados. Para cancelar un objeto, se debe desplegar el listado correspondiente y presionar el botón de cancelación identificado con una cruz roja. El sistema solicitará al chofer que indique un motivo, el cual quedará registrado y será visible en el panel web de Wis Tracking.
+Restaurar objetos procesados
+Los objetos ya confirmados como entregados o cancelados pueden restaurarse al estado “pendiente”. En los listados de objetos procesados o anulados, cada ítem cuenta con una opción de restauración (una flecha de retroceso). Al seleccionarla, el objeto volverá al estado pendiente, pudiendo ser entregado o cancelado nuevamente.
+Comentarios
+Debajo de los listados (entrega con escáner y entrega manual), hay una caja de comentarios donde el chofer puede registrar observaciones o información adicional relevante sobre el proceso de entrega.
+Finalización de entregas
+Cuando no queda ningún objeto en estado pendiente (todos fueron entregados o cancelados), estará disponible el botón “Finalizar entrega”. Al presionarlo, se dará por completada la entrega y se regresará al menú de acciones de la visita.
+Si al menos un objeto permanece pendiente, este botón no estará visible. En su lugar, se mostrará el botón “Anular todos los pendientes”, que cancela todos los objetos restantes y solicita un único motivo de cancelación que se aplicará a todos.
+Además, cada listado (escáner y manual) cuenta con su propio botón de anulación parcial, que actúa únicamente sobre los objetos pendientes en ese listado.
+Recibir objetos
+La acción Recibir objetos permite al chofer registrar la recepción de mercadería, ya sea planificada o inesperada. Al acceder a esta opción, se presentan tres listados diferenciados:
+Objetos a recibir con escáner: requieren la lectura de un código de barras para ser confirmados.
+Objetos de recepción manual: pueden ser confirmados directamente desde la pantalla, sin necesidad de escaneo.
+Objetos recibidos de manera inesperada: son objetos que se recepcionan sin estar planificados para la visita, los mismos podrán ser entregados en otra de las visitas del viaje o en el centro de distribución.
+En todos los casos, cada objeto muestra la información esencial para su identificación: cantidad a recibir, número o código identificador y una descripción.
+Recepción con escáner
+Las recepciones con escáner requieren la lectura de un código de barras o código QR, la cual puede realizarse de tres formas:
+Utilizando la cámara del dispositivo.
+Mediante un lector de código de barras incorporado o un escáner externo conectado al dispositivo.
+Digitando manualmente el código.
+A diferencia de las entregas, las recepciones con escáner incluyen una opción adicional junto al listado de objetos pendientes llamada "Alertar no esperados". Cuando esta opción está habilitada, permite al chofer registrar la recepción de objetos no planificados mediante la lectura de códigos de barras o códigos QR de recepción. (El proceso de recepción inesperada se detalla más adelante).
+Para confirmar la recepción mediante lectura, simplemente se debe escanear el código. El sistema validará si el código leído corresponde a un objeto pendiente de recepción.
+En el caso de digitación manual, una vez ingresado el código, debe confirmarse presionando el botón correspondiente junto al campo de ingreso.
+Para usar la cámara del dispositivo, se accede a la opción “Cámara” junto al campo de código; al apuntar a un código válido, la lectura se confirmará automáticamente.
+Si el código leído coincide con uno de los objetos pendientes, este se marcará como recepcionado.
+Si el código leído no coincide con ningún objeto planificado para la visita y el interruptor "Alertar no esperados" está activado, el sistema mostrará automáticamente una ventana de recepción inesperada. En esta, se informará al chofer que el código escaneado no estaba previsto para ser recepcionado en esta parada.
+Desde esa ventana, el chofer tendrá la opción de registrar el objeto como no planificado. Si decide hacerlo, el sistema solicitará completar ciertos datos para formalizar la recepción:
+Número o código externo de identificación (obligatorio)
+Descripción (opcional)
+Tipo de objeto (obligatorio)
+Destino: puede ser una de las visitas programadas del viaje o el centro de distribución al que retornará el camión
+Nota: Si el código escaneado corresponde a un código QR generado por Wis Tracking, no será necesario ingresar manualmente estos datos, ya que el sistema los reconocerá automáticamente a partir del contenido del código.
+Para más detalles sobre cómo se gestionan estos objetos, ver la sección Recepciones no esperadas.
+Recepciones manuales
+Las recepciones manuales no requieren lectura de código de barras/QR. Para confirmar estos objetos, basta con desplegar la sección de “Objetos pendientes” y marcar el checkbox ubicado a la izquierda del objeto a recepcionar.
+Recepciones no esperadas
+Las recepciones inesperadas permiten al chofer registrar objetos que no estaban planificados para ser recibidos en una visita. Esta funcionalidad contempla tres formas de ingreso:
+Escaneo de un código de barras no planificado.
+Escaneo de un código QR de recepción de Wis Tracking (generado desde el panel web).
+Registro manual, utilizando la opción "Ingresar nuevo objeto no esperado" dentro del listado de recepciones inesperadas.
+Cuando está activada la opción "Alertar no esperados" en el listado de objetos a recibir con escáner, y se escanea un código que no corresponde a ningún objeto planificado para la visita, el sistema mostrará una alerta informando que se ha leído un código no previsto. En este caso, el chofer puede optar por registrarlo como objeto no esperado.
+Si el objeto fue escaneado mediante un código QR de Wis Tracking, la aplicación podrá autocompletar los datos necesarios para la recepción a partir de la información contenida en el código. En cambio, si se trata de un código de barras común o de una carga manual, el sistema solicitará completar un formulario con los siguientes campos:
+Código de barras (opcional)
+Código o número identificador (obligatorio)
+Descripción (opcional)
+Tipo de objeto (obligatorio)
+Destino (obligatorio)
+El destino puede ser:
+Otra visita programada dentro del viaje actual, en cuyo caso el objeto quedará disponible para ser entregado durante esa visita.
+El Centro de Distribución (CD), que representa el destino final del viaje.
+Si se prevé recepcionar múltiples objetos no esperados con el mismo tipo y destino, se puede habilitar la opción "Conservar datos". Al activarla, una vez confirmado un objeto, el formulario permanecerá abierto y los campos Tipo y Destino quedarán precargados con los valores utilizados previamente. Esto permite al chofer registrar de forma ágil y continua varios objetos sin necesidad de volver a completar los mismos datos en cada ingreso.
+Esta funcionalidad asegura que cualquier objeto recibido fuera de lo planificado quede registrado y trazable, garantizando la transparencia del proceso logístico.
+Cancelación de objetos
+Los objetos pendientes —tanto con escáner como manuales— pueden ser cancelados. Para cancelar un objeto, se debe desplegar el listado correspondiente y presionar el botón de cancelación identificado con una cruz roja. El sistema solicitará al chofer que indique un motivo, el cual quedará registrado y será visible en el panel web de Wis Tracking.
+Restaurar objetos procesados
+Los objetos ya confirmados como recepcionados o cancelados pueden restaurarse al estado “pendiente”. En los listados de objetos procesados o anulados, cada ítem cuenta con una opción de restauración (una flecha de retroceso). Al seleccionarla, el objeto volverá al estado pendiente, pudiendo ser recepcionado o cancelado nuevamente.
+Comentarios
+Debajo de los listados (recepción con escáner, recepción manual y recepciones no esperadas), hay una caja de comentarios donde el chofer puede registrar observaciones o información adicional relevante sobre el proceso de recepción de mercadería.
+Sacar fotografía
+La acción Sacar fotografía permite capturar imágenes con el dispositivo móvil, las cuales quedarán asociadas a la visita realizada. Estas fotografías podrán ser consultadas posteriormente desde el panel web de Wis Tracking.
+Por defecto, todas las visitas realizadas mediante Wis Tracking incluyen una instancia de toma de fotografía. Sin embargo, si un cliente requiere más de una instancia por visita, o desea que esta acción no esté disponible para ciertos casos, es posible configurar su visibilidad según las necesidades del cliente o del tipo de visita.
+Al ingresar a la acción Sacar fotografía, se mostrará un listado con las distintas instancias de fotos solicitadas para la visita. El chofer deberá seleccionar una de ellas; al hacerlo, se activará la cámara del dispositivo y se visualizarán las fotos ya tomadas en esa instancia.
+Cada instancia permite tomar múltiples fotografías. Las imágenes capturadas se listan debajo de la interfaz de la cámara, y pueden eliminarse individualmente si es necesario repetir la toma.
+Una vez tomada al menos una fotografía, se habilitará el botón Confirmar, permitiendo finalizar la instancia de toma de fotos y regresar al menú de acciones de la visita.
+Firmar
+La acción Firmar permite registrar los datos de la persona que recibe o entrega mercadería en la visita, dejando constancia del responsable. Al igual que la toma de fotografías, las firmas pueden configurarse para contar con una o varias instancias por visita, o incluso estar deshabilitadas según la configuración.
+Para realizar esta acción, el chofer debe acceder al menú Firmar dentro de las acciones disponibles para la visita. Allí se listarán todas las instancias de firma habilitadas para la visita. Al seleccionar una instancia, se solicitará que la persona firme directamente en la pantalla táctil del dispositivo, y se podrá ingresar además sus datos personales, tales como nombre completo, tipo y número de documento.
+En caso de error al registrar la firma, el chofer podrá borrar la firma utilizando el botón Borrar, ubicado en la esquina superior derecha y representado por una cruz roja. Esto limpiará el lienzo de firma para que pueda registrarse nuevamente.
+Una vez cargados los datos requeridos y registrada la firma correctamente, se habilitará la opción Guardar firma, finalizando la acción.
+Agregar comentarios
+Cada visita permite agregar comentarios a nivel general, sin necesidad de estar asociados a una acción específica. Aquí, el chofer podrá registrar datos relevantes sobre la visita, que no estén relacionados directamente con la entrega o recepción de mercadería.
+Para registrar estos comentarios, en el menú de acciones de la visita se encuentra la opción Agregar comentario, al presionarla se despliega la caja de comentarios de visita. Los comentarios registrados de esta forma podrán ser visualizados posteriormente en el panel web de Wis Tracking.
+Completar visita
+Una visita puede ser marcada como finalizada en cualquier momento desde la pantalla de acciones. Si bien no es obligatorio completar todas las acciones planificadas para finalizar la visita, el grado de cumplimiento impacta en el comportamiento del sistema y en el estado final asignado a la misma.
+Finalización completa
+Cuando todas las acciones planificadas para una visita han sido ejecutadas —esto incluye entregas, recepciones, toma de fotografías y registro de firmas, si aplican— se habilita el botón "Completar punto" en el menú de acciones. Al seleccionarlo, el estado de la visita cambiará a "Completada" y el destino actual del viaje avanzará automáticamente hacia la siguiente visita pendiente.
+Finalización parcial
+Si al menos una de las acciones no ha sido completada o está incompleta, el botón
+"Completar punto" no estará disponible. En su lugar, aparecerá la opción "Salir del punto". Al seleccionarla, se solicitará al chofer que indique un motivo de salida anticipada, el cual quedará registrado y será visible desde el panel web de Wis Tracking. En este caso, la visita se marcará como "Completada parcialmente".
+Visita sin acciones realizadas
+En los casos donde no se ha ejecutado ninguna acción en la visita, seguirá apareciendo la opción "Salir del punto". También se solicitará un motivo al chofer, y el estado final de la visita será "Cancelada".
+Finalizar un viaje
+La finalización de un viaje puede realizarse en cualquier momento, independientemente de si se han concretado todas las visitas planificadas o no. No obstante, todo viaje debe finalizar en su parada final, la cual normalmente corresponde al punto de partida, habitualmente el centro de distribución.
+Condición para finalizar el viaje
+La finalización de un viaje solo es posible cuando el destino activo es la parada final. En caso de que se necesite finalizar un viaje sin haber realizado una o más visitas intermedias, el chofer deberá reordenar el destino utilizando la funcionalidad de “Cambiar orden de visita”, omitiendo así las visitas no ejecutadas y dirigiéndose directamente a la parada final.
+Comportamiento especial de la parada final
+A diferencia de las visitas regulares, la parada final no permite ejecutar acciones ni puede ser cancelada. Es un punto obligatorio que debe alcanzarse para poder dar por terminado el viaje.
+Cuando el destino actual es la parada final, la funcionalidad de "Confirmar llegada" se reemplaza por "Finalizar viaje". Esta opción puede activarse de dos maneras:
+Automáticamente, al ingresar dentro del radio de confirmación definido.
+Manualmente, si el chofer desea confirmar su llegada de forma explícita.
+En ambos casos, al activar esta opción, se mostrará un mensaje de confirmación.
+Cancelación automática de visitas pendientes
+Si al finalizar el viaje aún existen visitas no realizadas, se notificará al usuario, en caso de aceptar estas serán canceladas automáticamente, y esta acción será reflejada en el panel web de seguimiento.
+Comportamiento posterior a la finalización
+Una vez confirmado el final del viaje:
+El usuario será redirigido al listado principal de viajes.
+Este listado estará dividido en dos secciones:
+○ Viajes disponibles
+○ Viajes finalizados
+Los viajes finalizados permanecerán visibles hasta que sean sincronizados con el panel web de Wis Tracking. Tras la sincronización, el viaje desaparecerá del dispositivo y toda la información local asociada será eliminada automáticamente.
+Para forzar una actualización del listado, el chofer puede deslizar hacia abajo en la parte superior de la pantalla.
+⚠ En caso de que el dispositivo se apague o la aplicación de Wis Tracking se cierre completamente, el viaje no será sincronizado hasta que la app vuelva a abrirse.
+Sincronización y registro de datos
+La aplicación Android de Wis Tracking se comunica constantemente con nuestro servidor central, asegurando el seguimiento en tiempo real de todas las acciones realizadas por los choferes, incluyendo hitos de entrega y recepción de mercadería, alertas y el monitoreo de la ubicación de los dispositivos.
+Existen dos tipos de comunicación entre los dispositivos Android y el panel web de administración: las comunicaciones en caliente y las comunicaciones diferidas.
+Comunicaciones en caliente: Son aquellas que requieren una conexión a internet activa y estable para transmitir y recibir datos de forma inmediata.
+Comunicaciones diferidas: Son aquellas que se gestionan mediante colas de comunicación y se envían automáticamente cuando el dispositivo recupera la conexión a internet, garantizando que ninguna información se pierda aun cuando la conexión sea intermitente o esté ausente temporalmente.
+A continuación, se listan las comunicaciones en caliente que existen y las diferidas:
+Comunicaciones en caliente (Requieren comunicación activa):
+Consulta de viajes disponibles
+Confirmación de viaje
+Notificaciones (Comienzo de viaje y Visita próxima)
+Comunicaciones diferidas:
+Alertas generadas
+Ubicación de dispositivo
+Acciones realizadas
+Visitas completadas
+Finalización de viaje
+Registro de ubicación de dispositivos
+La ubicación actual del dispositivo (y por ende del vehículo) se registra de forma continua para garantizar un historial preciso del recorrido del chofer en todo momento. A lo largo del desarrollo de un viaje, múltiples eventos y acciones se vinculan a la posición geográfica del dispositivo, permitiendo consultar no solo la fecha y hora en que ocurrieron, sino también el lugar exacto donde se registraron.
+La precisión y la frecuencia del registro de ubicación dependen directamente de la calidad de la señal GPS y de las políticas de ahorro de energía aplicadas por el sistema operativo del dispositivo móvil. Por esta razón, es fundamental aplicar las configuraciones de energía recomendadas para minimizar posibles interferencias que afecten la frecuencia y exactitud del registro de coordenadas.
+El sistema realiza un seguimiento constante de la ubicación mientras el chofer se encuentra viajando entre visitas. Durante el trabajo en una visita, la ubicación no se registra activamente, a menos que el dispositivo salga de un radio de distancia previamente configurado. Esta medida busca evitar el registro innecesario de posiciones cuando el chofer permanece dentro de un punto de entrega o recepción.
+El registro de ubicación no se ve afectado por el estado de la aplicación, ya que Wis Tracking utiliza servicios de seguimiento que operan tanto en primer plano como en segundo plano. Esto garantiza un monitoreo constante de la ubicación, independientemente de si el chofer tiene la aplicación abierta activamente o minimizada. Así, se asegura la continuidad del registro de posiciones durante todo el trayecto.
+La comunicación de los registros de ubicación, alertas y demás acciones vinculadas a coordenadas geográficas se realiza bajo el modo de comunicación diferida. Esto significa que los datos se almacenan localmente y son enviados al servidor cuando la conexión a internet está disponible, garantizando la integridad de la información incluso en zonas sin cobertura.
+Acciones en visitas
+Todas las acciones ejecutadas durante una visita —como la entrega y recepción de objetos, anulaciones, recepciones inesperadas, toma de fotografías, firmas y comentarios— se registran y almacenan localmente en el dispositivo. La sincronización de estos datos se realiza bajo el modelo de comunicación diferida, lo que permite garantizar la operatividad incluso sin conexión a internet.
+Durante la ejecución de acciones en una visita, tanto el registro de ubicación como la sincronización de datos se suspenden temporalmente. Esto se hace para evitar interferencias, y asegurar que el chofer pueda realizar o deshacer acciones con total libertad antes de que sean enviadas al servidor.
+Una vez finalizada la visita mediante la opción Completar punto, todas las acciones y registros asociados quedan disponibles para su sincronización con el servidor central.
+Notificaciones
+Durante el transcurso de un viaje, Wis Tracking puede emitir hasta tres tipos de notificaciones automáticas dirigidas a los contactos asociados a cada visita, siempre que dichas notificaciones estén habilitadas para ese cliente.
+Los tipos de notificaciones disponibles son:
+Comienzo de viaje: Se envía a todos los contactos de las visitas planificadas una vez que el viaje parte del centro de distribución. Informa que la mercadería se encuentra en camino y será entregada durante el día.
+Próxima visita: Se notifica al contacto de la visita que está próxima a realizarse. Incluye un enlace de seguimiento en tiempo real, donde el cliente puede visualizar la ubicación del camión y el horario estimado de llegada.
+Paquete entregado: Se envía una vez completada la entrega, informando que la mercadería ha sido entregada en la dirección correspondiente.
+Estas notificaciones pueden ser enviadas a través de dos canales:
+Correo electrónico
+Mensajes de WhatsApp (requiere una licencia adicional y conlleva un costo asociado)
+Todas las notificaciones operan bajo el esquema de comunicación en caliente, por lo que requieren una conexión activa a internet para ser emitidas correctamente.
+[Imagen 1 → = EliSMobile
+
+MS
+
+Viaje 53
+CAM_50
+AADN
+
+ISUZU NQR71L-AADN 550 £e9 o 2]
+[Imagen 2 → E Agregar comentarios]
+[Imagen 3 → ¿Permitir que Wis tracking haga
+fotos y grabe vídeos?
+
+Mientras se usa la aplicación
+
+Solo esta vez
+
+No permitir]
+[Imagen 4 → >
+
+¿Desea ir a este punto?]
+[Imagen 5 → GRUPO AGEN
+DAC MALDÓN Cancelar este punto
+
+Ñ
+Marcar llegada a este punto (Y)
+
+Guido Boggíani 1011, San Lorenzo 2160, Paragu(MKoA
+
+SAMUEL ISABELINO DEL ... 'O]
+[Imagen 6 → Tareas en GEMA SA
+
+F  Entregarobjetos (0/1)
+O Recibir objetos (0/0)
+[1 Sacar fotografía (0/1)
+1% Firmar(0/1)
+
+MM. Agregar comentarios
+
+Salir del punto]
+[Imagen 7 → BR Entregas con scanner — [0/1]
+
+WISCOOO000080806 » 10]
+
+Pendientes (1) -
+
+(1) 8080 - Contenedor Nro:8080 e]
+[Imagen 8 → ER Entregas con scanner
+
+Lea el codigo de
+hana
+
+Anulados (1) -
+
+«) Entregas manuales
+
+Confirmados (1) -
+
+(7 Agregar comentarios a la entrega
+
+Toca aqui para agregar comentarios
+
+Finalizar entrega]
+[Imagen 9 → Lea el codigo de
+E > un
+
+Confirmados (1) -
+
++ DOC132 - Documentos pedid.. e)]
+[Imagen 10 → 20!
+
+'N]
+[Imagen 11 → (7 Agregar comentarios a la recepción
+
+Gdelgadogicl. Ni TBagno >
+
+1121345167 f8f9J0]
+[Imagen 12 → Wis Tracking
+(a) WIS - Soluciones de Software ... Instalar
+
+Info. de la app >
+
+Aplicación móvil para Wis Tracking
+
+Mapas y navegación
+
+E
+
+21MB Para todos O
+
+El
+
+Seguridad de los datos
+
+La seguridad empieza por entender cómo recogen y
+
+comparten tus datos los desarrolladores. Las
+a
+
+il. EE]
+[Imagen 13 → Monaco >
+
+Guido Boggíani 1011, San Lorenzo 2160, (Y)
+
+SAMUEL ISABELINO DEL »O
+
+Entregar a gerencia. Acceder por lateral]
+[Imagen 14 → Guido Boggiani 1011, San Lorenzo 2160, 00. (Y)
++
+
+SAMUEL ISABELINO DEI]
+[Imagen 15 → enan:
+
+GRUPO Al
+ac maLbon Cancelar este punto
+
+| Marcar llegada a este punto (Y) ,,
+Mi. '
+na g
+
+Guido Boggiani 1011, San Lorenzo 2160, Paragu
+
+SAMUEL ISABELINO DEL ...]
+[Imagen 16 → ¿Desea volver al punto anterior?]
+[Imagen 17 → €) Entregas manuales 0/1
+
+Pendientes (1)
+
+[o] 501010 - Contened...]
+[Imagen 18 → 9
+
+¿Por qué deseas anular la
+entrega de este objeto?
+
+Visita cancelada
+Objeto no encontrado
+
+Entrega no esperada]
+[Imagen 19 → BR Recepciones con scanner [0/1] 2
+
+tea elcodigode | p a
+Lbarse |]
+Pendientes (1) Alertar «
+
+no esperados
+
+$ DOC132 - Documentos pedid...]
+[Imagen 20 → lunicipal
+.
+a 0 a
+Ruta Transchaco casi, Panamá, Mariano Roque Lo]]
+[Imagen 21 → *x
+
+¿Desea finalizar el viaje?
+
+El viaje aún tiene puntos pendientes o salteados,
+puede visualizarlos en el listado]
+[Imagen 22 → BR Recepciones con scanner [0/1] 2
+
+Lea el codigo de
+: > un
+
+' Alertar
+Pendientes (1) =— oesperados
+
+$ DOC132 - Documentos pedid.. 10)]
+[Imagen 23 → BF Recepciones con scanner [0/1] 2
+
+Lea el codigo de
+, > a
+
+Pendientes (1) —=]
+[Imagen 24 → GSLISMobile]
+[Imagen 25 → Comenzar viaje
+
+¿Desea comenzar el viaje "CAM_50"?]
+[Imagen 26 → = Puntos pendientes (3) 2
+32 SAMUEL ISABELINO o: (| Go)
+
+E GEMASA-12 > ]0)
+E Predio 1-2 [»]]
+[Imagen 27 → o)
+
+¿Desea confirmar este punto?
+
+Local 4 - Guido Boggiani 1011, San Lorenzo 2160,
+Paraguay
+
+Está confirmando un punto fuera del radio del sistema, esta
+acción generará una alerta en el sistema.]
+[Imagen 28 → Entregar objetos
+
+ER Entregas con scanner 0/1
+
+»> Lo]
+
+Pendientes (1)
+
+1t 8080 - Contenedor Nro:8080 0)
+
+Anular pendientes con scanner]
+[Imagen 29 → 5% Entregas con scanner (AY
+
+[sa el codigo de » a
+
+Confirmados (1) .
+
+(1) 8080 - Contenedor Nro:8080 >)]
+[Imagen 30 → = liSVobile
+
+O Firmar remito
+
+£ Firma Cliente]
+[Imagen 31 → O Entregar objetos (2/2) >
+
+O Recibirobjetos (1/1) >
+O Sacar fotografía (1/1) >
+O  Firmar(1/1) >
+
+Agregar comentarios w]
+[Imagen 32 → €) Entregas manuales 11
+Confirmados (1) -
+
++ 501010 - Contened...]
+[Imagen 33 → ER Entregas con scanner
+
+Confirmados (1) -
+
+«%) Entregas manuales
+
+Pendientes (1)
+
+Anular pendientes manuales
+
+Anular todos los pendientes]
+[Imagen 34 → < Permiso de Ubicación
+
+E)
+
+Wis tracking
+
+ACCESO A UBICACIÓN PARA ESTA APLICACIÓN
+
+Permi ¡empre
+
+Permitir solo mientras se usa
+la aplicación]
+[Imagen 35 → 24 Ver Mapa 3 1-0 1.0
+
+CAM_50
+
+Viaje: 53
+
+Mo Estás viajando a...
+SAMUEL ISABELINO
+= DELPUERTO
+FERNANDEZ 7) (o)
+Entrega Recepcion
+
+Tarea de Entrega PNI5179
+
+Entregar a gerencia | Acceder por lateral]
+[Imagen 36 → ¿Desea saltear este punto?
+
+Recuerde que este punto seguirá disponible dentro
+de su lista de pendientes]
+[Imagen 37 → % Puntos cancelados (1)
+
+2 SAMUEL ISABELINO DEL PI]
+[Imagen 38 → ¿Por qué deseas anular la
+recepción de este objeto?
+
+Recepción en mal estado
+
+Marcar Objetos restantes como NO
+recibidos
+
+Recepción no Realizada]
+[Imagen 39 → = OlLISVobile O
+
+< Sacar fotografía
+
+EJ Tomar Fotografia]
+[Imagen 40 → Bo Estás viajando a...
+
+E Predio 1]
+[Imagen 41 → Viaje finalizado
+
+Viaje 53 o
+
+Sincronizando viaje... — Finalizado: 16/05/2025]
+[Imagen 42 → E
+
+Por favor indica el motivo por
+el cuál no puedes atender este
+punto
+
+Problema mecánico
+Tienda cerrada
+Firmo y Foto no requerida
+
+Visita cancelada]
+[Imagen 43 → BR Entregas con scanner — [0/1]
+
+WISCOOO000080806 » 10]
+
+Pendientes (1) -
+
+(1) 8080 - Contenedor Nro:8080 e]
+[Imagen 44 → €) Entregas manuales 11
+Confirmados (1)
+
++ 501010 - Contened...]
+[Imagen 45 → Lea el codigo de
+E > un
+
+Confirmados (1) -
+
++ DOC132 - Documentos pedid.. e)]
+[Imagen 46 → Objeto no esperado
+
+Tipo de objeto:
+
+Descripción:
+Destino:
+Volúmen:
+
+Código de barras: 12458
+
+Ingresar como objeto no esperado]
+[Imagen 47 → Ajustes
+
+Dispositivo
+
+O 6a72ffd6f4esdfe2
+
+Código de asociación
+
+C Guardar) Casocir Dispositi
+
+»)]
+[Imagen 48 → = liSMob
+
+Ver Puntos 3 mo 10)
+
+VALDOwavu
+arné de Salud O
+
+esoo “AS
+enoR
+
+Ituzaingo]
+[Imagen 49 → Bb Estás viajando a...
+
+SAMUEL ISABELINO
+2 DEL PUERTO
+
+FERNANDEZ
+
+Entrega Recepcion
+
+Tarea de Entrega PNI5179]
+[Imagen 50 → Firmar
+
+d de: Firma Cliente
+
+9
+
+Firma Cliente]
+[Imagen 51 → n
+
+Entregar objetos (1/2)
+O Recibir objetos (1/1)
+
+O Sacar fotografía (1/1)
+
+O Firmar (1/1)
+
+MB Agregar comentarios
+
+Salir del punto]
+[Imagen 52 → >
+
+¿Desea ir a este punto?]
+[Imagen 53 → E
+
+¿Desea restaurar este punto?]
+[Imagen 54 → €) Entregas manuales — [0/1]
+Pendientes (1)
+
+O *501010- Contened... 10)
+
+Anular pendientes manual:]
+[Imagen 55 → (7 Agregar comentarios a la entrega
+
+Comentario]
+
+Comentario Comentarios Comentarlo >
+
+11234567890]
+[Imagen 56 → 9
+
+¿Por qué deseas anular la
+entrega de este objeto?
+
+Visita cancelada
+Objeto no encontrado
+Entrega no esperada
+Objeto no Entregado
+
+Objeto en mal estado]
+[Imagen 57 → Permitir uso de ubicación
+
+Para poder realizar visitas y ejecutar
+tareas de entrega y recolección,
+permite a Wis Tracking utilizar tu
+
+ubicación todo el tiempo.
+
+Wis tracking recolecta tu ubicación
+para permitir tener un registro
+en tiempo real de la posición
+del vehículo y su velocidad, de
+esta manera podemos brindar
+
+la funcionalidad de rastreo y
+recomnilar tiemnos de trabaio]
+[Imagen 58 → Guido Boggiani 1011, San Lorenzo 2160, 00. (Y)
++
+
+SAMUEL ISABELINO DEI]
+[Imagen 59 → Sacar fotografi
+
+Tomar Fotografia (0)]
+[Imagen 60 → ERES] PR
+
+l= Puntos pendientes (3)
+Y Puntos confirmados (0)
+
+% Puntos cancelados (0)]
+[Imagen 61 → o)
+
+¿Desea confirmar este punto?
+
+Local 4 - Guido Boggiani 1011, San Lorenzo 2160,
+Paraguay
+
+Está confirmando un punto fuera del radio del sistema, esta
+acción generará una alerta en el sistema.]
+[Imagen 62 → enan:
+
+GRUPO Al
+ac maLbon Cancelar este punto
+
+| Marcar llegada a este punto (Y) ,,
+Mi. '
+na g
+
+Guido Boggiani 1011, San Lorenzo 2160, Paragu
+
+SAMUEL ISABELINO DEL ...]
+[Imagen 63 → BR Entregas con scanner — [0/1] A
+
+Lea el codigo de
+"a > lo]
+
+Pendientes (1) -
+
++1 8080 - Contenedor Nro:8080]
+[Imagen 64 → 44 Ingreso de objeto no esperado
+
+1 12458
+
+IP Código externo
+
+Este campo es requerido
+
+IP Descripción
+
+E% Seleccione un tipo]
+[Imagen 65 → BR Recepciones con scanner [0/1] 2
+
+tea elcodigode | p a
+Lbarse |]
+Pendientes (1) Alertar «
+
+no esperados
+
+$ DOC132 - Documentos pedid...]
+[Imagen 66 → Selecciona el motivo por el
+cual abandonas el punto sin
+realizar todas sus tareas
+
+Problema mecánico
+Tienda cerrada
+Firmo y Foto no requerida
+
+Visita cancelada
+
+Fuera de horario]
+[Imagen 67 → lunicipal
+.
+a 0 a
+Ruta Transchaco casi, Panamá, Mariano Roque Lo]]
+[Imagen 68 → ]
+[Imagen 69 → 5% Entregas con scanner (AY
+
+[sa el codigo de » a
+
+Confirmados (1) .
+
+(1) 8080 - Contenedor Nro:8080 >)]
+[Imagen 70 → Objeto no esperado
+
+Tipo de objeto:
+Descripción:
+Destino:
+Volúmen:
+
+Código de barras: 12458
+
+Ingresar como objeto no esperado]
+[Imagen 71 → ¿2 Ver Puntos la ho Eo a
+
+ALDO Nav:
+
+A E 2
+armé de Salud E E
+E 2
+$ tuzango >
+j Florida gy O Agua q
+To-Ta Q)
+| 25 de Mayo
+Rafael Perez, fal puerto
+7 Aleka Repuestos (>
+'Aruro Santana 5
+E o ¿O
+a ES El El
+2 Y Y ES a
+3 GRUPO AGENCIA - YTres E
+
+DAC MALDONADO 2
+
+QO=0.* 0
+nicipal
+lonad o]
+[Imagen 72 → GSLISMobile]
+[Imagen 73 → ¿Desea saltear este punto?
+
+Recuerde que este punto seguirá disponible dentro
+de su lista de pendientes]
+[Imagen 74 → GRUPO AGEN
+DAC MALDÓN Cancelar este punto
+
+Ñ
+Marcar llegada a este punto (Y)
+
+Guido Boggíani 1011, San Lorenzo 2160, Paragu(MKoA
+
+SAMUEL ISABELINO DEL ... 'O]
+[Imagen 75 → Entregar objetos
+
+ER Entregas con scanner 0/1
+
+»> Lo]
+
+Pendientes (1)
+
+1t 8080 - Contenedor Nro:8080 0)
+
+Anular pendientes con scanner]
+[Imagen 76 → Recibir objetos
+
+EF Recepciones con scanner — | 0/1
+
+1d a
+
+y. ener a
+
+4 DOC132- Documentos pedid e
+
+Anular pendientes con scanner )
+
+7
+pS
+€) Recepciones manuales — (0/0
+
+Aa Recepciones no esperadas — [0
+
+Ñ aj
+(¿Ingresar nuevo objeto no esperado dl
+
+Anular todos los pendientes]
+[Imagen 77 → 20!
+
+'N]
+[Imagen 78 → Firma Cliente]
+[Imagen 79 → % Puntos cancelados (1)
+
+2 SAMUEL ISABELINO DEL PI]
+[Imagen 80 → ER Entregas con scanner
+
+Lea el codigo de
+hana
+
+Anulados (1) -
+
+«) Entregas manuales
+
+Confirmados (1) -
+
+(7 Agregar comentarios a la entrega
+
+Toca aqui para agregar comentarios
+
+Finalizar entrega]
+[Imagen 81 → Permitir uso de ubicación
+
+Para poder realizar visitas y ejecutar
+tareas de entrega y recolección,
+permite a Wis Tracking utilizar tu
+
+ubicación todo el tiempo.
+
+Wis tracking recolecta tu ubicación
+para permitir tener un registro
+en tiempo real de la posición
+del vehículo y su velocidad, de
+esta manera podemos brindar
+
+la funcionalidad de rastreo y
+recomnilar tiemnos de trabaio]
+[Imagen 82 → >
+d o
+
+¿Permitir que Wis tracking acceda
+a la ubicación de este dispositivo?
+
+Mientras se usa la aplicación
+
+Solo esta vez
+
+No permitir]
+[Imagen 83 → Monaco >
+
+Guido Boggíani 1011, San Lorenzo 2160, (Y)
+
+SAMUEL ISABELINO DEL »O
+
+Entregar a gerencia. Acceder por lateral]
+[Imagen 84 → 24 Ver Mapa 3 1-0 1.0
+
+CAM_50
+
+Viaje: 53
+
+Mo Estás viajando a...
+SAMUEL ISABELINO
+= DELPUERTO
+FERNANDEZ 7) (o)
+Entrega Recepcion
+
+Tarea de Entrega PNI5179
+
+Entregar a gerencia | Acceder por lateral]
+[Imagen 85 → E
+
+Por favor indica el motivo por
+el cuál no puedes atender este
+punto
+
+Problema mecánico
+Tienda cerrada
+Firmo y Foto no requerida
+
+Visita cancelada]
+[Imagen 86 → 9
+
+¿Por qué deseas anular la
+entrega de este objeto?
+
+Visita cancelada
+Objeto no encontrado
+
+Entrega no esperada]
+[Imagen 87 → Ah Ingreso de objeto no esperado
+
+In Código de barras
+
+Ps
+
+IP. Inespweado
+
+E Bultos
+
+BD) Conservar datos]
+[Imagen 88 → ¿Por qué deseas anular la
+recepción de este objeto?
+
+Recepción en mal estado
+
+Marcar Objetos restantes como NO
+recibidos
+
+Recepción no Realizada]
+[Imagen 89 → Bo Estás viajando a...
+
+E Predio 1]
+[Imagen 90 → €  wis tracking a. YA
+
+Valoración y Selección de nuestros experto
+
+Patrocinado
+
+Find my kids: localizado...
+
+Compras enla aplicación
+
+4,7k El e
+
+1 Mreseñas O 64 MB Para todc
+
+Instala la aplicación y quedate tranquilo cuando tu hijo no
+conteste el teléfono.
+
+Wis Tracking
+
+(A) WS - Solucione... + Mapas y navegación
+21MB]
+[Imagen 91 → Bb Estás viajando a...
+
+SAMUEL ISABELINO
+2 DEL PUERTO
+
+FERNANDEZ
+
+Entrega Recepcion
+
+Tarea de Entrega PNI5179]
+[Imagen 92 → €) Entregas manuales 0/1
+
+Pendientes (1)
+
+[o] 501010 - Contened...]
+[Imagen 93 → BF Recepciones con scanner [0/1] 2
+
+Lea el codigo de
+, > a
+
+Pendientes (1) —=]
+[Imagen 94 → Ah Ingreso de objeto no esperado
+
+In Código de barras
+
+Ps
+
+IP. Inespweado
+
+E Bultos
+
+BD) Conservar datos]
+[Imagen 95 → n
+
+Entregar objetos (1/2)
+O Recibir objetos (1/1)
+
+O Sacar fotografía (1/1)
+
+O Firmar (1/1)
+
+MB Agregar comentarios
+
+Salir del punto]
+[Imagen 96 → Ajustes
+
+Dispositivo
+
+O 6a72ffd6f4esdfe2
+
+Código de asociación
+
+C Guardar) Casocir Dispositi
+
+»)]
+[Imagen 97 → o)
+
+¿Desea confirmar este punto?
+
+Local 4 - Guido Boggiani 1011, San Lorenzo 2160,
+Paraguay
+
+Está confirmando un punto fuera del radio del sistema, esta
+acción generará una alerta en el sistema.]
+[Imagen 98 → €) Entregas manuales — [0/1]
+Pendientes (1)
+
+O *501010- Contened... 10)
+
+Anular pendientes manual:]
+[Imagen 99 → E) Guido Delgado
+
+Da r
+
+E) 53136155
+
+Guardar firma]
+[Imagen 100 → >
+d o
+
+¿Permitir que Wis tracking acceda
+a la ubicación de este dispositivo?
+
+Mientras se usa la aplicación
+
+Solo esta vez
+
+No permitir]
+[Imagen 101 → = Puntos pendientes (3) 2
+32 SAMUEL ISABELINO o: (| Go)
+
+E GEMASA-12 > ]0)
+E Predio 1-2 [»]]
+[Imagen 102 → E
+
+¿Desea restaurar este punto?]
+[Imagen 103 → ER Entregas con scanner
+
+Confirmados (1) -
+
+«%) Entregas manuales
+
+Pendientes (1)
+
+Anular pendientes manuales
+
+Anular todos los pendientes]
+[Imagen 104 → BR Recepciones con scanner [0/1] 2
+
+Lea el codigo de
+: > un
+
+' Alertar
+Pendientes (1) =— oesperados
+
+$ DOC132 - Documentos pedid.. 10)]
+[Imagen 105 → Sacar fotografi
+
+Tomar Fotografia (0)]
+[Imagen 106 → ERES] PR
+
+l= Puntos pendientes (3)
+Y Puntos confirmados (0)
+
+% Puntos cancelados (0)]
+[Imagen 107 → Mo Estás viajando a...
+
+SAMUEL ISABELINO
+2 DEL PUERTO
+
+FERNANDEZ
+
+Entrega]
+[Imagen 108 → a el codigo de > a
+
+Anulados (1) -
+
+$ DOC132 - Documentos pedid..]
+[Imagen 109 → o)
+
+¿Desea finalizar el viaje?
+
+Local 2- Ruta Transchaco casi, Panamá, Mariano
+Roque Alonso, Paraguay
+
+Está confirmando un punto fuera del radio del sistema, esta
+acción generará una alerta en el sistema.]
+[Imagen 110 → €  wis tracking a. YA
+
+Valoración y Selección de nuestros experto
+
+Patrocinado
+
+Find my kids: localizado...
+
+Compras enla aplicación
+
+4,7k El e
+
+1 Mreseñas O 64 MB Para todc
+
+Instala la aplicación y quedate tranquilo cuando tu hijo no
+conteste el teléfono.
+
+Wis Tracking
+
+(A) WS - Solucione... + Mapas y navegación
+21MB]
+[Imagen 111 → ¿2 Ver Puntos la ho Eo a
+
+ALDO Nav:
+
+A E 2
+armé de Salud E E
+E 2
+$ tuzango >
+j Florida gy O Agua q
+To-Ta Q)
+| 25 de Mayo
+Rafael Perez, fal puerto
+7 Aleka Repuestos (>
+'Aruro Santana 5
+E o ¿O
+a ES El El
+2 Y Y ES a
+3 GRUPO AGENCIA - YTres E
+
+DAC MALDONADO 2
+
+QO=0.* 0
+nicipal
+lonad o]
+[Imagen 112 → o)
+
+¿Desea confirmar este punto?
+
+Local 4 - Guido Boggiani 1011, San Lorenzo 2160,
+Paraguay
+
+Está confirmando un punto fuera del radio del sistema, esta
+acción generará una alerta en el sistema.]
+[Imagen 113 → €) Entregas manuales 11
+Confirmados (1)
+
++ 501010 - Contened...]
+[Imagen 114 → BR Entregas con scanner — [0/1] A
+
+Lea el codigo de
+"a > lo]
+
+Pendientes (1) -
+
++1 8080 - Contenedor Nro:8080]
+[Imagen 115 → Objeto no esperado
+
+Tipo de objeto:
+
+Descripción:
+Destino:
+Volúmen:
+
+Código de barras: 12458
+
+Ingresar como objeto no esperado]
+[Imagen 116 → 44 Ingreso de objeto no esperado
+
+1 12458
+
+IP Código externo
+
+Este campo es requerido
+
+IP Descripción
+
+E% Seleccione un tipo]
+[Imagen 117 → AA Recepciones no esperadas — [EJ
+
+Ingresar nuevo objeto no esperado]
+[Imagen 118 → Selecciona el motivo por el
+cual abandonas el punto sin
+realizar todas sus tareas
+
+Problema mecánico
+Tienda cerrada
+Firmo y Foto no requerida
+
+Visita cancelada
+
+Fuera de horario]
+[Imagen 119 → Wis Tracking
+(a) WIS - Soluciones de Software ... Instalar
+
+Info. de la app >
+
+Aplicación móvil para Wis Tracking
+
+Mapas y navegación
+
+E
+
+21MB Para todos O
+
+El
+
+Seguridad de los datos
+
+La seguridad empieza por entender cómo recogen y
+
+comparten tus datos los desarrolladores. Las
+a
+
+il. EE]
