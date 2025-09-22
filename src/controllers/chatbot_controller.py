@@ -53,7 +53,7 @@ class ChatbotController:
         Validate input message
         """
         if not message or not message.strip():
-            return False
+            return True
         if len(message.strip()) < 1:
-            return False
+            return True
         return True

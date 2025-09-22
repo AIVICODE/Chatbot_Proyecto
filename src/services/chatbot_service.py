@@ -4,17 +4,18 @@ Contiene la lógica principal del chatbot
 """
 from typing import Dict, Any
 from persistence.db_start import db_start
-from sentence_transformers import SentenceTransformer
 from llm import llm
+from llm import embed_model
 
 
 class ChatbotService:
 
     def __init__(self):
-        """Inicializa el servicio del chatbot."""
-        self.db_start = db_start() # Conecta con la base de datos de embeddings e intenciones.
-        self.model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-mpnet-base-v2')
-        self.ambiguous_threshold = 0.1  # Umbral de distancia para marcar ambigüedad
+
+        """Initialize the chatbot service"""
+        self.db_start = db_start()
+        self.model = embed_model
+        self.ambiguous_threshold = 0.5  # Threshold for determining ambiguous intent
     
     def prerouting(self, message: str) -> str:
         """
@@ -128,7 +129,7 @@ class ChatbotService:
         # Busca fragmentos relevantes en la colección de documentos.
         docs_results = self.db_start.docs_collection.query(
             query_embeddings=message_embedding.tolist(),
-            n_results=15,
+            n_results=5,
             include=["documents", "metadatas"]
         )
         
@@ -199,20 +200,7 @@ class ChatbotService:
                 # Llama al LLM con el prompt generado
                 response = llm.complete(prompt)
                 return str(response)
-            else:
-                 # Respuestas simples predefinidas cuando no hay contexto
-                message_lower = message.lower()
-                
-                if "hola" in message_lower:
-                    return "¡Hola! ¿En qué puedo ayudarte hoy?"
-                elif "como estas" in message_lower:
-                    return "¡Estoy muy bien, gracias por preguntar! ¿Y tú?"
-                elif "adios" in message_lower:
-                    return "¡Adiós! Que tengas un excelente día."
-                elif "?" in message:
-                    return f"Buena pregunta sobre '{message}'. Déjame ayudarte con eso."
-                else:
-                    return f"Recibí tu mensaje: '{message}'. ¿Podrías contarme un poco más para poder ayudarte mejor?"
+
         except Exception as e:
             print(f"Error en el procesamiento del LLM {str(e)}")
             return "Lo siento, ocurrió un error al procesar tu solicitud. Intenta nuevamente."

@@ -1,0 +1,3951 @@
+WIS Tracking – Panel web
+Manual de Usuario
+Índice
+Autenticación y gestión de contraseñas
+La gestión de usuarios y la autenticación en Wis Tracking se encuentra delegada al sistema de autenticación centralizado de Wis. Todas las acciones relacionadas con la creación de usuarios, la administración de credenciales y la recuperación de contraseñas deben realizarse exclusivamente a través de este sistema.
+Una vez creado un usuario en el sistema de autenticación y tras su primer ingreso exitoso, será automáticamente registrado en Wis Tracking. La asignación de roles y permisos, sin embargo, es gestionada directamente dentro del sistema Wis Tracking y debe ser realizada por un usuario con permisos administrativos.
+Registro de usuarios
+Para registrar un nuevo usuario y permitir su acceso a Wis Tracking, es necesario utilizar la opción “Registrar usuario”, disponible desde la pantalla de inicio de sesión del sistema de autenticación centralizado.
+Durante el registro se deben completar los siguientes campos obligatorios:
+Nombre de usuario
+Correo electrónico válido
+Contraseña
+Es fundamental que el correo electrónico ingresado sea válido y accesible, ya que se utilizará para la verificación de cuenta, recuperación de contraseña y envío de notificaciones relevantes.
+Las contraseñas deben cumplir con políticas de seguridad definidas, que incluyen requisitos como:
+Longitud mínima
+Cantidad mínima de caracteres no alfabéticos
+Límite de caracteres repetidos
+Restricciones sobre caracteres consecutivos
+(Ver sección “Políticas de seguridad” para más detalles.)
+Una vez completado el registro, el usuario no estará habilitado para acceder hasta verificar su dirección de correo electrónico. Se enviará un mensaje con un enlace de activación, y al hacer clic en dicho enlace, la cuenta será validada y estará lista para ser utilizada (En caso de no visualizar el link de activación, verificar casilla de spam).
+El usuario quedará formalmente registrado en Wis Tracking al realizar su primer acceso mediante el sistema de autenticación. Al ingresar por primera vez, no contará con roles ni permisos asignados, por lo que será necesario que un usuario con privilegios administrativos le asigne los accesos correspondientes desde el panel de administración de Wis Tracking.
+Políticas de seguridad
+El sistema de autenticación de Wis Tracking impone diversas restricciones y políticas orientadas a mantener altos estándares de seguridad en la gestión de usuarios y contraseñas. Estas políticas afectan tanto la creación de nuevas cuentas como el uso cotidiano del sistema.
+A continuación, se detallan los parámetros de seguridad aplicados:
+Tiempo de vida máximo de la contraseña
+Las contraseñas tienen una duración limitada. Una vez transcurrido el tiempo máximo permitido sin cambios, el sistema solicitará al usuario que actualice su contraseña para seguir accediendo.
+Límite de intentos fallidos de autenticación
+Existe un número máximo de intentos fallidos de inicio de sesión en un periodo de tiempo determinado. Si se supera este límite, la cuenta será temporalmente bloqueada como medida preventiva.
+Largo mínimo de contraseña
+Las contraseñas deben cumplir con un mínimo de caracteres establecidos para evitar combinaciones fácilmente vulnerables.
+Cantidad mínima de caracteres no alfabéticos
+Para garantizar mayor complejidad, se exige incluir una cantidad mínima de caracteres especiales como @, #, %, etc.
+Límite de caracteres repetidos
+Se restringe la cantidad máxima de veces que un mismo carácter puede repetirse en una misma contraseña.
+Límite de caracteres consecutivos
+No se permite el uso de una gran cantidad de caracteres consecutivos iguales (por ejemplo: aaaaaa, 11111).
+Reutilización de contraseñas
+Las contraseñas no pueden ser reutilizadas inmediatamente. El sistema requiere que se hayan utilizado una cierta cantidad de contraseñas distintas antes de permitir la reutilización de una ya usada.
+Recuperación y cambio de contraseñas
+Existen situaciones en las que los usuarios deben cambiar su contraseña, ya sea porque la han olvidado o porque ha expirado conforme a las políticas de seguridad. Esta gestión se realiza exclusivamente a través del sistema centralizado de autenticación.
+Para iniciar el proceso, se debe utilizar la opción "Recuperar contraseña" disponible en la pantalla de inicio de sesión del sistema. El procedimiento es el siguiente:
+El usuario debe ingresar su correo electrónico asociado a la cuenta.
+Si el correo corresponde a un usuario válido, se enviará un enlace de recuperación a dicha dirección.
+Al acceder al enlace, se solicitará ingresar una nueva contraseña.
+Esta nueva contraseña debe cumplir con todas las restricciones definidas en la sección Políticas de seguridad.
+Una vez confirmada, el usuario podrá acceder al sistema con su nueva contraseña.
+Este proceso garantiza que solo el propietario del correo pueda recuperar el acceso a su cuenta, manteniendo altos estándares de seguridad.
+Indicadores
+Al acceder al sistema de Wis Tracking, se mostrará la pantalla de inicio, la cual incluye indicadores visuales que brindan información clave sobre el estado actual del sistema y ofrecen acceso rápido a ciertas funcionalidades.
+En la parte izquierda de la pantalla, se destacan dos indicadores principales:
+Acciones realizadas
+Este indicador muestra un gráfico de torta que presenta los porcentajes de acciones realizadas por tipo de visita, diferenciando entre entregas y recepciones de mercadería. Esta visualización permite una rápida comprensión del tipo de operaciones ejecutadas en el período seleccionado.
+Objetos entregados/recepcionados
+Este indicador presenta un mapa de calor en formato de calendario, donde se representa la cantidad de objetos entregados y recepcionados por día. Esta visualización facilita el análisis del volumen de trabajo diario y permite detectar fácilmente picos o días con baja actividad.
+Ambos indicadores están influenciados por el filtro de fecha “Desde”, ubicado en la parte superior derecha de la pantalla. Este filtro permite seleccionar el rango de tiempo sobre el cual se desea visualizar los datos. Por defecto, se establece en el último mes.
+En la parte derecha de la pantalla de inicio, se presentan elementos clave para la navegación ágil y el análisis del estado actual del sistema.
+Accesos rápidos
+Ubicados en la parte superior derecha, permiten acceder directamente a funcionalidades esenciales del sistema:
+Planificar: Acceso al planificador de viajes. Esta funcionalidad estará disponible únicamente si la licencia contratada por el cliente incluye el módulo de planificación.
+Viajes: Dirige a la consulta general de viajes, donde es posible gestionar y consultar todos los viajes registrados en el sistema.
+Seguimiento: Permite el acceso a la pantalla de seguimiento de múltiples viajes, desde donde se puede visualizar la posición actual de los viajes en curso, así como también los recorridos históricos y las alertas generadas en viajes finalizados.
+Indicadores del día
+Debajo de los accesos rápidos, se encuentran indicadores numéricos del día actual, que presentan:
+Cantidad de viajes en progreso
+Número de alertas generadas
+Total de visitas completadas
+Cantidad de visitas pendientes
+Estos valores permiten una evaluación rápida de la operativa del día.
+Indicador de geolocalización de puntos de entrega
+Finalmente, se presenta un gráfico de torta que refleja el estado general de la geolocalización de los puntos de entrega:
+Porcentaje de puntos correctamente geolocalizados
+Porcentaje de puntos que requieren geolocalización manual
+Este indicador es de tipo histórico, por lo que no se ve afectado por filtros de fecha ni períodos temporales, ofreciendo así una visión acumulativa del estado de configuración del sistema.
+Mantenimiento
+El módulo de mantenimiento de Wis Tracking brinda un conjunto de herramientas destinadas a la gestión y administración de entidades maestras y configuraciones clave del sistema. Desde este módulo, los usuarios pueden registrar y modificar manualmente información relevante, incluso en aquellas instancias que operan integradas con un sistema WMS. Además, permite realizar personalizaciones que influyen en el comportamiento general del sistema, adaptándolo a las necesidades específicas de cada cliente. Este módulo resulta fundamental para asegurar la coherencia y el correcto funcionamiento de los distintos procesos operativos dentro de Wis Tracking.
+Motivos
+Wis Tracking permite registrar motivos para justificar determinadas acciones o excepciones durante el recorrido de un viaje. Esta funcionalidad está diseñada para brindar trazabilidad y transparencia en decisiones que alteran el flujo habitual del viaje.
+Por ejemplo, un chofer puede registrar un motivo si:
+No respeta el orden planificado de visitas
+No puede realizar una entrega o retiro
+Reporta un incidente o condición excepcional
+Gestión de motivos desde el panel web
+La configuración de los motivos disponibles se realiza desde el panel web, en la sección Motivos, ubicada dentro del módulo de Mantenimiento.
+Al acceder a esta pantalla, se presenta una consulta general de todos los motivos configurados en el sistema. Esta tabla contiene la siguiente información:
+Código del motivo
+Descripción
+Tipo de acción asociada (por ejemplo, “No entrega”, “Salto de visita”, etc.)
+Además, desde esta vista principal, el usuario podrá:
+Editar motivos existentes usando el icono de lápiz correspondiente en cada fila
+Crear nuevos motivos, a través del botón "Crear motivo" ubicado en la parte superior derecha de la pantalla
+Crear nuevo motivo:
+Para agregar un nuevo motivo al sistema, se debe utilizar el botón "Crear motivo" ubicado en la parte superior de la grilla de consulta general.
+Al hacerlo, se desplegará un formulario de creación, el cual solicita los siguientes campos obligatorios:
+Motivo:
+Identificador de texto único que codifica el motivo. Este campo es obligatorio y debe ser conciso pero representativo.
+Acción:
+Determina sobre qué tipo de acciones dentro del viaje se podrá aplicar el motivo (por ejemplo, entrega, salto de visita, etc.). Es un campo obligatorio y se selecciona de una lista predefinida.
+Descripción:
+Texto libre que describe el motivo en forma clara y comprensible. Es obligatorio y facilita la identificación del motivo por parte de los usuarios.
+Una vez completado el formulario, al confirmar, el sistema realizará las validaciones necesarias para asegurar que todos los campos sean válidos.
+Si la validación es exitosa, el formulario se cerrará automáticamente y el nuevo motivo se incorporará a la grilla de consulta general, quedando disponible para su uso en la aplicación móvil.
+Editar motivo existente:
+Para editar un motivo ya registrado, debemos ubicarlo dentro de la consulta general de motivos. Cada fila de la grilla cuenta con un ícono de lápiz 📝 que representa la acción de edición.
+Al hacer clic sobre el ícono, se desplegará el formulario de edición del motivo.
+Importante: El código del motivo no puede ser modificado, ya que funciona como identificador único.
+Sin embargo, se permite cambiar los siguientes campos:
+Acción
+Descripción
+Una vez realizados los cambios, al confirmar el formulario, el sistema realizará las validaciones correspondientes.
+Si todo es correcto, los cambios se guardarán y se actualizará automáticamente la consulta general reflejando las nuevas modificaciones.
+Visualización de motivos en dispositivo móvil:
+Los motivos que se crean o editan desde el panel web de Wis Tracking estarán disponibles para los choferes desde sus dispositivos móviles.
+Es importante tener en cuenta que estos datos se sincronizan con el servidor central en momentos específicos, por lo que es posible que los cambios no se reflejen inmediatamente. Para asegurar la actualización de motivos en el dispositivo, puede ser necesario:
+Cerrar y volver a abrir la aplicación móvil
+O volver a autenticarse en el sistema
+Dispositivos Móviles
+Wis Tracking hace uso de dispositivos móviles Android no solo para gestionar los viajes programados, sino también para recopilar información de ubicación durante la ejecución de los mismos.
+Por este motivo, es fundamental llevar un registro de los dispositivos utilizados por cada cliente y asociarlos a los viajes y acciones realizados por los usuarios.
+Consulta de dispositivos móviles
+Dentro del módulo de mantenimiento, encontraremos la opción “Dispositivos móviles”, la cual permite:
+Consultar todos los dispositivos registrados en la instancia de Wis Tracking.
+Visualizar información relevante de cada uno.
+Asociar dispositivos a usuarios por defecto.
+Al ingresar a esta pantalla, se mostrará una grilla con la consulta general de dispositivos, donde podremos ver los siguientes campos:
+Id. disp. móvil
+Identificador interno y único de cada dispositivo Android. Este valor es asignado por el fabricante del equipo.
+Id. usuario
+Identificador del usuario asignado al dispositivo.
+Nombre completo
+Nombre del usuario por defecto vinculado al dispositivo.
+Descripción del dispositivo móvil
+Información sobre la marca y el modelo del dispositivo, obtenida automáticamente del sistema Android y registrada durante la autenticación del usuario.
+Vincular dispositivos:
+Existen dos formas de vincular un dispositivo móvil a la instancia de Wis Tracking del cliente:
+Mediante lectura de código QR
+Mediante vinculación manual
+Ambos procesos también están documentados en el manual de la aplicación móvil de Wis Tracking, en el apartado “Pasos para asociar el dispositivo.”
+Vinculación desde el panel web
+Al acceder a la opción “Vincular dispositivo” desde el panel web, se abrirá un modal emergente con:
+Instrucciones paso a paso para realizar la vinculación.
+Una secuencia de imágenes ilustrativas del proceso en la app móvil.
+Un código QR de vinculación.
+Vinculación mediante código QR
+El usuario debe escanear el código QR desde la aplicación móvil Android.
+Si el proceso es exitoso, se mostrará un mensaje de confirmación en la pantalla del dispositivo.
+El dispositivo quedará registrado en la consulta general de dispositivos.
+Si el dispositivo ya existía en el sistema, se actualizará su información automáticamente.
+Vinculación manual
+En caso de no poder utilizar el escáner de QR:
+Se puede optar por el modo de vinculación manual.
+El sistema mostrará un código de vinculación, que debe ser digitado en la aplicación móvil.
+En este modo, el dispositivo no se dará de alta inmediatamente, sino que se registrará al momento en que el chofer tome su primer viaje.
+Editar dispositivos:
+Cada dispositivo listado en la consulta general de dispositivos móviles puede ser editado.
+Pasos para editar un dispositivo:
+Ubicar el dispositivo en la tabla de consulta.
+Presionar el botón de edición identificado con el ícono de un lápiz en la fila correspondiente.
+Se desplegará el formulario de edición, que permite modificar los siguientes campos:
+Descripción del dispositivo (por ejemplo: marca y modelo).
+Usuario asociado por defecto al dispositivo.
+Confirmar las modificaciones.
+Si los cambios pasan las validaciones pertinentes, el formulario se cerrará automáticamente.
+Los nuevos datos se verán reflejados en la tabla de dispositivos.
+⚠ El ID del dispositivo móvil no puede ser modificado, ya que es un identificador técnico generado por el fabricante.
+Puntos de Entrega
+Los puntos de entrega son una de las principales entidades dentro de Wis Tracking, ya que representan las direcciones físicas y coordenadas geográficas de las visitas a realizar en los viajes.
+Cada viaje se compone de un conjunto de visitas, y cada visita está asociada a un punto de entrega, el cual define el lugar donde debe realizarse dicha visita.
+Consulta general de puntos de entrega
+Desde el menú de Mantenimiento > Puntos de entrega, es posible acceder a la consulta general de todos los puntos registrados en el sistema. Esta pantalla permite:
+Visualizar el estado de geolocalización de los puntos.
+Acceder a las acciones de edición y geolocalización manual.
+Campos disponibles en la grilla de consulta:
+Código: Identificador único del punto de entrega.
+Desc: Descripción del punto de entrega.
+Dirección: Dirección geolocalizada del punto de entrega.
+Puerta: Número de puerta informado en la creación.
+Oficina: Número de oficina informado en la creación.
+Entre calle 1: Calle 1 informada en la creación.
+Entre calle 2: Calle 2 informada en la creación.
+Longitud: Coordenada de longitud, puede provenir de la creación, geolocalización automática o manual.
+Latitud: Coordenada de latitud, puede provenir de la creación, geolocalización automática o manual.
+País: País correspondiente a la dirección (informado o geolocalizado).
+Departamento: Departamento correspondiente a la dirección (informado o geolocalizado).
+Ventana 1 desde: Horario de inicio de la primera ventana de visita.
+Ventana 1 hasta: Horario de fin de la primera ventana de visita.
+Ventana 2 desde: Horario de inicio de la segunda ventana de visita.
+Ventana 2 hasta: Horario de fin de la segunda ventana de visita.
+Zona: Código de la zona asignada al punto tras la zonificación.
+Desc zona: Descripción de la zona asignada.
+Tiempo de entrega: Tiempo promedio estimado de entrega en ese punto.
+Agrupación: Código agrupador para clasificar puntos (por ejemplo: punto normal, centro de distribución).
+Teléfono: Teléfonos de contacto asociados al punto de entrega.
+Dirección de búsqueda: Dirección informada originalmente, usada para generar visitas.
+Geo Manual: Indica si la geolocalización fue ingresada manualmente.
+Estado: Estado del proceso de geolocalización del punto.
+Fecha de geolocalización: Fecha en que se completó la geolocalización.
+Fecha de comunicación WMS: Fecha en que se notificó la zonificación al sistema WMS.
+Actualización: Fecha de la última modificación del punto.
+Creación: Fecha de creación del punto.
+Fidelidad: Indica si las coordenadas tienen baja fidelidad (solo aplica a geolocalización automática).
+Creación manual y edición de puntos de entrega:
+Los puntos de entrega pueden generarse automáticamente (por integración con WMS u otros sistemas) o manualmente desde el panel web de Wis Tracking. También es posible editar puntos ya existentes.
+Acceso al formulario de creación
+Desde el menú Mantenimiento > Puntos de entrega, presionar el botón “+” en la parte superior izquierda de la grilla para abrir el formulario de creación.
+Campos del formulario de creación y edición:
+Descripción del punto de entrega (obligatorio)
+Texto de descripción para la dirección de entrega
+Número de puerta (opcional)
+Número de puerta para complementar la dirección
+Número de oficina (opcional)
+Número de oficina para complementar la dirección
+Calle 1 (opcional)
+Calle de cruce o referencia, para complementar la dirección
+Calle 2 (opcional)
+Calle de cruce o referencia, para complementar la dirección
+Teléfono (opcional)
+Número(s) de teléfono para notificaciones de WhatsApp (Si la licencia del cliente lo habilita).
+Formato internacional requerido.
+Múltiples números separados por ;.
+Tiempo de entrega (opcional)
+Tiempo de servicio o entrega al visitar el punto, se toma en cuenta para flujos de planificación.
+Agrupación (obligatorio)
+Código de categoría (ej. punto normal, centro de distribución).
+Ventana desde (opcional)
+Horario de inicio ventana de visita, se dividen en dos ventanas, se toman en cuenta para flujos de planificación.
+Ventana hasta (opcional)
+Horario de fin ventana de visita, se dividen en dos ventanas, se toman en cuenta para flujos de planificación.
+Características de vehículo aceptadas (opcional)
+Restricciones de los vehículos que pueden visitar este punto de entrega, se toman en cuenta para flujos de planificación..
+Una vez registrado un punto de entrega y superadas las validaciones correspondientes, el mismo quedará disponible en la consulta general.
+Los puntos de entrega creados manualmente deberán ser geolocalizados de forma manual. Para más información sobre este procedimiento, consulte la sección “Geolocalización manual y automática”.
+La edición de puntos de entrega se realiza utilizando el mismo formulario empleado para la creación. Para editar un punto existente, debe localizarse en la consulta general y hacer clic en el botón de edición (ícono de lápiz) en la fila correspondiente.
+Luego de realizar las modificaciones y superar las validaciones, los cambios se actualizarán automáticamente en la consulta general.
+Geolocalización manual y automática
+Los puntos de entrega generados mediante integración pasan por diferentes estados de geolocalización (asignación de coordenadas) en función de la información provista durante su creación.
+Un punto de entrega no se considera geolocalizado hasta que posea valores válidos de latitud y longitud.
+Estados posibles de geolocalización
+Pendiente
+El punto fue informado con una dirección y está en espera de ser procesado por la geolocalización automática.
+Pendiente manual
+La dirección informada no fue lo suficientemente precisa para determinar sus coordenadas. Se requiere geolocalización manual por parte del usuario.
+Zonificado
+El sistema pudo determinar un conjunto válido de coordenadas y ubicó el punto dentro
+de una zona configurada del sistema.
+Comunicado WMS
+Tras ser zonificado, el punto fue informado al sistema WMS (si aplica), indicando la zona o ruta asignada.
+Geolocalizado
+Se asignaron coordenadas válidas y no quedan acciones pendientes sobre el punto de entrega.
+En los casos donde una dirección fue geolocalizada automáticamente, pero las coordenadas obtenidas tienen baja fidelidad, el punto de entrega se marcará en la consulta general con una fila amarilla.
+Es recomendable que el usuario responsable verifique estas coordenadas realizando una geolocalización manual. En este proceso, si las coordenadas asignadas son correctas, simplemente se confirman. Si no lo son, se reemplazan manualmente.
+Cualquier punto de entrega, ya esté geolocalizado o pendiente, puede ser geolocalizado manualmente en cualquier momento. Para ello, se debe hacer clic en el ícono de mapa ubicado en la fila correspondiente dentro de la consulta de puntos de entrega.
+¿Cómo funciona la geolocalización manual?
+Al iniciar este proceso:
+Se despliega un mapa interactivo.
+El usuario puede hacer clic sobre el mapa para seleccionar manualmente la ubicación del punto.
+Al seleccionar un punto en el mapa, se mostrará una lista de direcciones posibles.
+El usuario debe elegir una dirección y confirmar.
+El sistema asignará esa dirección y sus coordenadas al punto de entrega.
+Importante:
+Tanto en la geolocalización automática como en la manual, se almacenan en el sistema los siguientes datos del punto de entrega:
+Dirección geolocalizada
+Coordenadas (latitud y longitud)
+País asociado
+Consulta de clientes y empresas
+Cada punto de entrega puede tener asociados uno o más clientes y empresas, lo que permite generar visitas a esa dirección para los clientes correspondientes. Para consultar las entidades vinculadas a un punto de entrega, se debe acceder al detalle de clientes utilizando el botón de información, identificado con un ícono de "i", disponible en cada fila de la consulta de puntos de entrega. Esta funcionalidad facilita la trazabilidad de las relaciones entre direcciones y entidades comerciales, optimizando la gestión y planificación de visitas.
+Objetos
+Los objetos representan las unidades de mercadería que deben ser entregadas o recibidas en cada visita, constituyendo una de las entidades fundamentales dentro del sistema Wis Tracking. La sección de objetos permite consultar de forma centralizada todos los objetos registrados en el sistema, accediendo a información esencial como su estado actual, datos de trazabilidad y atributos clave. Además, desde esta pantalla es posible realizar acciones como la creación y edición manual de objetos, la consulta detallada de movimientos y la generación de etiquetas para procesos de recepción.
+Consulta general de objetos
+Al ingresar a esta sección, se despliega una grilla de datos que conforma la consulta general de objetos. Desde esta grilla es posible ejecutar diferentes acciones sobre cada objeto y visualizar su información principal, la cual incluye:
+Número interno
+Identificador interno del objeto
+Número
+Número de objeto, o identificador externo informado por el sistema que genero el objeto por integración.
+Cod. Empresa
+Empresa a la cual pertenece el objeto
+Referencia
+Descripción o texto de referencia del objeto.
+Cod.Barras
+Código de barras a escanear para la entrega o recepción del objeto.
+Cantidad
+Cantidad de bultos que contiene el objeto
+Volumen
+Volumen en m3 del objeto
+Cod.Punto origen
+Identificador del punto de entrega de origen del objeto
+Desc.Punto origen
+Descripción del punto de entrega de origen del objeto
+Cod.Punto destino
+Identificador del punto de entrega de destino del objeto
+Des. Punto destino
+Descripción del punto de entrega de destino del objeto
+Cod. Punto actual
+Identificador del punto de entrega actual del objeto
+Des. Punto actual
+Descripción del punto de entrega actual del objeto
+Viaje
+Identificador del viaje en el que se encuentra asignado el objeto
+Estado
+Estado del objeto, refleja si el objeto fue entregado o recepcionado, además de reflejar el estado actual de asignación a viajes.
+Fecha ingreso
+Fecha de generación del objeto.
+Fecha de actualización
+Fecha de última actualización sobre el objeto.
+Peso
+Peso del objeto en kilogramos
+Largo
+Largo del objeto en metros
+Alto
+Altura del objeto en metros
+Profundidad
+Profundidad del objeto en metros
+Valor
+Valor monetario del objeto
+Creación y edición de objetos
+Los objetos de entrega y recepción generalmente se generan a través de procesos de integración durante el registro de visitas en un viaje. Sin embargo, el sistema permite también el registro manual de objetos, lo que facilita su posterior entrega o recepción, ya sea vinculándolos a una visita planificada o incorporándolos como recepciones inesperadas durante un viaje.
+La creación manual de objetos se realiza desde la pantalla principal de consulta de objetos, accediendo al formulario de registro mediante el botón de formulario ubicado en la parte superior de la pantalla, sobre la grilla de datos. Al desplegarse el formulario, se presentan los campos necesarios para completar el alta del objeto de forma manual.
+Referencia (obligatorio)
+Texto de descripción para el objeto.
+Número (obligatorio)
+Identificador externo del objeto
+Empresa (obligatorio)
+○ Empresa a la que pertenece el objeto.
+Tipo (obligatorio)
+○ Tipo de objeto, categoriza el objeto, los valores pueden ser Bulto, Documento, Cubeta, etc.
+Cantidad (opcional)
+Cantidad de bultos a entregar/recibir en el objeto.
+Peso (opcional)
+Peso del objeto en kilogramos.
+Volumen (opcional)
+Volumen del objeto en m3
+Origen (obligatorio)
+○ Punto de entrega de origen del objeto, si es una entrega el origen del objeto debe ser el centro de distribución, para recepciones, el origen es el punto de entrega donde se recepciona el objeto.
+Destino (obligatorio)
+○ Punto de entrega de destino del objeto, para las entregas representa el punto de entrega donde se entregará el objeto, en las recepciones puede ser el centro de distribución u otro punto de entrega.
+Código de barras (opcional)
+○ Código de barras a escanear al momento de entregar/recibir el objeto, si no se carga, la entrega/recepción será tratada como manual.
+Número tracking (opcional)
+Número de rastreo externo para el objeto.
+No todos los objetos permiten ser editados manualmente, ya que la posibilidad de edición depende del estado en el que se encuentren. Solo los objetos en estado Pendiente de asignación pueden ser modificados. Cualquier otro estado —como Entregado, Cancelado, En viaje o Asignado— bloquea la opción de edición.
+Cuando un objeto es editable, el botón de edición (identificado con un ícono de lápiz) estará habilitado en la grilla de consulta. Al presionar este botón, se despliega el formulario de edición, que contiene los mismos campos que el formulario de creación, precargados con la información actual del objeto seleccionado. Esto permite realizar ajustes y confirmar los cambios de forma sencilla siempre que las condiciones del estado lo permitan.
+Anular objeto
+Desde la consulta general de objetos, es posible anular aquellos que se encuentran en estado Pendiente de asignación. Al anular un objeto, este cambiará automáticamente al estado Cancelado, lo que implica que no podrá ser asignado a ninguna visita ni ser recepcionado en ningún viaje.
+Al momento de anular un objeto, se solicita al usuario que ingrese un motivo de anulación, el cual debe ser un texto libre y es requerido para completar la operación. Este motivo queda registrado como parte de la trazabilidad del objeto, permitiendo mantener un historial completo y transparente de sus cambios de estado y acciones asociadas.
+Generar etiqueta de recepción
+La aplicación móvil de Wis Tracking permite registrar recepciones de objetos no esperados durante la ejecución de una visita (ver sección “Recepciones no esperadas” en el manual de usuario de la aplicación Android). Estas recepciones pueden realizarse ingresando manualmente los datos del objeto o mediante el escaneo de una etiqueta de recepción.
+Las etiquetas de recepción de Wis Tracking son etiquetas especiales que incluyen todos los datos necesarios para registrar automáticamente una recepción inesperada desde la aplicación móvil. Esta funcionalidad permite que las sucursales o clientes registren anticipadamente los objetos a recepcionar desde el panel web, generando una etiqueta que será utilizada por el chofer. Al llegar al punto de entrega o sucursal correspondiente, el chofer puede escanear el código QR de la etiqueta para completar la recepción sin necesidad de ingresar datos manualmente.
+Para generar una etiqueta de recepción, se debe localizar el objeto correspondiente en la consulta general de objetos y presionar el botón de generación de etiqueta, identificado con el ícono de un código QR. Al hacerlo, se descargará un archivo PDF que contiene la etiqueta de recepción lista para su impresión y uso.
+Trazabilidad
+A lo largo del ciclo de vida de cada objeto, el sistema registra distintos hitos de trazabilidad que reflejan su historial y evolución. Entre estos hitos se encuentran acciones como el registro inicial del objeto, su asignación a una visita, la entrega, la anulación, entre otros eventos generados durante el proceso operativo de un viaje y la gestión de objetos.
+Para consultar la trazabilidad de un objeto específico, se debe acceder a la consulta general de objetos y presionar el botón de trazabilidad, identificado con el ícono de un documento. Esta acción despliega una pantalla emergente donde se muestra una grilla con los hitos registrados para el objeto seleccionado. En la parte superior de la ventana se presenta información general del objeto, junto con una representación visual en formato de “camino de hormigas” que ilustra la secuencia temporal de los eventos registrados.
+En la grilla de trazabilidad se incluyen los siguientes campos:
+Número interno
+Identificador interno del objeto
+Fecha acción
+○ Fecha y hora donde se registró el hito de trazabilidad
+Acción
+Descripción de la acción realizada.
+Núm. Viaje
+Identificador del viaje sobre el cual se generó el hito de trazabilidad.
+Viaje
+Descripción del viaje sobre el cual se generó el hito de trazabilidad.
+Punto Entrega
+Punto de entrega sobre el cual se generó el hito de trazabilidad.
+Nombre
+Usuario que realizo la acción
+Vehículos
+En Wis Tracking, los vehículos representan la flota disponible del cliente para la ejecución de los viajes. Estos vehículos pueden registrarse manualmente desde el sistema o incorporarse automáticamente mediante integración, en caso de que la instancia del cliente esté conectada con el WMS de Wis.
+Cada viaje generado dentro del sistema debe contar con un vehículo asignado, independientemente de su origen: ya sea por integración, como resultado de un proceso de planificación o por creación manual. La asignación de un vehículo es un requisito indispensable para la ejecución del viaje.
+Desde la pantalla de Vehículos, disponible en el módulo de mantenimiento, es posible consultar la flota actual del cliente, editar la información de los vehículos existentes y registrar nuevos vehículos de forma manual. Esta funcionalidad permite mantener actualizada la flota y asegurar la correcta asignación de vehículos a los viajes planificados.
+Consulta general de vehículos
+Al ingresar a esta sección, se despliega una grilla de datos que conforma la consulta general de vehículos. Desde esta grilla es posible editar cada vehículo y visualizar su información principal, la cual incluye:
+Código
+Identificador del vehículo.
+Descripción
+Texto que describe al vehículo para su fácil identificación y/o categorización.
+Tipo vehículo
+Corresponde a la categoría asignada al vehículo. Cada tipo de vehículo define sus características generales, tales como capacidad de carga, tipo de carga admitida, marca, modelo y otros datos relevantes que permiten clasificar y gestionar adecuadamente la flota.
+Placa
+○ Matrícula del vehículo
+Agrupación
+○ Categorización de vehículos, pudiendo identificar los vehículos de la flota del cliente o de flotas contratadas.
+Chofer
+Chofer por defecto asignado al vehículo
+Nombre completo
+Nombre del chofer por defecto asignado al vehículo.
+Creación y edición de vehículos
+En las instancias de Wis Tracking que estén integradas con el WMS, los vehículos se generan automáticamente mediante dicha integración. Para los demás escenarios, el sistema permite registrar y editar vehículos manualmente a través de las herramientas disponibles en la pantalla de vehículos del módulo de mantenimiento.
+El acceso al formulario de registro de vehículos se realiza mediante el botón de formulario ubicado en la parte superior de la grilla de consulta. Al presionarlo, se despliega el formulario correspondiente, donde es posible ingresar la siguiente información:
+Descripción (obligatorio)
+Descripción del vehículo, características o texto para identificar fácilmente el vehículo.
+Tipo (obligatorio)
+Tipo de vehículo con sus características, ver apartado “Tipo de vehículo” ● Placa (obligatorio)
+○ Placa/matrícula del vehículo ● Agrupación (obligatorio)
+○ Característica agrupadora de los vehículos, como pueden ser vehículos propios o externos.
+Chofer (opcional)
+○ Chofer asignado al vehículo, en caso de tener un chofer por defecto, todos los viajes creados para este vehículo serán asignados al chofer por defecto.
+Inicio jornada laboral (opcional)
+Horario de inicio de jornada laboral del vehículo, valor utilizado en flujos de planificación para determinar disponibilidad del vehículo.
+Fin jornada laboral (opcional)
+Horario de fin de jornada laboral del vehículo, valor utilizado en flujos de planificación para determinar disponibilidad del vehículo.
+Al confirmar el formulario de creación, si se superan las validaciones correspondientes, el vehículo quedará registrado y se visualizará en la grilla de consulta general.
+Para modificar los datos de un vehículo existente, se debe localizar el registro en la grilla de consulta y acceder al formulario de edición mediante el botón de edición, identificado con un ícono de lápiz. Al presionar este botón, se abrirá un formulario que contiene los mismos campos que el formulario de creación, precargados con la información actual del vehículo, permitiendo modificar los valores necesarios. Si los cambios superan las validaciones pertinentes, se actualizarán y se reflejarán en la grilla de consulta.
+Tipo de vehículo
+Como se mencionó en el apartado de vehículos, cada unidad debe tener asignado un tipo. Los tipos de vehículo definen las características estructurales y operativas de los mismos, proporcionando atributos que influyen tanto en los flujos de planificación como en la Metadata asociada a cada vehículo.
+Entre las propiedades definidas por el tipo se incluyen aspectos como la marca, el modelo, la capacidad de carga y otros datos relevantes. Esta clasificación permite estandarizar la gestión de la flota, optimizar la asignación en los viajes y facilitar la integración con otros módulos del sistema.
+Desde el módulo de mantenimiento se puede acceder a la pantalla de Tipos de Vehículo, donde es posible consultar los tipos ya registrados, crear nuevos y editar los existentes. Esta funcionalidad permite gestionar de forma centralizada las configuraciones asociadas a cada tipo de vehículo disponible en el sistema.
+Consulta general de tipos de vehículos
+Al acceder a la pantalla de Tipos de Vehículo, lo primero que se muestra es la consulta general con todos los tipos registrados en el sistema. En esta vista se presenta la siguiente información:
+Tipo
+Identificador interno del tipo de vehículo
+Marca
+Marca del vehículo
+Modelo
+Modelo del vehículo
+Peso
+Capacidad de peso máxima del tipo de vehículo
+Bultos
+Capacidad máxima de bultos del tipo de vehículo.
+Volumen
+Capacidad máxima de volumen en metros cúbicos.
+Creación y edición de tipos de vehículos
+Los tipos de vehículo pueden generarse automáticamente mediante integración cuando Wis Tracking se encuentra conectado con WMS. En caso contrario, es posible registrarlos de forma manual desde la pantalla de Tipos de Vehículo.
+Para acceder al formulario de creación, se debe presionar el botón de formulario ubicado en la parte superior de la pantalla, por encima de la grilla de consulta general. Al hacerlo, se desplegará el formulario de alta, el cual contiene los siguientes campos:
+Descripción (obligatorio)
+Texto descriptivo (Nombre) del tipo de vehículo para su fácil identificación
+Peso (opcional)
+Capacidad máxima de peso del vehículo en kilogramos, utilizado para flujos de planificación.
+Bultos (opcional)
+Capacidad máxima de bultos del vehículo, utilizado para flujos de planificación.
+Altura (opcional)
+○ Altura del vehículo en metros
+Volumen (opcional)
+○ Capacidad máxima de volumen del vehículo en metros cúbicos, utilizado para flujos de planificación.
+Marca (opcional)
+○ Marca del vehículo.
+Modelo (opcional)
+Modelo del vehículo
+Características (opcional)
+○ Características del vehículo (Ver puntos de entrega) para restringir acceso del mismo a puntos de entrega que acepten las mismas condiciones, como puede ser muelles, carga lateral, rampas, tamaño y demás condiciones. Utilizado en flujos de planificación.
+Duración máxima (opcional)
+○ Tiempo máximo en minutos que puede operar el vehículo por día. Utilizado en flujos de planificación.
+Duración máxima por ruta (opcional)
+Tiempo máximo en minutos que puede operar el vehículo en una ruta/viaje. Utilizado en flujos de planificación.
+Distancia máxima por ruta (opcional)
+Distancia máxima en kilómetros que puede recorrer el vehículo en una ruta/viaje. Utilizado en flujos de planificación.
+Duración mínima (opcional)
+○ Tiempo mínimo en minutos que puede operar el vehículo por día. Utilizado en flujos de planificación.
+Duración mínima por ruta (opcional)
+Tiempo mínimo en minutos que puede operar el vehículo en una ruta/viaje. Utilizado en flujos de planificación.
+Tiempo de carga (opcional).
+Tiempo promedio en minutos de carga del vehículo. Utilizado en flujos de planificación.
+Tiempo de descarga (opcional)
+Tiempo promedio en minutos de descarga del vehículo. Utilizado en flujos de planificación.
+Tiempo de recarga (opcional)
+Tiempo promedio en minutos de reabastecimiento del vehículo. Utilizado en flujos de planificación.
+Una vez confirmado el formulario de creación de tipos de vehículos, y siempre que se superen las validaciones correspondientes, el nuevo tipo quedará disponible en la consulta general y podrá ser asignado tanto en la creación como en la edición de vehículos.
+Para editar un tipo de vehículo existente, se debe localizar en la consulta general de tipos de vehículos y acceder al formulario de edición a través del botón identificado con un lápiz, ubicado en cada fila de la grilla. Al presionarlo, se despliega el formulario de edición, que permite modificar todos los campos utilizados en la creación del tipo de vehículo. Una vez confirmada la edición, y si se superan las validaciones correspondientes, los cambios se verán reflejados tanto en la grilla de consulta como en todos los vehículos asociados al tipo editado.
+Mantenimiento de zonas
+Wis Tracking permite definir zonas geográficas para los distintos clientes, las cuales cumplen la función de agrupar conjuntos de puntos de entrega bajo una misma característica (zona). Al geolocalizar un punto de entrega, Wis Tracking evalúa si sus coordenadas se encuentran dentro de los límites de alguna zona definida, y procede a zonificarlo en consecuencia.
+En escenarios donde Wis Tracking está integrado con WMS, cada zona representa una ruta dentro del WMS, permitiendo mantener un paralelismo entre la agrupación de puntos de entrega en Wis Tracking y las agrupaciones de sucursales o clientes en el WMS. Toda acción de zonificación o creación de zonas en Wis Tracking tiene su equivalente en el WMS, modificando las rutas asociadas a los pedidos generados por los puntos de entrega o creando nuevas rutas cuando se crean nuevas zonas.
+Dentro del sistema, las zonas pueden utilizarse al momento de planificar viajes o al crear viajes de manera manual, permitiendo restringir las visitas a realizar a un conjunto específico de zonas.
+Por defecto, Wis Tracking define dos zonas especiales necesarias para su funcionamiento estándar: la zona “Resto del país” y la zona “Sin geolocalizar”. Estas zonas no tienen una definición geográfica y son gestionadas de forma interna por el sistema.
+Desde la pantalla de mantenimiento de zonas es posible consultar las zonas existentes, editarlas y crear nuevas. Esta pantalla ofrece dos modalidades de trabajo: modalidad mapa, que permite definir gráficamente el polígono geográfico de cada zona, y modalidad grilla, que presenta la información de las zonas en formato tabular para su gestión detallada.
+Gestión de zonas
+La gestión de zonas se realiza mediante la interacción del usuario con un mapa interactivo, desde el cual es posible definir polígonos que determinan los límites geográficos de cada zona, así como también editar los polígonos existentes o eliminarlos.
+En la parte superior del mapa se encuentran disponibles las herramientas de acción, entre las cuales se incluyen: Crear zonas, Editar zonas y Borrar. Estas opciones permiten al usuario dibujar nuevas zonas, modificar las existentes o eliminarlas del sistema según sea necesario.
+Crear nueva zona
+Mediante la acción Crear zona, se habilita la herramienta de definición de polígonos. A través de la creación de puntos geográficos en el mapa, el usuario podrá definir un polígono que representa los límites de la zona. Este polígono debe contener al menos tres puntos, aunque es posible añadir una cantidad ilimitada de ellos. Los puntos definidos pueden ser arrastrados libremente, permitiendo modificar la forma del polígono en tiempo real.
+Al definir el primer punto, el sistema generará automáticamente un polígono base compuesto por tres puntos geográficos, los cuales podrán ser ajustados o completados según sea necesario para definir con precisión los límites de la zona.
+Durante la creación de una nueva zona, en la parte izquierda de la pantalla se desplegará un formulario en el que se deberán completar los datos correspondientes a la zona, tales como:
+Zona (obligatorio)
+Código único que identifica la zona
+Desc. Zona (obligatorio)
+Texto descriptivo de la zona.
+Color (obligatorio)
+Color del polígono a visualizar en el mapa.
+Una vez definida la zona mediante su respectivo polígono y completado el formulario con los datos requeridos, si se superan todas las validaciones pertinentes, la nueva zona quedará registrada y podrá visualizarse tanto en el mapa interactivo como en la modalidad de grilla de la pantalla de gestión de zonas.
+En los casos donde Wis Tracking opera con integración al WMS, la creación de la zona será comunicada automáticamente al sistema WMS, lo que generará una nueva ruta correspondiente dentro de dicho sistema, asegurando así la coherencia entre ambas plataformas.
+Editar zona
+Las zonas previamente definidas pueden ser editadas, tanto en sus límites geográficos como en los datos asociados a las mismas. Para iniciar la edición de una zona, debemos acceder a la opción Editar ubicada en la parte superior izquierda del mapa. Al hacerlo, el sistema solicitará seleccionar la zona a editar; para ello, basta con hacer clic sobre el polígono correspondiente a la zona deseada.
+Una vez seleccionada, se habilitará el modo edición, que funciona de forma similar al modo de creación. En este modo, el polígono que define la zona podrá ser ajustado arrastrando los puntos geográficos existentes, permitiendo modificar su forma en tiempo real.
+Además, en el panel izquierdo de la pantalla se abrirá el formulario de edición, desde el cual se podrán actualizar los datos de la zona, como la descripción y el color asignado. Es importante destacar que el código identificador de la zona no puede ser modificado durante la edición.
+Borrar zona
+Las zonas definidas pueden ser eliminadas del sistema accediendo a la opción Borrar, ubicada en la esquina superior izquierda de la pantalla. Al seleccionar esta acción, el sistema solicitará al usuario que indique qué zona desea eliminar. Para ello, basta con hacer clic sobre el polígono correspondiente a la zona que se desea borrar.
+Una vez seleccionada la zona, el sistema mostrará un mensaje de confirmación, solicitando al usuario validar si realmente desea eliminar la zona seleccionada. Solo tras confirmar esta acción, la zona será eliminada del sistema.
+Deshabilitar zonas
+Las zonas existentes en el sistema pueden ser deshabilitadas si ya no deben utilizarse en la planificación ni en los procesos operativos. Para realizar esta acción, debemos acceder al modo grilla, donde se podrán marcar las zonas como inactivas.
+Para ingresar al modo grilla, se debe presionar la opción de vista grilla, identificada con el ícono de celdas ubicado en la esquina superior izquierda del mapa. Al hacerlo, se abrirá una nueva pestaña en el navegador que muestra las zonas del sistema en una grilla de consulta.
+En esta grilla se podrá visualizar la siguiente información:
+Código
+○ Código identificador de la zona
+Descripción
+○ Texto de descripción o nombre de la zona
+Fecha de inserción
+○ Fecha de creación de la zona
+Fecha modificación
+○ Fecha y hora de la última modificación registrada sobre la zona
+Estado
+○ Indica si la zona está habilitada o no
+Para deshabilitar una zona, debemos interactuar con la grilla de datos. Una vez identificada la zona que se desea deshabilitar, en la columna "Estado" encontraremos un interruptor (toggle) que indica si la zona está habilitada o no.
+Al presionar este toggle, podremos alternar el estado de la zona entre habilitada e inhabilitada. Para confirmar los cambios realizados, es necesario presionar el botón de confirmación, identificado con un check verde, ubicado en la parte superior izquierda de la grilla.
+Reportes
+El módulo de reportes concentra las consultas más relevantes del sistema, enfocándose principalmente en tareas y viajes, que son los pilares operativos del trabajo de los choferes y del flujo de entregas y recepciones de mercadería. Desde este módulo no solo es posible realizar el seguimiento detallado de los viajes activos y consultar información histórica, sino que también se permite gestionar estas entidades mediante la creación y edición manual. Por su alcance y funcionalidad, el módulo de reportes reúne las herramientas clave para el monitoreo y la gestión diaria dentro de Wis Tracking.
+Tareas activas
+Las tareas representan las necesidades de visita a los distintos puntos de entrega, y son los bloques fundamentales que componen un viaje. Para cada visita que un chofer debe realizar durante un viaje, se genera una tarea específica que debe ser ejecutada en ese punto.
+Cada tarea o visita está compuesta por múltiples acciones que los choferes deben llevar a cabo. Junto con los objetos, las tareas representan las necesidades operativas de entrega y recepción de mercadería en los distintos puntos de entrega.
+En las instancias de Wis Tracking integradas con el WMS, las tareas (también llamadas visitas) se generan automáticamente a partir de los pedidos gestionados en el WMS. Esta integración también permite registrar los puntos de entrega vinculados a dichos pedidos, asegurando que cada necesidad logística esté correctamente reflejada en el sistema.
+En escenarios donde Wis Tracking opera de forma independiente (modalidad stand-alone), las tareas se generan mediante el uso de la API de registro de visitas. A través de esta API, el sistema se alimenta con la información necesaria: pedidos, objetos y direcciones en las que debe realizarse la entrega o recepción de mercadería.
+Consulta general de tareas
+Al acceder a la pantalla de Tareas activas dentro del módulo de reportes, lo primero que se presenta es la consulta general de tareas. Esta vista permite visualizar información clave sobre las visitas registradas en el sistema y su estado actual, brindando una visión integral de las necesidades logísticas que gestiona Wis Tracking.
+Desde esta consulta es posible no solo realizar el seguimiento del estado de cada visita, sino también ejecutar acciones específicas sobre ellas según el flujo operativo.
+En la grilla de tareas activas se puede consultar la siguiente información:
+Cod. ext. Tarea
+Identificador externo de la tarea otorgado por el sistema que genero la misma.
+Tarea
+Descripción de la visita/tarea
+Cod punto destino
+Identificador del punto de entrega asignado a la tarea, representa el punto geográfico donde se debe realizar la tarea.
+Punto destino
+Descripción del punto de entrega asignado a la tarea/visita.
+Creado
+Fecha y hora de creación de la tarea/visita.
+Prometida
+Fecha y hora prometida para la realización de la tarea/visita.
+Teléfono
+Número de contacto asociado a la visita, utilizado para flujos de notificación.
+Estado
+Estado actual de la tarea/visita
+Num. Viaje
+Identificador del viaje al cual se asignó la tarea/visita
+Viaje
+Descripción del viaje al cual se asignó la tarea/visita.
+Comentario ejecución
+Comentario registrado por el chofer en la ejecución de la tarea/visita desde el dispositivo móvil.
+Cancelar tarea
+Las tareas o visitas pueden ser canceladas siempre que no estén asignadas a un viaje. Esta acción se realiza desde la consulta general de tareas, accediendo a las acciones disponibles en cada fila.
+Para cancelar una tarea, se debe:
+Ubicar la tarea dentro de la consulta general.
+Verificar que la acción de cancelación esté habilitada (esto depende del estado actual de la tarea).
+Presionar el ícono de cancelación, representado por una cruz en la fila correspondiente.
+Confirmar la acción en el mensaje emergente de validación.
+Una vez confirmada, la tarea pasará automáticamente al estado cancelado, y se eliminarán todas las acciones pendientes asociadas a ella.
+Detalle de tarea
+La pantalla de detalle de tarea brinda una vista integral de todas las acciones e información asociada a una visita. Desde este panel se pueden consultar y gestionar aspectos clave de la operación, tanto previos como posteriores a la ejecución de la tarea.
+Entre los elementos disponibles se encuentran:
+Acciones de entrega y recepción de mercadería.
+Registro de fotografías y firmas digitales.
+Información asociada a pedidos y documentación.
+Visualización de post-its operativos y alertas generadas.
+Además de ser una vista detallada, esta pantalla permite acciones de edición, como la creación o modificación de acciones relacionadas con la tarea (entregas, recepciones, firmas o fotos), convirtiéndose así en el panel principal de gestión de visitas.
+La pantalla de detalle es accesible directamente desde la consulta general de tareas, pero también puede abrirse desde distintos puntos del sistema, facilitando el acceso centralizado a la información completa de una visita.
+En la pantalla de detalle de tarea, podremos encontrar la siguiente información:
+Detalle
+La sección de detalle brinda información relevante de la tarea, presentando numerosos datos vinculados a su generación, planificación y ejecución. En esta pestaña encontraremos:
+Tarea: Descripción de la tarea o visita.
+Punto de entrega: Dirección de entrega vinculada a la tarea o visita.
+Descripción del punto de entrega: Descripción del punto de entrega vinculado.
+Fecha de creación: Fecha y hora en la que se generó la visita.
+Fecha prometida: Fecha y hora planificadas para la ejecución de la tarea o visita.
+Estado: Descripción del estado actual de la tarea o visita.
+Comentario del chofer: Comentario registrado por el chofer al ejecutar la tarea o visita desde la aplicación móvil.
+Número de viaje: Identificador del viaje vinculado a la tarea.
+Descripción del viaje: Texto descriptivo del viaje al que se asignó la tarea.
+Estado del viaje: Estado actual del viaje al que se asignó la tarea.
+Inicio: Fecha de inicio del viaje.
+Vehículo: Identificador del vehículo en el que se realizó el viaje.
+Depósito: Centro de distribución desde el cual partió el chofer al iniciar el viaje.
+Conductor: Chofer que realizó el viaje y, en consecuencia, la tarea.
+Post-its
+Los post-its son mensajes que se pueden asignar a una visita. Su uso principal es informar al chofer o alertarlo sobre información relevante que debe tener en cuenta al momento de realizar la tarea. Estos mensajes se visualizan en la aplicación Android cuando el punto de entrega es seleccionado como destino activo del viaje (ver la sección “Modos de trabajo durante el viaje” en el manual de la aplicación Android).
+Desde la sección de post-its se pueden consultar todos los mensajes creados para la visita, además de crear nuevos mensajes, siempre que el estado de la visita y del viaje asignado lo permitan.
+Consulta de post-its
+La consulta de post-its presenta la siguiente información:
+Descripción
+Mensaje del post-it que visualizara el chofer en la aplicación.
+Nivel
+Nivel de importancia del post-it, esto representa el color con el que se visualiza el post-it en la aplicación móvil (1 = Verde, 2 = Amarillo, 3 = Rojo).
+Estado
+Indica si el post-it está activo o no.
+Crear y editar post-it
+Desde la sección de post-its no solo se pueden consultar los mensajes asociados a la visita, sino que también es posible crear nuevos y editar los existentes, siempre y cuando la tarea/visita no esté finalizada.
+Para acceder al formulario de creación de post-its, se debe presionar el botón “Agregar post-it” ubicado en la parte superior de la consulta de post-its. Al hacerlo, se desplegará el formulario de creación, donde se podrá indicar:
+Descripción del post-it
+Estado
+Nivel de importancia (Color)
+Una vez completado el formulario, si se cumplen todas las validaciones, el post-it quedará asociado a la visita y será visible tanto desde el panel web como desde la aplicación Android, al momento de realizar la tarea.
+Para editar un post-it, se debe ubicar el mensaje deseado en la consulta y presionar el botón de edición, identificado con el ícono de un lápiz. Al hacerlo, se desplegará el formulario de edición con los mismos campos utilizados durante la creación.
+Una vez confirmada la edición, si se cumplen las validaciones correspondientes, los cambios se visualizarán automáticamente en la consulta general de post-its.
+Solicitud de entrega
+La sección de Solicitudes de entrega permite consultar y gestionar las acciones de entrega de objetos dentro de una visita. Desde aquí, se puede acceder a todos los objetos planificados para entregar en una tarea, visualizando información básica de los mismos, así como su estado de entrega.
+Siempre que el estado de la tarea lo permita, esta sección habilita la posibilidad de agregar nuevos objetos o remover objetos existentes.
+Tal como se explicó en el apartado de Objetos del módulo de Mantenimiento, los objetos representan la unidad de carga que Wis Tracking entrega y recibe como mercadería. Cada objeto vinculado a una tarea lo hace mediante una acción de entrega, la cual gestiona su propio estado, independiente del estado general de la tarea o visita. Esto permite que una visita pueda estar completada parcialmente, con acciones de entrega en diferentes estados (completadas, pendientes o canceladas).
+Las acciones de entrega se generan automáticamente en cada visita a través de la integración, tanto en modalidad stand-alone como cuando se trabaja con WMS. No obstante, cada visita permite agregar manualmente objetos en estado pendiente, los cuales pueden provenir de entregas fallidas en visitas anteriores o haber sido generados de forma manual dentro del sistema.
+En resumen, la forma de entregar un objeto que no estaba originalmente planificado o que no fue entregado previamente, es mediante la edición de una visita en estado pendiente y la asignación del objeto a la misma.
+Consulta de entregas
+Al acceder a la sección de Solicitudes de entrega, lo primero que visualizaremos será la consulta de entregas correspondientes a la visita seleccionada. Esta consulta permite obtener una vista clara de las acciones de entrega planificadas para la visita, su estado y datos relevantes. En esta sección encontraremos la siguiente información para cada solicitud de entrega:
+Número
+Tipo
+Descripción
+Cod. Barras
+Cantidad
+Estado
+Motivo
+Si la tarea de entrega ya fue realizada, en la parte inferior de la sección de objetos de entrega se mostrarán los comentarios registrados por el chofer desde la aplicación móvil.
+Este campo se utiliza para aclaraciones o para documentar información relevante sobre el proceso de entrega de mercadería correspondiente a la visita.
+Agregar o remover objetos para entregar
+Siempre que una visita se encuentre pendiente de asignación a un viaje o esté asignada a un viaje real que aún no ha comenzado su recorrido, será posible agregar o remover objetos de entrega.
+Una de las formas de realizar esta acción es desde la sección "Solicitud de entrega", ubicada en la pantalla de detalle de visita.
+Para agregar un nuevo objeto de entrega a una visita, presione el botón "Agregar entrega", disponible en la parte superior del listado de objetos de entrega.
+Al presionar el botón "Agregar entrega", el sistema mostrará una grilla con todos los objetos pendientes cuyo punto de entrega coincida con el de la visita.
+Esto significa que solo podrán asignarse objetos a una visita si cumplen con las siguientes condiciones:
+Se encuentran en estado pendiente.
+Tienen como destino la misma dirección (punto de entrega) que la visita.
+No están asignados a otra visita.
+Desde esta grilla de objetos pendientes, el usuario podrá seleccionar los objetos que desea asociar a la visita.
+Una vez seleccionados, la asignación se confirma mediante el botón de acción ubicado en la parte superior de la grilla, seleccionando la opción "Agregar seleccionados".
+La grilla de consulta de objetos pendientes mostrará la siguiente información:
+Número interno del objeto (Identificador interno)
+Número de objeto (Identificador externo)
+Estado
+Descripción
+Código de barras
+Cantidad
+Destino
+Desde la sección "Solicitud de entrega", también es posible remover objetos previamente planificados para ser entregados en la visita actual.
+Para ello, se debe utilizar la grilla de consulta de entregas, la cual permite la selección múltiple de objetos.
+Una vez seleccionados, se debe acceder al menú de acciones ubicado en la parte superior de la grilla y presionar la opción "Remover seleccionados".
+Los objetos removidos serán desasociados de la visita actual y pasarán a estado pendiente de asignación, pudiendo ser:
+Reasignados a la misma visita
+Asignados a otra visita que comparta el mismo punto de entrega.
+Solicitud de recepción
+La sección de Solicitudes de recepción permite consultar y gestionar las acciones de recepción de objetos dentro de una visita. Desde aquí, se puede acceder a todos los objetos planificados para recepcionar en una tarea, así como también los objetos recepcionados de manera inesperada, visualizando información básica de los mismos, así como su estado de recepción.
+Siempre que el estado de la tarea lo permita, esta sección habilita la posibilidad de agregar nuevos objetos o remover objetos existentes.
+Tal como se explicó en el apartado de Objetos del módulo de Mantenimiento, los objetos representan la unidad de carga que Wis Tracking entrega y recibe como mercadería. Cada objeto vinculado a una tarea lo hace mediante una acción de recepcion, la cual gestiona su propio estado, independiente del estado general de la tarea o visita. Esto permite que una visita pueda estar completada parcialmente, con acciones de recepción en diferentes estados (completadas, pendientes o canceladas) ya sea para recepciones planificadas o inesperadas.
+En escenarios de integración con un WMS, las acciones de recepción de cada visita se generan vacías.
+Esto permite registrar la recepción de objetos no planificados, dado que la integración solo alimenta a Wis Tracking con objetos de entrega.
+En cambio, en escenarios de funcionamiento independiente (stand-alone) o integrados con software de terceros, cada visita puede ser generada con objetos de recepción planificados.
+Bajo cualquier escenario, cada visita permite agregar manualmente objetos en estado pendiente, los cuales pueden provenir de recepciones fallidas en visitas anteriores o haber sido generados de forma manual dentro del sistema.
+En resumen, la forma de recepcionar un objeto que no estaba originalmente planificado o que no fue recepcionado previamente, es mediante la edición de una visita en estado pendiente y la asignación del objeto a la misma.
+Consulta de recepciones
+Al acceder a la sección de Solicitudes de recepción, lo primero que visualizaremos será la consulta de recepciones correspondientes a la visita seleccionada. Esta consulta permite obtener una vista clara de las acciones de recepción planificadas para la visita, su estado y datos relevantes. En esta sección encontraremos la siguiente información para cada solicitud de recepción:
+Objeto (Identificador)
+Tipo
+Descripción
+Cantidad
+Estado
+Punto entrega recepción
+Punto entrega actual
+Estado
+Motivo (En caso de ser inesperada o cancelación)
+Fecha del resultado de la recepción
+Si la tarea de recepción ya fue realizada, en la parte inferior de la sección de objetos de recepción se mostrarán los comentarios registrados por el chofer desde la aplicación móvil.
+Este campo se utiliza para aclaraciones o para documentar información relevante sobre el proceso de recepción de mercadería correspondiente a la visita.
+Agregar o remover objetos para recepcionar
+Siempre que una visita se encuentre pendiente de asignación a un viaje o esté asignada a un viaje real que aún no ha comenzado su recorrido, será posible agregar o remover objetos de recepción.
+Una de las formas de realizar esta acción es desde la sección "Solicitud de recepción", ubicada en la pantalla de detalle de visita.
+Para agregar un nuevo objeto de recepcion a una visita, presione el botón "Agregar recepción", disponible en la parte superior del listado de objetos de recepción.
+Al presionar el botón "Agregar recepción", el sistema mostrará una grilla con todos los objetos pendientes, cuyo punto de entrega actual coincida con el de la visita.
+Esto significa que solo podrán asignarse objetos a una visita si cumplen con las siguientes condiciones:
+Se encuentran en estado pendiente.
+Tienen como punto actual la misma dirección (punto de entrega) que la visita.
+No están asignados a otra visita.
+Desde esta grilla de objetos pendientes, el usuario podrá seleccionar los objetos que desea asociar a la visita.
+Una vez seleccionados, la asignación se confirma mediante el botón de acción ubicado en la parte superior de la grilla, seleccionando la opción "Agregar seleccionados".
+La grilla de consulta de objetos pendientes mostrará la siguiente información:
+Número interno del objeto (Identificador interno)
+Número de objeto (Identificador externo)
+Estado
+Tipo
+Descripción
+Código de barras
+Cantidad
+Origen
+Desde la sección "Solicitud de recepción", también es posible remover objetos previamente planificados para ser recepcionados en la visita actual.
+Para ello, se debe utilizar la grilla de consulta de recepciones, la cual permite la selección múltiple de objetos.
+Una vez seleccionados, se debe acceder al menú de acciones ubicado en la parte superior de la grilla y presionar la opción "Remover seleccionados".
+Los objetos removidos serán desasociados de la visita actual y pasarán a estado pendiente de asignación, pudiendo ser:
+Reasignados a la misma visita
+Asignados a otra visita que comparta el mismo punto de entrega.
+Fotos tomadas
+La sección "Fotos tomadas" permite visualizar las acciones de toma de fotografías planificadas para una visita.
+Cada visita admite la captura de evidencia fotográfica durante la ejecución de sus actividades, la cual luego puede consultarse tanto en el seguimiento de viajes como en el detalle de la visita.
+Dependiendo del estado de la visita, desde esta sección también es posible agregar nuevas fotografías si surge la necesidad de registrar evidencia adicional.
+Cada punto de entrega (cliente) puede tener asignada una plantilla de acciones opcionales que se aplicará automáticamente a las visitas que se generen para ese cliente.
+Por defecto, la plantilla de acciones de Wis Tracking incluye:
+Toma de fotografías
+Registro de firma digital
+Sin embargo, estas acciones pueden ser deshabilitadas para clientes específicos o incluso para todos los clientes.
+Las únicas acciones que siempre estarán presentes en todas las visitas son:
+Entrega de mercadería
+Recepción de mercadería
+Tanto la toma de fotografías como el registro de firma digital son opcionales y pueden ser activadas o desactivadas según las necesidades operativas.
+Consulta de fotografías
+Al acceder a la sección "Fotos tomadas", lo primero que se muestra es la grilla de fotos planificadas para la visita.
+En esta grilla se presenta información básica de cada fotografía, como su descripción y estado.
+Debajo de la grilla, en caso de que se hayan ejecutado tomas fotográficas, se visualizarán las miniaturas de las imágenes capturadas.
+Al hacer clic sobre una miniatura, la fotografía se abrirá en su tamaño original, permitiendo una visualización detallada.
+La consulta de fotografías presenta los siguientes datos:
+Id de la acción
+Descripción
+Estado
+Agregar fotografías
+Si el estado de la visita lo permite, es posible programar nuevas fotografías para ser tomadas.
+Para ello:
+Presione el botón "Agregar foto", ubicado en la parte superior de la grilla de fotos planificadas.
+Ingrese una descripción para la fotografía que desea programar.
+Confirme la acción.
+La fotografía quedará pendiente de ejecución y podrá ser tomada durante la visita cuando se realicen las actividades correspondientes.
+Firmas obtenidas
+La sección "Firmas obtenidas" permite visualizar las acciones de registro de firma digital planificadas para una visita.
+Cada visita admite el registro de firmas digitales durante la ejecución de sus actividades, la cual luego puede consultarse tanto en el seguimiento de viajes como en el detalle de la visita.
+Dependiendo del estado de la visita, desde esta sección también es posible agregar nuevos registros de firma si surge la necesidad de registrar evidencia adicional.
+Cada punto de entrega (cliente) puede tener asignada una plantilla de acciones opcionales que se aplicará automáticamente a las visitas que se generen para ese cliente.
+Por defecto, la plantilla de acciones de Wis Tracking incluye:
+Toma de fotografías
+Registro de firma digital
+Sin embargo, estas acciones pueden ser deshabilitadas para clientes específicos o incluso para todos los clientes.
+Las únicas acciones que siempre estarán presentes en todas las visitas son:
+Entrega de mercadería
+Recepción de mercadería
+Tanto el registro de firma digital como la toma de fotografías son opcionales y pueden ser activadas o desactivadas según las necesidades operativas.
+Consulta de firmas
+Al acceder a la sección "Firmas obtenidas", lo primero que se muestra es la grilla de firmas planificadas para la visita.
+En esta grilla se presenta información básica de cada firma, como su descripción y estado.
+Debajo de la grilla, en caso de que se hayan registrado firmas digitales, se visualizarán las miniaturas de las firmas registradas, junto con la aclaración, tipo y número de documento.
+Al hacer clic sobre una miniatura, la firma se abrirá en su tamaño original, permitiendo una visualización detallada.
+La consulta de fotografías presenta los siguientes datos:
+Id de la acción
+Descripción
+Aclaración
+Tipo documento
+Número documento
+Estado
+Agregar registros de firma
+Si el estado de la visita lo permite, es posible programar nuevos registros de firmas para ser realizados.
+Para ello:
+Presione el botón "Agregar firma", ubicado en la parte superior de la grilla de firmas registradas.
+Ingrese una descripción para la firma que desea programar.
+Confirme la acción.
+La firma quedará pendiente de ejecución y podrá ser tomada durante la visita cuando se realicen las actividades correspondientes.
+Pedidos
+Todas las visitas en Wis Tracking tienen pedidos asociados que funcionan como referencias informativas de las operaciones realizadas en la visita.
+En escenarios integrados con WMS:
+Los pedidos generados en el WMS crean automáticamente visitas y direcciones en Wis Tracking.
+Posteriormente, durante el proceso de creación de viajes (armado de camión), estas visitas pueden agruparse en un mismo viaje resultando en una unica visita.
+Todas las referencias de pedidos generadas en el WMS y vinculadas a la visita pueden consultarse desde la sección “Pedidos” dentro del detalle de la visita.
+En escenarios stand-alone o con integración mediante APIs de terceros:
+La generación de visitas también permite cargar referencias de pedidos externas para vincularlas a cada visita.
+Es importante destacar que:
+Los pedidos asociados no son unidades de carga para entregas o recepciones.
+Los objetos de entrega/recepción son los que cumplen esa función.
+Los pedidos sirven como referencia de información sobre lo que se está atendiendo en la visita.
+La consulta de pedidos presenta la siguiente información:
+Número de pedido
+Planificación parcial
+Fecha de entrega
+Fecha emitido
+Fecha recibido
+Memo
+Empresa
+Cliente
+Referencia
+Alertas
+Como se explica en otras secciones y en el manual de uso de la aplicación Android de Wis Tracking, ciertas acciones realizadas durante la ejecución de un viaje pueden generar alertas.
+Estas alertas tienen como finalidad informar sobre situaciones inesperadas o fuera de los parámetros definidos en la planificación y ejecución de viajes.
+Dentro del detalle de una visita, la sección de alertas permite consultar todas las alertas generadas durante el viaje que estén vinculadas a dicha visita.  Ejemplos de estas alertas incluyen:
+Confirmación de la visita fuera del radio de distancia permitido.
+Llegada a la visita fuera del rango parametrizado.
+La consulta de alertas del detalle de visita, presenta la siguiente información:
+Id de la alerta generada
+Descripción de la alerta generada
+Viajes
+Consulta de viajes
+La consulta general de viajes permite obtener una visión rápida de los viajes realizados, planificados y en ejecución, además de centralizar el acceso a diversas herramientas y consultas de seguimiento de su ejecución.
+Esta sección está compuesta principalmente por una grilla de consulta, que concentra información esencial de cada viaje y brinda acceso a acciones relacionadas.  Además, permite acceder a:
+Indicadores de avance del trabajo actual, para un seguimiento rápido.
+Acceso directo a la creación manual de viajes, funcionalidad que puede no estar disponible en todas las versiones de Wis Tracking.
+La grilla de consulta de viajes presenta la siguiente información:
+Identificador del viaje
+Identificador externo del viaje
+Descripción
+Estado
+Chofer
+Vehículo
+Matrícula
+Hora de inicio estimada
+Fecha de creación
+Fecha inicio de viaje
+Hora de fin estimada
+Fecha de cierre
+Tiempo total estimado
+Distancia total estimada
+Distancia real recorrida
+En la parte superior de la grilla de consulta de viajes se muestra un conjunto de indicadores rápidos que resumen el estado de los viajes del día.  Estos indicadores incluyen:
+Cantidad de viajes teóricos (planificados).
+Cantidad de viajes en progreso.
+Avance porcentual de ejecución del trabajo diario.
+El porcentaje de avance se calcula en función de la cantidad de visitas realizadas sobre el total de visitas correspondientes a los viajes en progreso.
+En caso de estar habilitado, también se contará con el acceso a la creación manual de viajes, en escenarios de integración con WMS es probable que esta opción no esté disponible.
+Detalle de viaje
+Desde la grilla de consulta de viajes, es posible acceder a la pantalla de detalle de viaje.  En esta vista se puede:
+Consultar las distintas paradas que debe realizar el vehículo, con su orden establecido.
+Visualizar el estado de cada visita asociada al viaje.
+En definitiva, esta pantalla ofrece una visión general y rápida, en formato de grilla, de todas las visitas planificadas y su estado actual.
+En la consulta de detalles podremos visualizar la siguiente información:
+Número de viaje
+Orden de visita
+Punto de entrega
+Descripción de punto de entrega
+Hora de arribo
+Hora de salida
+Fecha
+Estado
+Descripción de visita
+Resumen de viaje
+Desde la consulta de viajes, también es posible acceder a la pantalla de resumen de viaje.  Esta vista ofrece una visión general del viaje, permitiendo:
+Consultar todas las acciones realizadas, incluyendo:
+Entregas
+Recepciones
+Toma de fotografías
+Registro de firmas digitales
+Visualizar la totalidad de las referencias de pedidos atendidas.
+Acceder a la documentación adjunta relacionada con el viaje.
+Esta pantalla centraliza toda la información relevante para auditar y hacer seguimiento de la ejecución del viaje.
+La información del resumen de viaje se presenta en grillas de consulta, organizadas en pestañas para facilitar su navegación.
+En estas pestañas es posible encontrar:
+Pedidos
+La pestaña “Pedidos” permite realizar una consulta general de todas las referencias de pedidos asociadas a las visitas del viaje.
+En la grilla de pedidos se puede visualizar la siguiente información:
+Punto entrega visita
+Descripción punto de entrega
+Referencia
+Número de pedido
+Asignación
+Fecha emitido
+Memo
+Cliente
+Empresa
+Entregas
+En la pestaña “Entregas” se muestran todas las acciones de entrega de objetos correspondientes al viaje, así como los comentarios de entrega registrados en cada visita.
+En la grilla de consulta de entregas es posible visualizar:
+Número de objeto
+Tipo de objeto
+Descripción de objeto
+Cantidad
+Id punto de entrega
+Descripción de punto de entrega
+Estado
+Fecha resultado
+Motivo
+Recepciones
+En la pestaña “Recepciones” se muestran todas las acciones de recepción de objetos correspondientes al viaje, así como los comentarios de recepción registrados en cada visita.
+En la grilla de consulta de recepción es posible visualizar:
+Número de objeto
+Tipo de objeto
+Descripción de objeto
+Código de barras
+Cantidad
+Id punto de entrega origen
+Descripción de punto de entrega origen
+Id punto de entrega actual
+Descripción de punto de entrega actual
+Estado
+Fecha resultado
+Motivo
+Fotos
+La pestaña “Fotos” concentra todas las acciones de toma de fotografías realizadas durante el viaje, mostrando el estado de cada fotografía y el punto de entrega asociado.
+Debajo de la grilla de consulta, se visualizan las miniaturas de las fotos tomadas en cada visita, con la posibilidad de acceder a las imágenes originales al hacer clic sobre ellas.
+La grilla de consulta de fotos presenta la siguiente información:
+Id acción
+Descripción
+Id visita
+Estado
+Firmas
+La pestaña “Firmas” concentra todas las acciones de toma de registro de firma digital realizadas durante el viaje, mostrando el estado de cada firma y el punto de entrega asociado.
+Debajo de la grilla de consulta, se visualizan las miniaturas de las firmas registradas en cada visita y los datos de aclaración y documento, con la posibilidad de acceder a las imágenes originales al hacer clic sobre ellas.
+La grilla de consulta de firmas presenta la siguiente información:
+Id visita
+Id acción
+Descripción
+Aclaración
+Documento
+Tipo documento
+Estado
+Objetos pendientes
+Como se mencionó en la sección de detalle de visita, es posible agregar objetos de entrega y recepción a una visita, siempre que se cumplan ciertas condiciones.
+Esta acción también puede realizarse a nivel de viaje, permitiendo asignar objetos pendientes cuyos puntos de entrega coincidan con las visitas programadas para ese viaje.
+Para ello, en la consulta general de viajes se encuentra la opción “Agregar objetos pendientes”, la cual permite agregar de manera masiva un conjunto de objetos pendientes al viaje, siempre y cuando:
+El viaje esté en estado real.
+El viaje no haya comenzado a ser trabajado.
+Al presionar el botón “Agregar objetos pendientes”, se abrirá un pop-up que mostrará los objetos pendientes tanto de entrega como de recepción, disponibles para ser seleccionados y asignados al viaje.
+Condiciones para agregar objetos de entrega:
+Deben estar en estado pendiente.
+Su punto de entrega actual debe ser el centro de distribución del viaje.
+Su punto de entrega de destino debe coincidir con una de las visitas programadas para el viaje.
+Condiciones para agregar objetos de recepción:
+Deben estar en estado pendiente.
+Su punto de entrega actual debe ser una de las visitas programadas para el viaje.
+Su punto de entrega de destino debe ser otra de las paradas del viaje o el centro de distribución.
+Esta funcionalidad facilita la gestión masiva de objetos, agilizando la preparación y planificación de los viajes.
+Para asignar objetos de entrega o recepción al viaje:
+Seleccione los objetos deseados en el listado.
+Confirme la asignación utilizando la opción correspondiente:
+“Agregar para entrega” para objetos de entrega.
+“Agregar para recepcionar” para objetos de recepción.
+Esta acción asociará los objetos seleccionados al viaje, dejándolos listos para ser procesados durante la ejecución.
+Remover chofer
+Como se mencionó en la sección Vehículos, cada vehículo puede tener un chofer por defecto asignado.
+Al crear un viaje y asignar el vehículo responsable, si este cuenta con un chofer por defecto, dicho chofer quedará asignado automáticamente al viaje.
+Esto implica que solo ese usuario podrá visualizar el viaje como pendiente para ser ejecutado desde la aplicación Android.
+Existen situaciones en las que un viaje debe ser realizado por otro chofer. Para facilitar la visualización del viaje a otros choferes, desde la consulta de viajes es posible remover la asignación del chofer mediante la acción “Remover chofer”.
+Esta acción hará que el viaje sea visible para todos los choferes.
+Cuando otro chofer comience a trabajar el viaje desde la aplicación Android, automáticamente se le asignará como responsable.
+Importante: Esta acción solo estará disponible si el viaje está en estado real y aún no ha sido comenzado.
+Edición de viajes
+Los viajes en estado real que aún no hayan comenzado a ser trabajados permiten ser editados manualmente.
+(Esta funcionalidad puede no estar disponible en todas las versiones del sistema).
+Mediante la edición manual de viajes es posible:
+Cambiar atributos del viaje, como el vehículo asignado y su descripción.
+Agregar o remover visitas.
+Modificar el orden de atención de las visitas del viaje.
+Para acceder a la pantalla de edición de viajes, se debe ingresar a la funcionalidad “Editar” disponible en la consulta general de viajes.
+Al acceder a la pantalla de edición de viajes, se presenta inicialmente un conjunto de indicadores rápidos con datos generales sobre el viaje en edición:
+Cantidad total de visitas
+Cantidad de entregas
+Cantidad de recepciones
+Debajo de estos indicadores se encuentra la sección principal de la herramienta de edición, compuesta por un mapa interactivo que permite visualizar y manipular los datos del viaje.
+Sobre el mapa se ubica el menú flotante de configuración, desde el cual se pueden realizar todas las operaciones de edición necesarias, organizadas en tres pasos principales:
+Configuración
+Visitas
+Resumen
+En el primer paso, se definen los parámetros generales del viaje:
+Descripción del viaje
+Centro de distribución
+Vehículo asignado
+Configuraciones de visualización de visitas (para el siguiente paso)
+Importante:
+En modo edición, estas configuraciones solo afectan a las visitas no asignadas al viaje (visitas disponibles para agregar).
+Las visitas ya asignadas siempre se mostrarán en el editor.
+Tipo de acción:
+Entregas
+○ Recepciones
+Incluir objetos pendientes (No disponible en todas las versiones):
+Permite mostrar objetos pendientes que no pertenecen a ninguna visita.
+Filtros aplicables:
+Fecha de entrega
+○ Empresa
+○ Cliente
+○ Zona
+○ Tipo de punto de entrega
+Para un detalle completo sobre el comportamiento de filtros y configuraciones, consulte la sección “Creación de viajes manuales”.
+Una vez realizados los cambios deseados en la configuración, podemos avanzar al paso “Visitas”. Si no se requiere modificar ningún atributo del viaje en el paso anterior, basta con presionar el botón “Siguiente” para continuar.
+Es importante tener en cuenta que los cambios aplicados en cualquiera de los pasos no impactan de inmediato sobre el viaje. La edición únicamente se confirma en el paso final “Resumen”, lo que permite navegar entre los pasos con total libertad sin afectar la planificación hasta que se confirme la edición.
+En el paso “Visitas” se muestran todas las visitas que cumplen con los criterios definidos en la configuración, junto con las visitas ya asignadas al viaje. En modo edición, todas las visitas aparecen inicialmente deseleccionadas, salvo aquellas que ya pertenecen al viaje, que estarán seleccionadas por defecto.
+Esto significa que, si no se desea realizar ningún cambio sobre las visitas del viaje, simplemente se puede presionar “Siguiente” para continuar sin modificaciones.
+La visualización de visitas se organiza en cards informativas, donde cada una muestra la descripción de la visita, la descripción del punto de entrega (dirección del cliente), la dirección completa y un resumen de los datos logísticos de entrega y recepción.
+Este resumen incluye la cantidad de bultos, el peso total y el volumen de la visita.
+Cada visita permite consultar el detalle de los objetos de entrega y recepción mediante un botón identificado con tres cajas, ubicado en la esquina superior derecha de la card.  Al presionarlo, se despliega un menú con el listado de objetos de entrega y de recepción, mostrando para cada uno su cantidad, peso, volumen y descripción.
+Sobre cada listado, un cabezal de acciones resume el total de bultos, peso y volumen correspondientes a esa visita, facilitando una visión rápida de la carga.
+Para asignar o remover una visita de un viaje, se utiliza el toggle de selección ubicado en cada card.
+Seleccionar una visita la asigna al viaje, mientras que deseleccionarla la remueve del mismo.
+La selección de visitas puede ser parcial, es decir, una visita puede incorporarse al viaje sin incluir todos sus objetos de entrega o recepción.
+En caso de querer realizar esta asignación parcial, es necesario abrir el menú de detalle de la visita y deseleccionar manualmente los objetos que no se deseen agregar.
+Tanto las visitas como los objetos de entrega y recepción permiten la selección o deselección global mediante el toggle principal ubicado sobre cada listado, lo que facilita la gestión de múltiples elementos a la vez.
+El listado de visitas también puede filtrarse utilizando el filtro de visitas en la parte superior. Este filtro ofrece dos criterios principales:
+Descripción: realiza una búsqueda por texto sobre la descripción de la visita, el punto de entrega y la dirección.
+Último viaje: permite filtrar por el identificador del último viaje al que perteneció un objeto, útil en escenarios donde un objeto no fue entregado y se desea reasignar en un nuevo viaje.
+Esta combinación de selección manual, selección global y filtros permite gestionar con flexibilidad qué visitas y objetos formarán parte del viaje en edición.
+Mientras nos encontremos en el paso “Visitas”, el mapa interactivo mostrará marcadores correspondientes a todas las visitas seleccionadas.
+Si se presiona una de las cards del listado de visitas, el mapa se centrará automáticamente en la ubicación de esa visita.
+Asimismo, al posar el cursor (hover) sobre uno de los marcadores del mapa, se desplegará un menú de información de la visita representada, donde se muestran:
+La descripción de la visita
+El punto de entrega
+La dirección completa
+Un resumen logístico con la cantidad de bultos, peso y volumen de las entregas y recepciones
+Esta funcionalidad permite identificar rápidamente cada visita en el mapa y acceder a información relevante sin necesidad de abandonar el listado principal.
+Una vez que se hayan seleccionado o removido las visitas del viaje, o incluso si no se ha modificado nada en este paso, podemos avanzar al tercer y último paso: “Resumen”.  Este paso ofrece una visión general de todas las visitas que conforman el viaje y genera un ruteo teórico basado en el orden de atención establecido.
+En la parte superior de la pantalla se muestra una card de resumen del viaje, que incluye:
+Vehículo asignado
+Descripción del viaje
+Chofer asignado
+Cantidad de visitas
+Fecha de ejecución prevista
+Si todas las visitas son ruteables (es decir, interconectables mediante caminos terrestres), el sistema genera un ruteo teórico del viaje, calculando:
+Distancia total estimada
+Fecha y hora estimada de inicio y fin
+Duración teórica del recorrido
+Debajo de esta card se presenta un camino visual tipo “hormigas”, que muestra el punto de origen y finalización (centro de distribución) y todas las visitas a realizar en orden.  Cada visita se identifica con su número de secuencia, descripción, dirección y la cantidad de entregas y recepciones previstas.
+El orden de las visitas puede modificarse arrastrando las cards dentro del resumen hacia la posición deseada, o presionando clic derecho sobre la visita, visualizando el menú de cambio de orden rápido.
+Cada vez que se altera el orden, el sistema recalcula automáticamente el ruteo teórico, actualizando la distancia total, los tiempos estimados y la duración prevista del viaje.
+Finalmente, en el mapa interactivo se visualizan:
+Las visitas programadas, representadas con marcadores
+El centro de distribución
+El recorrido teórico completo que se espera realizar
+En el paso “Resumen”, una vez realizadas todas las modificaciones necesarias, es posible confirmar la edición del viaje mediante el botón de confirmación, ubicado en la esquina superior derecha de la pantalla.
+Este botón solo se habilita cuando nos encontramos en el tercer y último paso “Resumen”.  Al presionarlo:
+Se aplican todos los cambios realizados durante el proceso de edición.
+El sistema redirige automáticamente al usuario a la pantalla de consulta general de viajes.
+Con esta acción finaliza el proceso de edición manual del viaje, dejando actualizada toda la información según las modificaciones aplicadas.
+El funcionamiento detallado de los componentes de edición manual de viajes se explica en profundidad en la sección “Creación de viajes manuales”.
+Seguimiento de viajes
+Los viajes permiten realizar un seguimiento en tiempo real de su ejecución, ofreciendo una vista general del proceso que incluye:
+El estado actual del viaje.
+El estado de cada visita programada.
+Las alertas generadas durante la ejecución.
+El recorrido realizado por el vehículo sobre el mapa.
+Para acceder al seguimiento de un viaje, el usuario debe presionar el botón de ruta, disponible en la consulta general de viajes.
+Al acceder a la pantalla de seguimiento, se presenta un mapa interactivo que concentra toda la información necesaria para monitorear la ejecución del viaje.
+En la parte superior de la pantalla se encuentran una serie de indicadores de estado, que permiten obtener una visión rápida del progreso del viaje. Estos incluyen:
+Número del viaje en seguimiento.
+Cantidad de entregas realizadas.
+Cantidad de recepciones realizadas.
+Cantidad de alertas generadas.
+Barra de progreso, que refleja la relación entre las visitas planificadas y las visitas efectivamente realizadas.
+Estos indicadores brindan un resumen inmediato de la situación actual del viaje, complementando la información visual disponible en el mapa.
+Debajo de los indicadores se encuentra el mapa de seguimiento, el cual puede dividirse en tres secciones principales.
+En primer lugar, se ubica el menú flotante de seguimiento, que ofrece un resumen de la ruta a realizar por el vehículo. Este menú presenta una card de resumen del viaje, donde se muestran los principales datos:
+Vehículo asignado
+Chofer asignado
+Identificador del viaje
+Descripción del viaje
+Estado actual del viaje
+Debajo de esta card se despliega el camino de hormiga, que representa de manera visual las visitas planificadas. Este recorrido comienza y finaliza en el centro de distribución, mostrando en orden todas las visitas que deben realizarse durante el viaje.
+Cada visita está representada por una card dentro del camino de hormiga. Este camino refleja el estado de cada tarea mediante un código de colores e íconos representativos, lo que facilita la lectura rápida del progreso del viaje.
+En la card de cada visita se muestran los siguientes datos:
+Hora de llegada y partida.
+Descripción del punto de entrega (cliente).
+Descripción de la visita.
+Cantidad de entregas planificadas vs. realizadas.
+Cantidad de recepciones planificadas vs. realizadas.
+Un botón de acceso rápido a la pantalla de detalle de la visita.
+El camino de hormiga, que corre por la parte izquierda de las cards de visita, brinda una representación visual inmediata del estado de cada visita. El sistema utiliza el siguiente código de colores e íconos:
+Azul con ícono de reloj → visitas pendientes de ejecutar.
+Rojo con ícono de anulación → visitas canceladas por el chofer.
+Amarillo con ícono de tilde parcial → visitas completadas parcialmente.
+Verde con ícono de tilde → visitas completadas totalmente.
+De esta manera, el camino de hormiga combina información visual y textual para que el usuario pueda interpretar rápidamente el estado del viaje y de cada visita.
+Detrás del menú flotante, y ocupando la totalidad de la pantalla, se encuentra el mapa de seguimiento.
+En este mapa se representan todas las visitas del viaje mediante marcadores, junto con el centro de distribución, que aparece identificado con un ícono de depósito. Las visitas y el centro de distribución se interconectan a través de la ruta teórica del viaje, mostrada con una línea punteada.
+Si el viaje está en progreso y se cuenta con información de posición reportada por los dispositivos, el mapa mostrará la última posición conocida del vehículo, representada con el ícono de un camión.
+De la misma forma, si existen datos del recorrido real, este se visualizará como una línea sólida sobre el mapa, diferenciándose de la ruta teórica.
+El color de los marcadores y de los recorridos se asigna de manera aleatoria. En caso de querer modificarlo, se puede hacer clic en el ícono de camión dentro de la card de resumen del viaje en el menú flotante, lo que desplegará un menú de selección de colores.
+Por último, en la parte derecha del mapa de seguimiento se encuentran los botones de control de visualización, que permiten encender o apagar diferentes elementos representados en el mapa.
+El primero es el botón de visualización de rutas teóricas, que permite mostrar u ocultar la línea punteada que representa el recorrido planificado. Esto resulta útil cuando se desea resaltar únicamente el recorrido real realizado por el vehículo.
+Debajo se encuentra el botón de alertas, identificado con un ícono de advertencia. Al activarlo, se muestran en el mapa marcadores de alerta en todos los puntos donde el vehículo haya generado una excepción. Al pasar el cursor sobre un marcador, se despliega un cartel de información que detalla el tipo de alerta, descripción, hora de ocurrencia, visita asociada y el usuario que la generó.
+Finalmente, se dispone del botón de sincronización en tiempo real. Si esta opción está activada, el progreso del viaje se refresca automáticamente en la pantalla de seguimiento, permitiendo utilizarla como un monitor en vivo del vehículo y de su recorrido.
+Creación de viajes manuales
+Desde la pantalla de consulta de viajes, es posible acceder a la funcionalidad de creación manual de viajes.
+Esta opción no está habilitada en todas las versiones de Wis Tracking y se encuentra principalmente disponible en entornos stand-alone o en integraciones con software de terceros, donde Wis Tracking es alimentado con necesidades de visita, y la planificación del viaje se realiza manualmente, consolidando dichas visitas en un recorrido asignado a un vehículo.
+Para acceder a la creación manual de viajes, se debe presionar el botón “Crear viaje”, ubicado en la parte superior derecha de la consulta general de viajes.
+La pantalla de creación manual de viajes tiene como componente principal un mapa interactivo, diseñado para guiar al usuario en la configuración y planificación del viaje a través de tres pasos.
+Al acceder, se presenta el mapa interactivo con un menú flotante de creación, que orienta al usuario durante todo el proceso.
+Sobre el mapa se muestran indicadores numéricos que reflejan:
+La cantidad de visitas asignadas al viaje
+La cantidad de entregas
+La cantidad de recepciones
+Además, en la misma vista se encuentra el botón de confirmación de creación, el cual solo se habilita una vez completados correctamente los tres pasos del proceso.
+A continuación, se describe cada uno de los pasos para crear un viaje y el comportamiento del mapa interactivo en cada etapa.
+Configuración:
+El primer paso para la creación manual de un viaje es la Configuración, donde se definen los atributos principales del viaje y se aplican filtros para determinar qué visitas estarán disponibles para asignar.
+En esta etapa, se deben establecer los siguientes atributos del viaje:
+Fecha de programación: indica el día en que se ejecutará el viaje.
+Centro de distribución: determina el punto de partida y llegada del recorrido.
+Vehículo asignado: será el vehículo que ejecute el viaje y, al asignarlo, el sistema vinculará automáticamente al chofer por defecto configurado para ese vehículo.
+Descripción: un texto libre que permite identificar o documentar el propósito del viaje.
+El centro de distribución es indispensable para que el sistema pueda calcular correctamente el inicio y el final del recorrido.
+Asimismo, la asignación de vehículo asegura que el viaje pueda ser tomado por el chofer correspondiente desde la aplicación Android de Wis Tracking.
+Una vez definidos los atributos del viaje, el siguiente paso consiste en configurar los filtros para determinar qué visitas estarán disponibles para su asignación.
+En primer lugar, se debe indicar qué tipos de acciones de visita se desean visualizar, pudiendo seleccionar entregas, recepciones, o ambas.
+Además, es posible incluir los objetos pendientes (No disponible en todas las versiones).
+Al habilitar la visualización de objetos pendientes:
+No solo se mostrarán las visitas sin viaje asignado, listas para incorporarlas al nuevo
+Viaje.
+También se obtendrá una visión completa de todos los objetos pendientes gestionados por el sistema.
+Dichos objetos aparecerán representados como visitas ficticias, consolidadas por punto de entrega, lo que permite asignarlos rápidamente a un viaje.
+Estas tres configuraciones —entregas, recepciones y objetos pendientes— se gestionan mediante toggles, que permiten habilitar o deshabilitar cada opción según la necesidad de planificación.
+Por último, en el paso de Configuración encontramos la sección de Filtros, que permite discriminar qué visitas y objetos pendientes se visualizarán en el paso de asignación de visitas.
+Los filtros disponibles son:
+Fecha de entrega: corresponde a la fecha prometida de entrega de cada visita.
+Empresa: aplicable en escenarios con integración WMS, permite filtrar visitas según la empresa emisora del pedido.
+Cliente: útil si se desea atender únicamente ciertos clientes específicos.
+Zona: permite restringir las visitas a una geovalla específica generada en Wis Tracking (ver sección “Mantenimiento de zonas”).
+Tipo de punto de entrega: posibilita categorizar las direcciones de las visitas y filtrar por tipo (por ejemplo, sucursales, hospitales o depósitos).
+El uso combinado de estos filtros permite acotar la visualización de visitas y objetos pendientes, facilitando la planificación precisa del viaje.
+Una vez aplicadas todas las configuraciones y filtros deseados, podemos avanzar al siguiente paso: “Visitas”.
+En esta etapa se visualizarán todas las visitas que cumplen con los criterios definidos en la configuración, permitiendo realizar la planificación manual del viaje de manera precisa y organizada.
+Visitas:
+En el segundo paso, “Visitas”, el menú flotante del mapa interactivo listará todas las visitas que cumplen con los criterios de configuración y filtros aplicados en el paso anterior.  Cada visita se presenta como una card con información básica, permitiendo asignarla al viaje y visualizar su ubicación en el mapa.
+Cada card de visita incluye:
+Descripción de la visita, correspondiente al texto asignado al momento de su creación mediante integración.
+Descripción del punto de entrega, es decir, la identificación del cliente o dirección principal.
+Dirección de entrega completa.
+Datos logísticos de entrega y recepción, que muestran la cantidad de objetos, el peso total y el volumen asociados a la visita.
+Además, cada visita cuenta con un conjunto de objetos de entrega y recepción, los cuales pueden consultarse mediante el menú de detalle de visita, accediendo al ícono de tres cajas ubicado en la esquina superior derecha de cada card.
+El detalle de objetos muestra para cada uno su descripción, cantidad de bultos, peso y volumen.
+Por defecto, una vez aplicado el paso de Configuración, todas las visitas listadas estarán asignadas al viaje.
+Si se desea desasignar una visita, se debe utilizar el toggle de selección ubicado en la parte superior de la card.
+El listado también cuenta con un toggle general en la esquina superior derecha, que permite seleccionar o deseleccionar todas las visitas de manera masiva.
+Las visitas pueden asignarse de forma parcial, lo que significa que es posible incorporar una visita al viaje sin incluir todos sus objetos de entrega o recepción.
+Para realizar esta asignación parcial, se accede al menú de detalle de la visita y se desseleccionan manualmente los objetos que no se deseen atender.
+El listado de visitas incluye un buscador para facilitar la planificación manual.  Este permite filtrar las cards por dos criterios:
+Descripción: realiza una búsqueda por la descripción de la visita, del punto de entrega y de la dirección.
+Viaje: filtra las visitas que contienen objetos no entregados o no recepcionados que pertenecieron al viaje ingresado.
+Cabe aclarar que este filtro solo afecta la visualización de las cards, no modifica su asignación al viaje.
+La selección final siempre depende de los toggles individuales de cada visita o del toggle global.
+Como se mencionó en el paso de Configuración, es posible visualizar también los objetos pendientes (No disponible en todas las versiones), los cuales se muestran agrupados por punto de entrega y pueden asignarse al viaje como si fueran visitas.
+Las cards de objetos pendientes se distinguen fácilmente porque:
+Presentan una alerta en color naranja, indicando que se trata de objetos pendientes.
+El texto de la descripción de la visita y del punto de entrega también aparece en color naranja, reforzando su identificación.
+Estas cards funcionan igual que cualquier otra visita:
+Pueden asignarse al viaje de manera total, incorporando todos los objetos.
+O de forma parcial, seleccionando únicamente los objetos que se desee incluir en el recorrido.
+Esta funcionalidad permite integrar rápidamente objetos pendientes (No disponible en todas las versiones) en la planificación, asegurando que no queden sin ser atendidos en la operación diaria.
+Las visitas seleccionadas se visualizan en el mapa interactivo mediante marcadores:
+Azules, para las visitas regulares.
+Naranjas, para los objetos pendientes.
+En cualquier momento, el usuario puede hacer clic sobre una visita seleccionada y el mapa se centrará automáticamente en el marcador correspondiente.
+De manera inversa, al pasar el cursor (hover) sobre cualquiera de los marcadores del mapa, se despliega un cartel informativo que muestra:
+La descripción de la visita
+El punto de entrega
+La dirección completa
+Los datos logísticos de entregas y recepciones, incluyendo bultos, peso y volumen
+Esta interacción entre mapa y listado de visitas permite ubicar rápidamente cada punto en el recorrido y consultar información clave sin cambiar de pantalla.
+Una vez seleccionadas las visitas que se desean atender en el viaje, se puede avanzar al tercer y último paso: “Resumen”.
+Para continuar, basta con presionar el botón “Siguiente” en el menú flotante del mapa interactivo.
+Resumen
+Luego de confirmar las visitas que se desean atender en el viaje, se accede al tercer y último paso: “Resumen”.
+En esta etapa, el menú flotante presenta una vista general que representa todo el viaje. En primer lugar, se muestra una card informativa con los atributos principales: el vehículo asignado, la descripción del viaje, el chofer, la cantidad de visitas a realizar y la fecha de ejecución.
+Si todas las coordenadas de las visitas pueden interconectarse mediante caminos accesibles para vehículos, el sistema generará un ruteo teórico del viaje. En ese caso, la card de información incluirá también la hora estimada de inicio y fin, la duración aproximada y la distancia total a recorrer.
+Debajo de esta card se despliega un camino de hormiga que representa el recorrido planificado, comenzando y terminando en el centro de distribución y pasando por todas las visitas asignadas. En los casos donde se asignen varias visitas con el mismo punto de entrega, estas se mostrarán consolidadas en una sola, ya que así quedarán registradas al confirmar el viaje. Cada visita tiene un orden asignado, representado por un número que indica su secuencia dentro de la ruta teórica. Las cards de visita dentro del camino muestran su descripción, el punto de entrega y un resumen de entregas y recepciones.
+En el mapa interactivo, cada visita aparece representada con un marcador, y al pasar el cursor sobre él se despliega información con la descripción, la dirección y los datos logísticos. El centro de distribución también se muestra con un ícono de depósito. Siempre que la geolocalización lo permita, se visualizará además el recorrido teórico completo.
+Si al menos una visita no puede rutease junto con las demás, el sistema no calculará los datos teóricos ni representará el recorrido en el mapa. Esto no impide crear el viaje, pero se mostrará una alerta en la esquina superior derecha de la card informativa, sobre la cual se puede pasar el cursor para leer una advertencia detallada.
+El camino de hormiga es interactivo: el usuario puede arrastrar cualquier visita y cambiar su posición, lo que recalcula automáticamente el ruteo teórico, actualizando la distancia total, la duración estimada y los horarios previstos. También es posible alterar el orden con un menú contextual, disponible al hacer clic derecho sobre una card, que ofrece las opciones Subir, Bajar, Enviar al inicio y Enviar al final.
+Cuando el usuario esté conforme con la planificación y el orden de visitas, puede confirmar la creación del viaje mediante el botón “Crear viaje”, ubicado en la parte superior derecha. Al presionarlo, se muestra una animación de carga mientras el sistema procesa la creación, consolidando automáticamente las visitas que pertenezcan al mismo punto de entrega. Finalmente, el usuario es redirigido a la consulta general de viajes, donde verá el viaje recién creado en estado real, listo para ser ejecutado.
+Alertas y Excepciones
+Como se mencionó anteriormente, la ejecución de un viaje mediante la aplicación Android de Wis Tracking puede generar eventos fuera de lo planificado.
+Todos estos eventos se registran en el sistema como alertas, las cuales poseen:
+Un tipo definido que las categoriza.
+Una ubicación geográfica que indica la posición donde se generaron.
+Información del viaje vinculado, incluyendo el vehículo, el chofer y el viaje en el que ocurrieron.
+Si bien las alertas pueden visualizarse en las pantallas de seguimiento de viaje, Wis Tracking cuenta además con una pantalla específica que centraliza todas las alertas generadas en el sistema, denominada “Alertas y excepciones”.
+En esta pantalla se presenta una grilla de consulta con todas las alertas, desde donde el usuario puede confirmarlas.
+La confirmación de alertas tiene como objetivo dejar constancia de su aceptación, quedando registrada en la alerta junto con la fecha y el usuario que la confirmó.
+Existen diversos tipos de alertas, entre los que se incluyen:
+Llegada a una visita fuera del radio de distancia permitido
+Salida de una visita fuera del radio de distancia permitido
+Saltear el orden de visita predeterminado
+Finalizar el viaje fuera del radio de distancia permitido del centro de distribución
+En la consulta general de alertas generadas, se encontrara la siguiente información:
+Id del log vinculado
+Viaje
+Código del tipo de alerta
+Descripción de la alerta
+Fecha de generada
+Nombre usuario
+Referencia alerta
+Id alerta
+Matrícula vehículo
+Nombre vehículo
+Usuario que acepta la alerta
+Nombre usuario que acepta
+Fecha aceptación
+Cada fila de la grilla de consulta de alertas cuenta con un botón de aceptación.
+Al presionarlo, la alerta quedará registrada como aceptada, incorporando los siguientes datos:
+Usuario que realizó la aceptación.
+Fecha y hora en la que se confirmó la alerta.
+De esta forma, se garantiza una trazabilidad completa de las alertas y su gestión dentro del sistema.
+Resumen de viajes
+La pantalla de “Resumen de viajes” tiene como objetivo ofrecer una vista rápida y consolidada del estado de ejecución de todos los viajes comprendidos dentro de un período de tiempo.
+Al igual que en el resumen de viaje individual, al que se accede desde la consulta general de viajes, la información se organiza en pestañas, permitiendo consultar de manera estructurada los datos relacionados con:
+Viajes
+Pedidos
+Entregas
+Recepciones
+Fotos
+Firmas
+Para visualizar la información, es necesario que el usuario especifique un rango de fechas (fecha de inicio y fecha de fin).
+Este filtro, ubicado en la parte superior de las grillas de consulta, se aplica de forma global, afectando a todas las pestañas mencionadas.
+A continuación, se describen en detalle las pestañas del Resumen de viajes y la información disponible en cada una de ellas.
+Viajes
+La pestaña “Viajes” permite consultar todos los viajes comprendidos dentro del rango de fechas especificado, mostrando su estado y las fechas de ejecución correspondientes.
+En la grilla de viajes se visualiza la siguiente información:
+Id viaje
+Chofer
+Descripción
+Estado
+Vehículo
+Matrícula
+Tipo de vehículo
+Creación
+Tiempo total
+Distancia total
+Inicio estimado
+Cierre
+Fecha inicio
+Pedidos
+La pestaña “Pedidos” permite realizar una consulta general de todas las referencias de pedidos asociadas a las visitas de los viajes comprendidos en el rango de fechas.
+En la grilla de pedidos se puede visualizar la siguiente información:
+Viaje
+Id visita
+Punto entrega
+Estado
+Referencia
+Estado pedido
+Número de pedido
+Asignación
+Fecha emisión
+Memo
+Agente
+Empresa
+Entregas
+En la pestaña “Entregas” se muestran todas las acciones de entrega de objetos correspondientes a los viajes comprendidos en el rango de fechas especificado, así como los comentarios de entrega registrados en cada visita.
+En la grilla de consulta de entregas es posible visualizar:
+Viaje
+Objeto
+Tipo objeto
+Descripción objeto
+Código de barras
+Punto entrega
+Estado
+Fecha resultado
+Id visita
+Motivo
+Recepciones
+En la pestaña “Recepciones” se muestran todas las acciones de recepción de objetos correspondientes a los viajes comprendidos en el rango de fechas especificado, así como los comentarios de recepción registrados en cada visita.
+En la grilla de consulta de recepción es posible visualizar:
+Viaje
+Id objeto
+Número objeto
+Tipo objeto
+Descripción objeto
+Código de barras
+Cantidad
+Punto entrega origen
+Punto entrega actual
+Estado
+Fecha resultado
+Motivo
+Fotos
+La pestaña “Fotos” concentra todas las acciones de toma de fotografías realizadas durante los viajes comprendidos en el rango de fechas especificado, mostrando el estado de cada fotografía y el punto de entrega asociado.
+La grilla de consulta de fotos presenta la siguiente información:
+Viaje
+Descripción
+Id visita
+Estado
+Firmas
+La pestaña “Firmas” concentra todas las acciones de toma de registro de firma digital realizadas durante los viajes comprendidos en el rango de fecha especificado, mostrando el estado de cada firma y el punto de entrega asociado.
+La grilla de consulta de firmas presenta la siguiente información:
+Viaje
+Descripción
+Aclaración firma
+Tipo de documento
+Número de documento
+Id visita
+Estado
+Mapas
+El módulo de mapas de Wis Tracking permite realizar un seguimiento general de los viajes en progreso y los viajes finalizados dentro del sistema.
+Este módulo incorpora herramientas visuales que facilitan el monitoreo del trabajo realizado, mostrando la posición actual de la flota de vehículos, así como las alertas y excepciones generadas a lo largo de los viajes.
+Panel de viajes activos
+El panel de viajes activos ofrece una visualización concisa de los viajes que aún no han finalizado, presentando la información en un formato visual de tarjetas (cards). Cada tarjeta de viaje brinda acceso rápido a su seguimiento, permitiendo ingresar a la pantalla de seguimiento con un solo clic.
+Las tarjetas de viajes activos muestran la siguiente información:
+Número de viaje
+Descripción
+Chofer asignado
+Fecha de inicio
+Además, desde la pantalla de viajes activos se puede acceder rápidamente a la consulta general de viajes a través de un botón ubicado en la parte superior izquierda.
+Panel de visualización de viajes
+El panel de visualización de viajes tiene como objetivo principal permitir el seguimiento simultáneo de todos los viajes correspondientes a una fecha dada.
+Por defecto, al acceder al panel se muestran los viajes del día actual, aunque es posible aplicar filtros por estado y fecha, obteniendo así una visión general tanto de los viajes en progreso como de los ya finalizados en la fecha seleccionada.
+En resumen, este panel ofrece funcionalidades similares a la pantalla de seguimiento individual de viajes, con la diferencia de que permite visualizar múltiples viajes al mismo tiempo.
+La pantalla está compuesta por un mapa de seguimiento interactivo, que muestra todos los viajes en progreso y permite aplicar filtros sobre ellos, funcionando de manera análoga al seguimiento individual.
+En la parte superior se encuentran indicadores rápidos que proporcionan un panorama inmediato de la situación actual, incluyendo:
+Cantidad de viajes
+Visitas completadas
+Entregas realizadas
+Recepciones realizadas
+Alertas generadas
+Sobre el mapa se ubica el menú flotante de seguimiento, donde se presenta una card por cada viaje visualizado.
+Cada card muestra información clave, como:
+Vehículo (camión)
+Chofer asignado
+Identificador del viaje
+Descripción
+Estado actual
+Una barra de progreso que refleja la relación entre visitas planificadas y visitas realizadas
+Cada card incluye un toggle de visualización en la esquina superior derecha, que permite activar o desactivar la representación del viaje en el mapa.
+Además, al igual que en el seguimiento individual, es posible cambiar el color de visualización del viaje haciendo clic en el ícono del camión dentro de la card.
+Para consultar el estado de avance de las visitas planificadas, basta con hacer clic sobre la card de un viaje.
+Al hacerlo, se despliega el menú de detalle de viaje, que incluye un camino de hormigas similar al del seguimiento individual.
+Este camino muestra el centro de distribución y todas las visitas planificadas, con su respectiva información:
+Hora de llegada y partida
+Descripción del punto de entrega (cliente)
+Descripción de la visita
+Objetos entregados vs. planificados
+Recepciones realizadas vs. planificadas
+Cada visita se representa con un código de colores en el camino de hormigas:
+Verde → visitas completadas
+Amarillo → visitas completadas parcialmente
+Rojo → visitas canceladas
+Azul → visitas pendientes
+Finalmente, cada card de visita cuenta con un botón de información en la parte superior derecha, que permite acceder directamente a la pantalla de detalle de la visita.
+En la parte central de la pantalla se encuentra el mapa de seguimiento, donde se visualizan las visitas de cada viaje representadas con marcadores en el color asignado al viaje correspondiente.
+Del mismo modo, los centros de distribución y el camión se muestran con el mismo color de identificación.
+El recorrido teórico planificado se representa mediante una línea punteada del color asignado, mientras que el recorrido real ejecutado aparece como una línea sólida.
+Tal como se mencionó anteriormente, la visualización de un viaje específico puede ser habilitada o deshabilitada mediante el toggle de visualización disponible en cada card de viaje dentro del menú flotante.
+Al realizar hover sobre cualquiera de los marcadores de visita en el mapa, se despliega un popup informativo con los principales datos de la visita.  En este panel se muestran:
+Descripción del punto de entrega
+Descripción de la visita
+Dirección completa
+Hora de llegada y de partida
+Objetos entregados y recepcionados
+Por último, en la parte superior derecha del mapa se encuentra el menú de filtros y visualización.
+Desde este menú es posible:
+Modificar la fecha de visualización para el seguimiento de viajes.
+Aplicar filtros por zona y por estado de los viajes.
+Activar o desactivar la visualización de las rutas teóricas.
+Mostrar u ocultar las alertas generadas.
+Habilitar la actualización en tiempo real, del mismo modo que en el seguimiento individual de viajes.
+Configuración y componentes
+En esta sección se describen las herramientas de gestión de usuarios y permisos que ofrece Wis Tracking, junto con las funcionalidades principales de sus componentes.
+Entre estos componentes destacan las grillas, que constituyen el elemento central para la presentación de datos al usuario, ya que concentran la mayoría de las consultas y operaciones disponibles en el sistema.
+Perfiles y usuarios
+Los usuarios generados por primera vez desde el sistema de autenticación centralizado podrán acceder a Wis Tracking, pero no tendrán permisos asignados para visualizar pantallas ni ejecutar acciones dentro del sistema.
+Para habilitar sus accesos, será necesario asignarles un perfil de usuario, tarea que debe realizar un usuario con permisos administrativos para la gestión de usuarios y perfiles.
+En esta sección, primero se explica cómo crear y gestionar los perfiles de usuario y, posteriormente, cómo asignar dichos perfiles a los usuarios sincronizados desde el sistema de autenticación centralizado.
+Administrar perfiles
+Desde la pantalla de perfiles es posible consultar los perfiles existentes, editarlos o crear nuevos.
+Al ingresar, lo primero que se presenta es la grilla de consulta de perfiles, donde se listan todos los perfiles ya creados en el sistema.
+En esta consulta se muestra la siguiente información:
+Id del perfil
+Descripción
+Tipo de usuario
+Cada fila de la grilla cuenta con un ícono de edición representado por un lápiz. Al hacer clic sobre él, se despliega la grilla de permisos junto con un campo de edición para la descripción del perfil.
+En la grilla de permisos se visualizan todos los permisos disponibles en el sistema, pudiendo asignar o quitar permisos del perfil seleccionado.
+Una vez realizadas las modificaciones de permisos y/o descripción, los cambios deben confirmarse mediante el botón “Confirmar”, ubicado en la parte inferior izquierda de la pantalla.
+El proceso de creación de un perfil es muy similar al de edición.
+Para iniciar, se debe acceder al modo de creación de perfil mediante el ícono de creación, ubicado en la parte superior de la grilla de perfiles.
+Al hacer clic, se despliega la grilla de permisos junto con el campo de descripción del perfil.
+En este formulario es obligatorio ingresar una descripción y seleccionar el conjunto de permisos que se deseen asignar al perfil.
+Una vez definidos, se confirma la creación presionando el botón “Confirmar”, ubicado en la parte inferior izquierda de la pantalla.
+Gestionar usuarios
+La pantalla de gestión de usuarios permite acceder a la consulta de usuarios existentes en el sistema y editarlos, con la posibilidad de asignar o remover perfiles, así como agregar o quitar permisos de manera individual.
+Al ingresar, lo primero que se presenta es la grilla de consulta de usuarios, en la que se visualiza la siguiente información:
+Identificación de usuario
+ID interno de usuario
+Nombre completo
+Correo electrónico
+Para editar un usuario, es necesario acceder a su formulario de edición. Esto se logra haciendo clic en el ícono de lápiz ubicado en la fila correspondiente dentro de la grilla de consulta de usuarios.
+Al presionar el ícono, se despliega el formulario de edición, el cual se organiza en tres pasos:
+Asignación de perfiles
+Permite asignar o remover perfiles al usuario mediante una grilla de selección.
+Asignación de permisos individuales
+Posibilita otorgar permisos específicos al usuario de forma individual, aunque estos no estén incluidos en ninguno de sus perfiles asignados.
+Esto brinda una mayor personalización del acceso a funcionalidades dentro del sistema.
+Confirmación
+Una vez definidos los perfiles y permisos, se procede a confirmar la edición, finalizando así la asignación de permisos y perfiles.
+Grillas
+Las grillas son el componente principal para presentar información a los usuarios en Wis Tracking. Están presentes en la mayoría de las pantallas del panel web de administración.
+Las grillas de Wis Tracking ofrecen numerosas herramientas de personalización y funcionalidades que complementan el sistema.
+En esta sección se describirán las funcionalidades comunes a todas las grillas del sistema.
+Visualización de columnas
+Todas las grillas del sistema cuentan con un conjunto definido de columnas. Dentro de estas columnas, es posible personalizar la visualización para mostrar únicamente las que resulten más útiles.
+Para ocultar columnas que no consideremos necesarias o para mostrar aquellas que estén ocultas, debemos acceder a la funcionalidad de visualización de columnas, ubicada en la parte superior derecha de todas las grillas.
+Esta función está representada por un ícono en forma de ojo. Al presionarlo, se desplegará un menú contextual donde si elegimos la opción columnas podremos acceder a una ventana emergente que nos permitirá cambiar la visualización de las columnas.
+Esta ventana presenta dos columnas definidas: las columnas visibles, ubicadas a la izquierda, y las columnas ocultas, a la derecha.
+Para mostrar u ocultar una columna, simplemente debemos hacer clic en el nombre de la misma. Dependiendo de la sección en la que se encuentre (visible u oculta), al hacer clic, la columna se moverá a la sección opuesta.
+Es importante aclarar que las configuraciones de visualización de columnas son personalizadas para cada usuario, y solo afectan las grillas que ese usuario visualiza. Por lo tanto, las modificaciones realizadas por diferentes usuarios serán independientes entre sí.
+Existe una forma rápida de ocultar columnas sin necesidad de acceder a la ventana de visualización. Desde cualquier grilla, podemos hacer clic derecho sobre el encabezado de una columna, lo que desplegará un menú contextual. Una de las opciones disponibles será “Ocultar columna”; al seleccionarla, la columna se ocultará para ese usuario.
+Reorganización de columnas
+Al igual que es posible ocultar o mostrar columnas, también se puede modificar el orden de visualización de las mismas, permitiendo que cada usuario acomode los datos de la manera más cómoda y práctica.
+Exceptuando las columnas fijas (como las de acciones que contienen botones), todas las demás permiten alterar su posición. Esto puede hacerse de dos formas:
+Arrastrando columnas
+Se puede cambiar el orden presionando con el mouse sobre el encabezado de la columna y arrastrándola a la posición deseada.
+Fijando columnas
+Es posible fijar una columna en la parte izquierda o derecha de la grilla. Para ello, se debe hacer clic derecho sobre el encabezado y seleccionar “Fijar a la izquierda” o “Fijar a la derecha” en el menú contextual.
+Para liberar una columna fijada, se sigue el mismo procedimiento pero seleccionando la opción “Soltar”.
+Filtros y orden
+Para ordenar los datos de una columna, se deben utilizar las flechas de orden ubicadas en el encabezado de cada columna.
+Al presionar las flechas, el orden irá cambiando en el siguiente ciclo: ascendente → descendente → neutral.
+El estado actual del orden se refleja en el icono de flechas del encabezado correspondiente.
+Para activar el filtrado, se debe presionar el botón con el icono de lupa, ubicado en la parte superior izquierda de la grilla.
+Al hacerlo, se habilitará un campo de filtrado debajo de cada encabezado de columna.
+En este campo se puede escribir el criterio de búsqueda y presionar Enter para aplicar el filtro.
+El filtrado admite dos modos:
+Búsqueda exacta: ingresando solo el texto (ejemplo: Cliente1) se filtrarán los resultados que coincidan exactamente con el valor ingresado.
+Búsqueda por similitud: ingresando el texto entre el carácter % (ejemplo: %Cliente%) se filtrarán los resultados que contengan la palabra ingresada en cualquier parte del campo.
+Guardar filtros
+Los filtros y órdenes que el usuario aplique sobre las grillas pueden guardarse para utilizarlos en cualquier momento.
+Esta funcionalidad es especialmente útil cuando se desea contar con conjuntos de filtros recurrentes dentro de una consulta, como, por ejemplo, filtros por estados específicos o para clientes o usuarios particulares.
+Para crear un nuevo filtro, simplemente se deben aplicar los criterios deseados en la grilla y luego presionar el botón Guardar filtro, ubicado en la parte superior derecha de todas las grillas, identificado con un icono de guardado.
+Al presionarlo, se abrirá el menú de guardado, donde será posible:
+Asignar un nombre al filtro.
+Ingresar una descripción.
+Definir si será global (visible para todos los usuarios) o no (solo disponible para el usuario que lo crea).
+Marcarlo como inicial o no (si se marca como inicial, el filtro se aplicará automáticamente al cargar la grilla).
+Indicar si se debe conservar el orden aplicado (si se marca esta opción, el orden de los datos se guardará como parte del filtro).
+Una vez completados los datos y configuraciones, se debe presionar el botón Guardar para confirmar la creación del filtro.
+Para aplicar un filtro guardado, se debe presionar el botón Cargar filtros, ubicado en la parte superior derecha de la grilla, junto al botón de Guardar filtro.
+Al hacerlo, se mostrará un menú con todos los filtros disponibles, donde se podrá visualizar:
+Nombre del filtro.
+Descripción.
+Fecha de creación.
+Indicador de si es global.
+Indicador de si es inicial.
+Botones de acción:
+○ Aplicar filtro (identificado con un ícono de tic azul).
+○ Eliminar filtro (identificado con un ícono de cruz roja).
+Debajo del menú, se encuentra la opción Limpiar filtros aplicados a la grilla.
+Al momento de aplicar un filtro, el menú de filtros guardados se cerrará automáticamente y el filtro seleccionado se aplicará a la grilla.
+En todo momento será posible saber qué filtro está activo, ya que su nombre se mostrará en la parte superior derecha de la grilla.
+Exportar datos
+Las grillas de Wis Tracking permiten exportar los datos visualizados a planillas Excel.  La planilla exportada conservará el mismo formato y configuración que la grilla mostrada en pantalla, incluyendo:
+Orden de datos.
+Columnas visibles y ocultas.
+Orden de columnas.
+Filtros aplicados.
+Para exportar una grilla de datos, se debe utilizar la función de exportación, presionando el botón verde con el icono de Microsoft Excel ubicado en la parte superior derecha de la grilla de consulta.
+Al presionarlo, el sistema generará y descargará automáticamente un archivo .xlsx con los datos actualmente visualizados en la grilla.
+[Imagen 1 → ]
+[Imagen 2 → 220
+
+ERC
+
+Objetos entregados/Recepcionados
+
+Jan Feb Mar Apr May Jun Jul
+
+February 21, 2025:
+
+16
+
+Aug
+
+oct]
+[Imagen 3 → Trazabilidad
+
+Número interno: 369
+
+Codigo de barras: WISCO00000211239
+Punto entrega origen: CD
+
+Descripción: Contenedor Nro:21123
+Punto entrega actual: FUMBEL SA
+
+Estado: ENTREGADO
+Punto entrega destino FUMBEL SA
+
+a fa]»] D0BB rw gio
+
+Numero Int Fecha Accion Dominio W Núm. Viaje Ú Viaje p Punto Entrega P Fullname:
+AS Objeto emegado ae 128 AZ PAMELA sami
+000 aer teo nccado una deme ES
+00 asoaer5 ota inpeedo en lina 12. mz oo
+
+Cerrar]
+[Imagen 4 → Objetos a recpcionar
+
+Iro. Interm Numero ob
+
+Descripcios  Cod.Barras Cantidad Origen
+
+in resultados]
+[Imagen 5 → Mg
+
+Firma Cliente
+Aclaracion: Mauro Mendez
+Documento: 27699309
+Tipo: ci
+
+1imegen]
+[Imagen 6 → ]
+[Imagen 7 → y EE PRE PO A
+
+Perfiles
+ga
+
+Descripción
+
+Administrador
+Prueba
+
+Transportista]
+[Imagen 8 → Id. Viaje Id.Externo Estado
+
+— E EN ñ
+
+a 28 EGRMMOT Viaje finalizado
+2 29 EGR_MMO2 Viaje finalizado
+23 30 TEST_MM11 Viajefinalizado
+36 35 CAM_MM Viaje finalizado
+39 36 PED_MM.25 Viaje finalizado]
+[Imagen 9 → 1315  COBOE S.A JUEVES)
+
+Tarea de Entrega 8118144024-3000250565-40
+av. dr. juan bautista alberdi 6502, 11500 montevide.
+
+01317 nm ay]
+[Imagen 10 → BE] Traducir al español x
+
+Confirme su cuenta siguiendo el enlace
+https/sso wistracking.com/account/confirmEmail?tenant=DEMO 1]
+[Imagen 11 → (GLISTracking
+
+Puntos de entregas
+
+OD BB +... vinguno
+
+i Código Desc. 7 birección era | Ofóna | Estecalel | Entecaled | Longitud " atiua País Dn
+[2140 CD_JMA | CD-JMA C. Manuel Bonnemaison 140, Callao 07001, Peru -77.108230 -12.0550
+(12 ][s8s [8] co_mea_boe1 co impa Doel, S.A Av. Simón Bolívar (Transístmica, Ricardo Perez Milla 8, Panamá, Provincia de Panamá, Pan: -79.517240 9.065047
+[2/40 CD co 29 de Setiembre, 111018 Mariano Roque Alonso, Paraguay -57.534570 -25.222320
+ela 999 | AVEspaña Av. España 382, Lima 15001, Peru -77.040190 -12.057840
+[2/0 998 Real Plaza Salaverry Centro Comercial Real Plaza Salaverry, Av. Gral. Salaverry 2370, Jesús María 15076, Peru -77.052660 -12.089860
+(AJENO) 997. Plaza San Miguel Av, de la Marina 2000, San Miguel 15088, Peru -77.083640 -12.076150
+[2/8 0 996. Puerto del Callao WVWA4+P2X, 07021, Peru -77.144890 -12.053130
+¡2 we 995 Local 2 Amistad, 110216 Kapi'atá, Paraguay -57.449140 -25.366490
+[2/40 994 San Lorenzo Shopping Ruta Mariscal José Felix Estigarribia, San Lorenzo, Paraguay -57.506370 25.345
+E liwle' 993 Local1 Ruta Mariscal José Felix Estigarribia 5, San Lorenzo 111438, Paraguay -57.534090 -25.335030]
+[Imagen 12 → Confirmar acción
+
+¿Está seguro de que desea guardar los cambios?]
+[Imagen 13 → Detalle viaje
+
+Viaje 1646
+Núm. de piaje— Núm. parada
+1646 1
+1646 2
+1646 3
+
+Cód. punto de entrega
+3406
+3407
+
+3408
+
+Desc. punto de entrega Arribo
+Cliente 004 JJ-El Spot (Pádel) 11:49:08
+
+Cliente 005 JJ- CONECTARTE ST 11:57:32
+
+Cliente 006 JJ- FORTIS JOCKEY | 11:57:32
+
+Partida
+11:56:03
+
+11:57:32
+
+11:57:32
+
+Fecha
+15/07/2025 00:00
+15/07/2025 00:00
+
+15/07/2025 00:00
+
+Estado tarea Tarea
+
+Tarea cancelada — El Spot (Pádel) - Entrega de mercaderia JJ Emprendimeintos
+Armado teórico de vi CONECTARTE STUDIO - Entrega de mercadería JJ Emprendimeintos
+
+Armado teórico de vi: FORTIS JOCKEY - Entrega de mercaderia JJ Emprendimeintos
+
+DOBEA rie ninguno]
+[Imagen 14 → a
+
+e A Aa
+Objetos pendientes Local 7
+Local 7
+
+Calle 25 8, 20000 Punta del Este, Departamento de Maldonado,
+30 7 ss Ñ
+
+dao zo]
+[Imagen 15 → ]
+[Imagen 16 → Entregas Macro 22/08
+Macro mercado
+33M3+MPS, Estacionamiento MacroMercado, 20000 Punta del Este...]
+[Imagen 17 → Seleccionar perfiles y empresas —> (E) Seleccionar permisos Confirmar usuario
+
+Permisos
+
+Id. Recurso Descripcion
+
+1 Seguridad
+
+2 Cambiar Contraseña
+
+3 Mantenedor de Perfiles
+4 Btn Editar perfil
+
+A. e
+
+Nombre
+
+WSEGO000_mnu_Seguridad
+
+WSEGO10_Cambiar Contraseña
+
+WSEGO20 Perfiles
+
+WSEGO20_grid1_btn_EditarPerfil
+
+A
+
+Nombre unico
+
+WSEGO00_Section_Acces 1
+
+WSEGO10_Page_Access, 1
+
+WSEGO20_Page_Access. 1
+
+WSEGO20_grid1_btn_Edit 1
+
+A]
+[Imagen 18 → E Planificar 13 Viajes el Seguimiento]
+[Imagen 19 → (OLISTrackir
+
+Vehículos
+
+CONCMRCMCIACIACICCICCI
+
+47
+
+46
+
+45
+
+42
+
+4
+
+40
+
+[as]
+Código - Descripción
+CHANGAN CS 35
+ISUZU QKR55L - HAF 379
+Dev test
+LIBRE
+CL_BYD
+
+INCA - RETIRA
+
+CORREO
+
+Tipo vehículo
+
+Hyundai Mighty Ex8
+
+Hyundai Mighty Ex8
+
+Camioneta
+
+CAMION GRANDE
+
+CAMION CHICO
+
+CAMION CHICO
+
+CAMION CHICO
+
+INCA - JOSE GABRIEL CODEVII CAMION CHICO
+
+MIL-STP5474
+
+MIL-SCM5927
+
+CAMION CHICO
+
+CAMION CHICO
+
+7 Placa l Agrupación
+HCX 205 Vehiculo Propio
+HAF 379 Vehiculo Propio
+BAC8605 Punto Normal
+
+LIDECAR-C. GD Vehiculo Propio
+
+SDAS110 Vehiculo Propio
+LIBRE. Vehiculo Propio
+LIBRE Vehiculo Propio
+403433 Vehiculo Propio
+STP5474 Vehiculo Propio
+
+SCM5927 Vehiculo Propio
+
+Formulario
+
+Chofer
+
+341
+
+122
+
+Nombre completo
+
+Cesar Salinas
+
+mmendez
+
+0090BB ro vinguno]
+[Imagen 20 → 1852 - morales 2585, 11600 montevideo, departamento de montevideo, uruguay
+
+j Tarea acción detalle Descripcion
+
+344211 Tomar Fotografia
+
+Fotos tomadas
+
+Tomar Fotografia
+
+1 imagen
+
+Agregar foto
+
+Estado detalle
+
+Completada correctamente
+
+DO0BB ru. ninguno]
+[Imagen 21 → 0.5%
+9 y
+33 7 Confirmación de llegada al punto de entrega
+e zo] Arribo fuera de radio, Usuario: Transportista 1- Pablo
+El Perdomo, Punto de entrega: SUMMUM
+0150052 O sumuum E Transportista
+1-Pablo]
+[Imagen 22 → O vis 3 e niega 3 (D pesepcions 0
+
+E o
+
+ASS 1257- Camión megiano (Camión)
+
+z A
+ES 0 e 4 DE
+o
+
+a
+A
+
+% eme E %
+Cerro de distribución A E + 4
+a e) o Il
+IRA
+A o 2. A
+“A a
+Í]
+[Imagen 23 → ]
+[Imagen 24 → Basoso- CL - PABLO.
+
+E Transportista 1- 942053
+Pablo Perdomo
+
+1D 143153 (8) En progreso
+
+lA
+
+(0]
+[Imagen 25 → m] o[ap Filtro: 'Mi
+
+otot — Distancia]
+[Imagen 26 → IWIS Confirmación de email
+
+Email confirmado correctamente
+
+Acceder al sistema]
+[Imagen 27 → Puntos de entregas
+
+código.
+
+Dueccónenraga
+
+Numiotans
+
+cospas
+
+totagupadós
+
+Lati
+
+Ente cae
+
+Nur posi
+
+Cs departamento
+
+Descripción
+
+Obsenaciones
+
+Loria
+
+Ente cale 2
+
+Tiempo entrega]
+[Imagen 28 → (O) — - Diana kimetman-apto 505 o
+
+Tarea de Entrega 608-116-44000
+bw.españa 2665, 11300 montevideo, departamento de
+
+O-- -.n ay]
+[Imagen 29 → ]
+[Imagen 30 → 8888888804
+
+Tareas
+
+Cód, ext. tarea
+
+Tarea
+
+8109622787-3000250; Tarea de Entrega 8109622787-3000250843-40
+
+1D_006
+
+Entrega en Farmacia Los Caobos
+
+8109622769-30002501 Tarea de Entrega 8109622769-3000250843-40
+
+TipodeP-243-40
+
+PED305-26514-40
+
+Tarea de Entrega TipodeP-243-40
+
+Tarea de Entrega PED305-26514-40
+
+8109622674-3000250; Tarea de Entrega 8109622674-3000250843-40
+
+PED301-26514-40
+
+PED300-250-40
+
+PEDA0-243-40
+
+P40-3000250704-40
+
+Tarea de Entrega PED301-26514-40
+
+Tarea de Entrega PED300-250-40
+
+Tarea de Entrega PED40-243-40
+
+Tarea de Entrega P40-3000250704-40
+
+Cód punto destino
+
+1772
+
+1008
+
+1772
+
+1783
+
+1786
+
+1772
+
+1785
+
+1784
+
+1783
+
+1779
+
+Punto destino Creado
+
+MSP DIRECCIA'N NACIO! 09/04/2025 07:29
+Farmacia Los Caobos 08/04/2025 15:43
+MSP DIRECCIA"N NACIO! 08/04/2025 08:59
+FARMACIA PRUEBA 07/04/2025 14:01
+Farmacia Medicina 03/04/2025 09:47
+MSP DIRECCIA"N NACIO! 03/04/2025 08:13
+Farmacia Medicina 02/04/2025 16:08
+HOSPITAL PRUEBA 02/04/2025 12:22
+
+FARMACIA PRUEBA 02/04/2025 10:59
+
+M.S.P HOSPITAL LAS PIE 01/04/2025 13:52
+
+Prometida
+
+10/04/2025 00:00
+
+08/04/2025 00:00
+
+09/04/2025 00:00
+
+12/04/2025 13:53
+
+08/04/2025 09:39
+
+04/04/2025 00:00
+
+03/04/2025 00:00
+
+07/04/2025 12:14
+
+07/04/2025 10:51
+
+06/04/2025 13:44 | 090111111
+
++59892561008
+
+Estado
+
+Preparación pendiente
+
+Preparación pendiente
+
+Preparación pendiente
+
+Preparación pendiente
+
+Tarea cancelada
+
+Preparación pendiente
+
+Tarea completada
+
+Armado real de viaje
+
+Armado real de viaje
+
+Preparación pendiente
+
+Núm. viaje
+
+1061
+
+1056
+
+1053
+
+1053
+
+DO BB rio: ninguno
+
+Viaje Desc. chofer
+
+0304/AM
+
+02/04 PM
+
+AM2/4
+
+AM 2/4]
+[Imagen 31 → ]
+[Imagen 32 → 7 LDONA
+a filtrar X NUEVO
+== Entregas Centro Centro Maldonado bento Cr
+las 3% 107 Maldonado 3... LL
+25 de Mayo 714, 20000 Maldonado, Departamento de M. Ain
+4 100 uiso (a
+y cr
+z E [)
+0 E 5.0 =
+E PORÁ $
+E IPORÁ E centro SAN FERNANDO
+(2)
+3 de Febrero.
+2)
+20 Ar
+E Enviue Buren Apancio
+
+cado, 20000 Punta del Este
+lia mos a
+
+cd 10
+5 O]
+[Imagen 33 → Alertas y excepciones
+
+Estado
+
+| Todas
+
+Log. recorrido
+16035
+16004
+16003
+16002
+16001
+16000
+15999
+14879
+
+14878
+
+14877
+
+Viaje
+922
+873
+873
+873
+873
+873
+873
+1645
+
+1645
+
+1645
+
+Cód. alerta
+
+PUNTLLEPAR
+
+PUNTLLEPAR
+
+PUNTLLEPAR
+
+PUNTLLEPAR
+
+PUNTLLEPAR
+
+PUNTLLEPAR
+
+PUNTLLEPAR
+
+PUNTLLEPAR
+
+PUNTLLEPAR
+
+PUNTLLEPAR
+
+rar
+
+Desc. alerta — Dt agregado
+
+Llegada o partidi 28/07/2025 08:34
+Llegada o partid: 25/07/2025 15:40
+Llegada o partid: 25/07/2025 15:40
+Llegada o partidi 25/07/2025 15:40
+Llegada o partid. 25/07/2025 15:39
+Llegada o partid. 25/07/2025 15:39
+Llegada o partidi 25/07/2025 15:34
+Llegada o partid. 16/07/2025 14:52
+
+Llegada o partid: 16/07/2025 14:52
+
+Llegada o partidi 16/07/2025 14:52
+
+Nombre
+
+admin
+
+admin
+
+admin
+
+admin
+
+admin
+
+admin
+
+admin
+
+admin
+
+admin
+
+admin
+
+Referencia
+Arribo fuera de radio, Usuario: admin, Punto de entrega: Centro Maldonado
+Partida fuera de radio, Usuario: admin, Punto de entrega: SUCURSAL PUNTA DEL ESTE
+Arribo fuera de radio, Usuario: admin, Punto de entrega: SUCURSAL PUNTA DEL ESTE
+Partida fuera de radio, Usuario: admin, Punto de entrega: Punta Shopping
+Arribo fuera de radio, Usuario: admin, Punto de entrega: Punta Shopping
+Partida fuera de radio, Usuario: admin, Punto de entrega: SUCURSAL MALDONADO NUEVO.
+Arribo fuera de radio, Usuario: admin, Punto de entrega: SUCURSAL MALDONADO NUEVO
+
+Partida fuera de radio, Usuario: admin, Punto de entrega: Cliente 003 JJ - Acuarela
+
+Arribo fuera de radio, Usuario: admin, Punto de entrega: Cliente 003 JJ - Acuarela
+
+Núm. alerta
+
+940558
+
+939482
+
+939479
+
+939478
+
+939465
+
+939464
+
+939415
+
+891840
+
+891838
+
+Partida fuera de radio, Usuario: admin, Punto de entrega: Cliente 002 JJ - Complejo San Cristo, 891837
+
+Placa
+
+B-ASD4853
+
+AAADOO
+
+AAADOD.
+
+AAADOO
+
+AAADOO
+
+AAADOO
+
+AAADOO
+
+AADN 550
+
+AADN 550
+
+AADN 550
+
+DOBB
+Vehículo Us. aceptada Us. aceptación
+Camion Generico 2 admin
+
+Prueba Refrigerado
+Prueba Refrigerado
+Prueba Refrigerado
+Prueba Refrigerado
+Prueba Refrigerado
+Prueba Refrigerado
+ISUZU NOR 71L-AADN 5,
+ISUZU NQR7IL-AADN 5,
+
+ISUZU NQR 71L -AADN 5
+
+Ninguno.
+
+Dtac
+
+101/08/2]]
+[Imagen 34 → Seleccionar perfiles y empresas > Seleccionar permisos Confirmar usuario
+
+[contemos | A]
+[Imagen 35 → M  viajes en progreso 0 A Atras
+
+Y Visitas completadas 0 0 Visitas pendientes]
+[Imagen 36 → ]
+[Imagen 37 → Vehículo:
+
+Descripción
+
+Tipo
+
+Seleccionar
+
+Agrupación
+
+Seleccionar
+
+Inicio jornada laboral
+
+Placa
+
+Chofer
+
+Seleccionar
+
+Fin jornada laboral]
+[Imagen 38 → Objetos a entregar
+
+2 098
+
+Gi - Agregar selecionados”
+
+2Jg165 PAQUETE_JJOC PEND.ASIG-— | BULTO Paquete Pedide JJ006 1 3408]
+[Imagen 39 → Fotos
+
+Descripcion]
+[Imagen 40 → Resumen de viaje
+
+Viaje 873
+
+Pedidos — Entregas
+
+Recepciones | Documentos viaje — Fotos
+Núm objeto Tipo objeto Descripción Cód. barras
+AA Sin resultados.
+
+Comentarios chofer
+
+Firmas
+
+Cantidad
+
+Cód punto entrega orig.
+
+Punto entrega orig.
+
+Cód punto entrega «|
+
+Cód. punto entrega act.
+
+Punto entrega act.
+
+Estado det.
+
+Fecha resu
+
+Motivo
+
+DOBEA rio ninguno]
+[Imagen 41 → Objetos pendientes asignación
+
+Viaje: 905 Descripción: Viaje para ruta 88
+
+Entregar Recepcionar
+
+gq 8
+
+Agregar para entregar > + 8
+Número A Ll Cantidad IdPuntode Destino
+
+02002 BULTO Contenedor 021 0202002 1 253 Punta Shopping
+
+02001 BULTO Contenedor 011 0202001 1 253 Punta Shopping]
+[Imagen 42 → BEVERL
+Av: Las]
+[Imagen 43 → e)
+O
+
+Centro de distribución
+
+Av. Franklin Delano Roosevelt E, 20000 Punta del Este, Departamento de Maldonado, Uruguay
+
+Central
+
+Avltalia 5820 Carrasco
+
+-l a
+
+Macro mercado
+
+33M3+MPB, Estacionamiento MacroMercado, 20000 Punta del Este, Departamento de Maldonado,
+Uruguay
+
+-l a
+
+Centro Maldonado
+
+25 de Mayo 714, 20000 Maldonado, Departamento de Maldonado, Uruguay
+
+-l a
+
+LONTRAS]
+[Imagen 44 → Bososo- CL - PABLO.
+
+2 Transportista 1 -
+Pablo Perdomo
+
+1D 143153 8) En progreso
+0
+
+0£ 2053
+
+Bbsoss - cL-MAXI
+
+2 Transportista 2-
+Maximiliano Perez
+
+MD 143161 O Finalizado
+Q OI O
+
+eL 2055
+
+Basoss - cL-MAx1
+
+2 Transportista 2-
+Maximiliano Perez
+
+9 urgente
+9
+
+Lo
+eL 2063
+
+(8) En progreso
+
+1
+A
+
+Ruta 8-Bri, Grl Juan A. Lavalleja 10451, 13000
+Montevideo, Departamento de Montevideo, Uruguay
+01047
+
+(Y) 1056. SANYFICOSA ep
+Tarea de Entrega 4167-100057162-11700
+Av.8 de Octubre 2573,11600 Montevideo, Departamen. 4
+Ona en ao z
+
+250 FN.R.(HOSPITAL DE CLINICAS) 0)
+
+Tarea de Entrega 2863; 147032-9800
+avitalia 2870, 11600 montevideo, departamento de
+
+01397 en ao
+(Y) 1127. SERVICIO SANIDAD FF.AA. e
+Tarea de Entrega 286314858-12447040-9800
+
+a. de octubre 3050, 11100 montevideo, departamen
+On21 en ao
+(Y) 1308. HOSPITAL BRITANICO e
+
+Tarea de Entrega 28
+
+morales 2585, 11600 montevideo, departamento de mon.
+
+01319 - ay
+
+(Y) 1213. FNR (MUTUALISTA EVANGELICA) O)
+Tarea de Entrega 286299456-12447099-9800]
+[Imagen 45 → Perfiles
+
+Descripción
+
+Transportista
+
+ES rio ninguno
+
+iio]. Daseicion a pen 7 s4:Tipo Unuro [dicción di po 7 nombre po mt cio
+2, Cambiar Contraseña WSEGO10_Cambiar Contraseña WISEGOIO_Page_Access_CambloPassword 1 WSFS01O. Page Access. | CambioPassword Interno.
+
+2 amenecordeetez — WSEGOZI Peri vsecazo gu Access eres A aEGozO Page Acc Por teo :
+
+2 matar VlsEG0z0 gr aer VISEGCSO taa 1 ezcozo rn tae teo .
+
+3 ng SEG AGRO isc, grat regar ' A eno s]
+[Imagen 46 → Historial de descargas recientes ()
+
+REPO202025-08-04 11-111 y [A
+105 KB «Hace 2 minutos]
+[Imagen 47 → Guardar filtro
+
+Descripción
+
+O Global
+O Inicial
+82 Incluir orden]
+[Imagen 48 → BE] Traducir al español x
+
+Confirme su cuenta siguiendo el enlace
+https/sso wistracking.com/account/confirmEmail?tenant=DEMO 1]
+[Imagen 49 → EiwIs Recupérela
+
+Ingrese una nueva contraseña y su confirmación
+
+| Contraseña
+
+Confirmar contraseña]
+[Imagen 50 → LIST
+
+Objetos
+cai ya pres]
+[Imagen 51 → 1315  COBOE S.A JUEVES)
+
+Tarea de Entrega 8118144024-3000250565-40
+av. dr. juan bautista alberdi 6502, 11500 montevide.
+
+01317 nm ay]
+[Imagen 52 → Puntos de entregas
+
+Código
+
+a
+
+20
+
+19
+
+1785
+
+1784
+
+1783
+
+1779
+
+Desc. Dirección Puerta
+Sucursal Sal remaruo Barrio San Fermanuo, Senaque y, ¿VUUU MAIuonauo, Vepartamento ue maluonauo, Uruguay,
+
+SERGIO ENRIQUE RECALDE KU( Concejal Vargas y, Asunción 001406, Paraguay
+
+Predio 1 Ruta Transchaco casi, Panamá, Mariano Roque Alonso, Paraguay
+
+IVANNA RAQUEL TORRES COR( HGX9+V8G, Capiatá, Paraguay
+
+Farmacia Medicina general flores 2125,,, uruguay
+
+HOSPITAL PRUEBA general flores 2125, montevideo, montevideo, uruguay
+
+FARMACIA PRUEBA 18 de julio 2016, sin especificar, montevideo, uruguay
+
+M.S.P. HOSPITAL LAS PIEDRAS juan antonio lavalleja 583, 15900 las piedras, departamento de canelones
+
+Oficina
+
+Entracallóa | Emtacalez | Longitud
+= - -D4.YOYUZU
+-57.558930
+-57.530810
+-57.481650
+
+-56.18606050
+
+-56.18606050
+
+-56.17221080
+
+-56.21683770
+
+009588 ru vinguno
+
+Latitud
+
+País
+
+-34.41UY0U
+
+-25.298720
+
+-25.197090
+
+-25.4003
+
+-34.88829060 Uruguay y
+-34.88829060 Uruguay »
+-34.90058620 Uruguay »
+-34.72815990 Uruguay c]
+[Imagen 53 → Mantenimiento de zonas
+Zona
+38
+
+Desc.Zona
+
+Prado
+
+Color
+
+Verde
+
+p 18 de Mayo
+
+villa ronesta
+h
+Corfrisa O),,
+
+livero San Antonio
+Granja-Taller
+
+A
+
+PLAYA PASCUAL
+TROPAS VIEJAS
+
+MELILLA
+
+DELTA DEL
+
+ADAYUSA
+
+|
+
+| Ciudad Der
+Los Céspedes |
+
+Parque Francisco Lecocg|
+LEzICA
+
+COLÓN
+
+(UAM Unidad
+2, Agroalimentaria...
+Paso.oe CASAVA
+A e 0
+
+sodimacO) Hipódromo Ni
+E de M
+
+SS
+
+Macromercado
+
+PUNTA ESPINILLO. Paso de la Arena:
+(9) La Baguala Hotel de
+
+Campo y Chacras dd
+
+¿0
+
+Club Atlético Bella Vista.
+- Complejo Deportivo...
+
+(o) Estadio Luis Tróccoli
+
+LA TEJA
+Pajas Blancas]
+[Imagen 54 → Confirmación de operación
+
+¿Desea cancelar la tarea?]
+[Imagen 55 → > 8-AsD488-4 (2)
+Prueba 6
+
+e Guido Delgado 82 visitas AA 6496 km
+E2s/0s/2025 O 1302-1320 Ó0017hr]
+[Imagen 56 → “we MARACANA:
+A a
+
+Bbeoso - CL - PABLO.
+
+E Transportista 1 -
+Pablo Perdomo
+
+1D 143060
+
+02 2046
+
+(6) En progreso
+
+13000
+
+o Uni
+
+BES
+
+LA TE]
+[Imagen 57 → ]
+[Imagen 58 → Entrega cliente 00001 - 24/04
+Central
+
+Av Italia 5820,Carrasco
+al ts]
+[Imagen 59 → Resumen de viajes
+
+Desde Hasta
+
+01/05/2025 Y 01/08/2025
+Viajes Pedidos Entregas Recepciones Fotos Firmas
+
+a
+
+. Nún. viaje : Nombre chofer É " Ñ
+
+Descripción Estado Desc. vehículo
+
+Placa
+
+Tipo vehículo
+
+Peso
+
+Bultos]
+[Imagen 60 → Resumen de viajes
+
+a
+
+o
+
+Vies Pesos Ensegas — Beceocons | Fotos | Fis
+
+a DODBDB +. woo
+
+Vije Depa Motos Esto dale
+a]
+[Imagen 61 → Id.Extemo
+0 Ocultar
+6 Soltar
+
+Fijar a la derecha]
+[Imagen 62 → ]
+[Imagen 63 → [e] na ¡Mo
+Id. tarea ali
+
+Descripción
+
+12187 Partida fuera de radio, Usuario: admin, Punto de entrega: SUCURSAL MALDONADO NUEVO.
+
+12186 Arribo fuera de radio, Usuario: admin, Punto de entrega: SUCURSAL MALDONADO NUEVO]
+[Imagen 64 → Configuración Visitas
+
+Ingrese un valor a filtrar
+
+25 de Mayo 714, 20000 Maldonado, Departamento de Maldonado,
+a 100 189
+
+0
+Entrega de mercadería para J.O.D.GROUP S.A.
+JO.D.GROUP SA.
+Avenida Molas Lopez 687 casi Prof, Dr. Cirilo Caceres Zoril.
+li ms22 woo  (mmo o
+
+Entregas Centro Maldonado 30/08
+
+Centro Maldonado
+
+25 de Mayo 714, 20000 Maldonado, Departamento de Maldonado,
+E 100 ww189 (o o
+
+Resumen
+
+Entrega de mercadería para J.O.D.GROUP S.A.]
+[Imagen 65 → ]
+[Imagen 66 → LIS Mobile
+
+Escanea el codigo para asociar tu dispositivo en Lis
+Tracking
+Acad aa succión o justos do Lts obio y solcconal ocio Asocir
+spostio]
+
+¿No puedes lee el odio GR, Resliza una asociación mansa, ben los alos dando ic azur]
+[Imagen 67 → Puntos entrega
+
+0 Geolocalizados
+
+0) Requieren geolocalización
+manual]
+[Imagen 68 → Cancelar objeto
+
+Motivos
+
+Valor requerido.]
+[Imagen 69 → ing
+
+Tipo de vehículo
+
+CICIACICC
+
+27
+
+26
+
+25
+
+24
+
+23
+
+Peso
+
+3800
+
+5000
+
+5000
+
+1200
+
+Bultos
+
+40
+
+30
+
+20
+
+Altura
+
+90
+
+90
+
+90
+
+Bultos
+
+18
+
+600
+
+600
+
+Descripción
+Hyundai Mighty Ex8
+CAMION GRANDE
+CAMION MEDIANO
+CAMION CHICO
+Prueba
+
+Camioneta
+
+Mercedes-Benz Sprinter 311
+
+Formulario]
+[Imagen 70 → Tarea acck — Descripción Aclaración firma
+207271 Firma Cliente | Mauro Mendez dl
+
+Firmas obtenidas
+
+Firma Cliente
+Aclaracion: Mauro Mendez
+Documento: 27699309
+Tipo: ci
+
+Piagai
+
+Tipo docun
+
+Número documento Estado detalle
+
+27699309
+
+Completada correctamente]
+[Imagen 71 → ]
+[Imagen 72 → 08:55  SALEMMA RETAILSA. o
+
+Nro. Pedido: 126692
+PC8H+423, Roque Centurión Miranda, Asunción 001529,
+
+00855 -”nñ ay]
+[Imagen 73 → ]
+[Imagen 74 → ]
+[Imagen 75 → > El
+y MALDONADO A o % e?
+: a 0-9 » an de 50
+% A E) Eos a E
+E a $5 E 5
+a suso O a ¿ %g ¿0 j ez 04
+% E S g :
+? 3 $0 OQ e % = 0
+z 3 E 3007 9
+tata 9 E j E E
+y ES E
+
+ll
+|
+|
+Sal
+
+JAGUEL
+
+o]
+
+BEVERLY HILLS
+I]
+[Imagen 76 → ]
+[Imagen 77 → [als
+
+Número Tipo
+
+Remover selecionados
+
+(QUETE_JJ006 | BULTO Paquete Pedido 0006 33006
+
+Comentarios del chofer]
+[Imagen 78 → Resumen de viaje
+Vito ers
+
+PA
+a ga
+
+Toreascck — Descripcion — Tareas Id Totes Mie
+
+17650 Tomartegrateze ore
+O
+
+Tomar Fotografia
+
+Tomar Fotograña
+
+1 Estado
+
+rara
+
+Estado deta
+No completada
+
+Compte comectamente
+
+empleada comectamecte
+
+DO0BB > vano]
+[Imagen 79 → Envegas Recepciones
+
+completadas
+
+o
+>
+
+5
+
+DepaSTAMtNO DE»
+DEPARTAMENTO DEC
+
+> O
+pa e A ES
+e AA ANG ss É Y -
+a O riataaco ATA o SEN hartos o
+
+Mass CL max o
+
+Brargorisa2- 0
+FaximilanoPecez
+
+urgente 0 tn progreso Po
+o]
+[Imagen 80 → Mo] eB] Filtro: Finalizados
+
+t Distancia]
+[Imagen 81 → aus
+
+Desde: 8 owornOM
+
+Mo Planificar ”» Viajes 28 — Seguimiento
+eos
+
+Ma viajes en progreso. 0 A tes 10)
+
+Y Visitas completadas. 0 o Vsitas pendientes. 10)]
+[Imagen 82 → IWIS Confirmación de email
+
+Email confirmado correctamente
+
+Acceder al sistema]
+[Imagen 83 → Asociación
+Manual
+
+Para realizar la asociación manual, ingresa a la
+sección de ajustes en la pantalla de inicio de Lis
+Mobile
+
+. Soleccona a opción [Asociacón manual ngrsa o codo de
+a asocación
+
+CODIGO MANUAL
+
+¿Desaas azar la asoceción auoraicamente?. Les código OR con lu dspostvo dando lc al]
+[Imagen 84 → Puntos de entregas
+
+peniaa O)
+
+sitio e a O
+
+o a]
+[Imagen 85 → 1sT
+
+Detalle tarea
+
+<a
+Tarea: aroa e Entrega CAMBIORUT2 2:40 Punto de entrega: 1760. Mateo Vidal 335.21600 Mentevido, Departamento de Montenaso Urusuay
+. detal > hr Tires de Entrega CAMBIORUTZ-2:40
+> Pos > .
+Diecin: tae Vidal 335711600 Montevideo Departamento de Montavióo, Uruguay
+1 Sales e entrega > Descipcón: FARMACIA DEL BUCEO
+fl OONA05 1176360
+- Salciud de recepción >
+Fecha preci O1JOs/2025 1200004
+- Sales de devolucion > sido Fares completada
+e Fotos tomadas >
+e riadas y Tall
+. Documento adjumo >  Nimvaje 040
+Descicin CANEIORUTZ
+» ano > tado Viaje inalizado.
+e > mas: eOs/2025 434310
+
+Elias ys]
+[Imagen 86 → Tos
+
+pue ap unbeor
+
+CENTRO
+y
+Sdefebreo O)
+
+Antique Burnett
+
+»,
+ES $ [)
+o
+
+.0
+(E
+Nuevo 2,
+CANTEGRIL
+
+2)
+
+¿
+E
+ES
+E
+
+(2)]
+[Imagen 87 → (L) 1122 FNRGREMCA) e
+Tarea de Entrega 286253937-12447044:9800
+aa. de octubre 2870, 11600 montevideo, departamen.
+
+01151 ln ay]
+[Imagen 88 → Configuración Visitas Resumen Es (titan
+
+Ingrese un valor a filtrar GD Entregas
+died a 1.50
+[Contenedor 0027193098
+Entrega cliente 00001 - 24/04 Em d15
+Central
+Av Italia 5820,Carrasco
+de 15 50.048
+Pendientes para Macro mercado 0
+”
+
+33M3+MPS, Estacionamiento MacroMercado, 20000 Punta del Este...
+
+| Macro mercado de
+hi sl (o o]
+[Imagen 89 → Resumen de viajes
+
+haa
+
+Vies — Pedidos — Enteges — Recepciones — Fotos Firmas
+
+[o] la]+] DOBAB ro won
+Vigo Dope Aciorción — Tipodocin  Námerodo Has Estododaale
+
+200. Fimaciene Rommel suerera — t0s06s —— Comietadacorectamente
+
+2050 macia Cato ANTAS 106168 Competente
+
+2050. Fimaciente arala Agea 257 10SNE7— Compeadacorectanene
+
+2089 remain 1017) ropero creta]
+[Imagen 90 → ¡Viaje Id.Externo Descripción
+1) Tr o Viaje 02.4 Emprend
+
+[3] 1605 o Viaje JJ Emprendimi]
+[Imagen 91 → Tenant]
+[Imagen 92 → Borrar Zona
+
+¿Desea elminar la zona 38?]
+[Imagen 93 → 1068
+
+1040
+
+1098
+
+1096
+
+2
+
+as
+
+24
+
+20
+
+eu.
+
+progreso
+
+Majes Emprendimientos 04/07
+Viaje Emprendimientos 04/07
+AMMprueioo
+
+mm
+
+ea
+
+ea
+
+CANBIORUTZ:
+
+presa 22
+
+Camionz2
+
+Estado
+Vejefralzodo
+Vijefratzado
+Vejefiralzado
+Vijetnalzado
+Vejefralzaco
+Vijefalzado
+Vijetnalzaco
+Vie fialzado
+Vijofratzado
+
+Vijofralzado
+
+Chole
+
+ani
+
+DD avance del ía
+
+Veiculo
+
+SUZUNOR 7IL-AADN 580 ARDN 550
+
+eLo
+
+MAXIMO
+
+oL-mIGUEL.
+
+eL-mIGUEL.
+
+eL-MIGUEL.
+
+Placa
+
+srecoso
+
+reses
+
+sresoso
+
+sorsoDo
+
+sorsoDo
+
+soreoso
+
+0%
+
+Horalhico estima — Fecha agregado — Iniclovisje
+
+oarorrz05 reas
+
+carosrz025 1242
+
+os/oYy20251239
+
+esrorrz075 10316
+
+oRLDRa0IS 1297
+
+os/os/e025 1130
+
+osros/a0a5 119
+
+osJoa/2095 1:97
+
+15/o7r202s 1148
+
+o/o 1441
+
+0a/0%/2075124S
+
+srowy2025 1039
+
+onIa025 1627
+
+ooYa05 1588
+
+os7os/2025 1654
+
+osas me
+
+BB suo nogo
+
+Hora estimado
+
+Cien
+
+18/07/2025 1157
+
+16/07/2025 1451
+
+OS
+
+e/ow2075 1638
+
+or/ca/a0251008
+
+a1/00/a0251245
+
+Bolos]
+[Imagen 94 → Entregas Centro Maldonado 30/08
+Centro Maldonado
+
+25 de Mayo 714, 20000 Maldonado, Departamento de Maldonado,
+il a 100 E 1s9 lio 0]
+[Imagen 95 → (O) centro de distribución
+| An asin Delano Rossévelt 820000 Punta el Este Departamenio de Maldonado Uruguay
+
+O Centro Maldonado
+25 de Mayo 714, 20000 Maldonado, Departamento de Maldonado, Uruguay
+
+-l ao
+
+Macro mercado
+
+33M3+MP8, Estacionamiento MacroMercado, 20000 Punta del Este, Departamento de Maldonado,
+Uruguay
+
+-l a
+
+(O) centro de distribución
+Av Frantin Delano Roosevelt, 20000 Punta del Este Departamento de Maldonado, Uruguay]
+[Imagen 96 → WIS Trackino
+
+O Visitas
+
+P——
+
+Configuración
+
+Configuración
+
+/
+
+Visitas
+
+==
+
+Resumen
+
+Entregas 0
+
+Fecha
+
+31/07/2025
+
+Vehiculo
+
+Seleccionar
+
+Descricpión
+
+WD Entregas
+(8 Incluir objetos pendientes
+
+Filtros
+
+Centro de distribución
+
+Centro de distribución
+
+WD Recepciones
+
+'añomos
+CERRO PELADO,
+
+LA SONRISA
+
+laLTOS DE,
+LAGUNA
+
+Fecha entrega
+
+Empresa
+Seleccionar
+Cliente
+Seleccionar
+Zona
+
+Seleccionar
+
+sánao
+HIPODROMO
+
+LA CANDELARIA
+
+CENTRO sanuBer
+
+CANTEGRIL
+
+CANTEGRIL %,
+
+o, BEER HILLS
+AY. Laureano Alonso PAI
+
+%.
+
+Punta del Este
+
+PIÑE DEACH
+
+ANDY GR
+
+(A Recepciones 0
+
+Barra d
+Maldonado
+El Pueblo Mio
+P
+y Chacras
+i del Golf
+A
+E Laguna Estates
+3
+z
+3
+E "Manantiales,
+] ElTesoro
+| EL PLACE
+
+1 ve Apatii Sara
+JAGUEL |
+
+EL PLACER
+| RINCÓN
+DELINDIO
+
+EL GOLF
+
+SAN RAFAEL
+
+LA PASTORA.
+
+PENÍNSULA
+
+"Combinaciones de tecles | Detos del mepa 02075 | Tánninos | Notioer un problema de Maps]
+[Imagen 97 → Resumen de viajes
+
+Desde eS
+
+mas y)
+
+(euros
+
+Viajes | Pedidos — Entregas — Recepciones — Fotos — Flemas
+
+B (als) D0B8 +» woo
+Ñ 'Nún. viaje: h ¡Nombre chofer. k Descripción p Estado. h Desc. vehiculo. Ñ Placa Ñ Tipo vehículo. E Ingreso. Ñ Tiempo total H Distancia total E Inicio estimade Ñ Cien. ll Inicio Tracking
+
+Vie 3 Emprender 047 Vil fnalzado ISUZU NOR 7IL-A/DM ADAL tud MENE | 202SOSTIAZ 030 AOISOITIAZA! 202507:16TIASISOO 2025071ET1AA127: 000000]
+[Imagen 98 → Mostrar/Ocultar columnas
+
+Visibles
+
+Botones
+
+1d.Viaje
+
+Id.Externo
+
+Descripción
+
+Ocultas
+
+Login
+
+Disp. móvil
+
+Cód. Estado
+
+ld. Estado]
+[Imagen 99 → (LISTrackin
+
+Motivos
+
+Formulario
+
+B af» ] D0BB +. vinguno
+
+á Motivo á Descripción il Acción
+
+[2] viscanspE Visita cancelada sPE
+
+[2] viscanreo Visita cancelada RREC
+[2] viscanent Visita cancelada RENT
+[2] viscanoev Visita cancelada RDEV
+[e] RoTO Paquete roto RREC
+[2] renoEsP Recepcion de objeto no espeado RREC
+[12] reonorEC Recepción no Realizada RREC
+[2] reonorE Recepción no encontrado RREC
+[2] reomaLesT Recepción en mal estado RREC
+[12] recrecven Recepción fecha de vencimiento caducada RREC]
+[Imagen 100 → Tipo de vehículo]
+[Imagen 101 → Firma
+
+Descaipción lema]
+[Imagen 102 → 18090 - CL - PABLO.
+
+(5)
+Pat Dd OO
+
+u Cataluí
+
+yes
+RS
+LAS
+
+4
+¿O
+¿en
+
+Felicianc
+
+Se,
+paez 9en]
+[Imagen 103 → O cena
+Ay Italia 5820,Carrasco.
+
+-l a
+
+(O) vecro mercado
+33M3+MP8, Estacionamiento MacroMercado, 20000 Punta del Este, Departamento de Maldonado,
+
+Uruguay
+-l ao Zo
+Subir.
+(O) centro Maldonado Enviar alí
+25 de Mayo 714, 20000 Maldonado, Departamento de Maldonado Urugu
+-l a]
+[Imagen 104 → Panel de usuario
+
+a sa DDD sr.
+
+ds Uno entr compro 7 comosteninos]
+[Imagen 105 → Desde: 01/07/2024
+
+Acciones realizadas
+
+O Entregas]
+[Imagen 106 → ]
+[Imagen 107 → BEA nn
+
+Solicitud de recepción
+
+Objeto Tipo Descripción — Cantidad
+
+44 Sin resultados
+
+Estado
+
+Comentarios del chofer
+
+Punto entrega
+
+Punto entrega:
+
+Estado det Motivo
+
+Fecha resultado]
+[Imagen 108 → Resumen de viaje
+Mo
+
+ll su
+
+DOBA + mao
+
+Tune Dari Acción Vf MaS Temas ls Todos cdo Esto ed
+A ros ars an A
+
+4
+
+Firma Cliente]
+[Imagen 109 → Confirmar acción
+
+¿Desea desasignar el viaje?]
+[Imagen 110 → (L) 1235. FNRMUTUALISTA EVANGELICA) O
+
+Tarea de Entrega 286308539-12447099-9800
+bvjosé batlle y ordóñez 2759, 11600 montevideo, d
+
+01252 -n an]
+[Imagen 111 → BEVERL
+Av: Las]
+[Imagen 112 → A
+>
+
+IranigasÑ—k GUARNER! Y GHILINO LTDA. Ono, darrenco”
+A Tarea de Entrega 3092056952-2296428-180
+a,
+e
+luis alberto de herrera 1601, 1601 ú
+
+montevideo montevideo uruguay
+
+ens 0 22 a BS)
+
+Completada
+MALVÍN]
+[Imagen 113 → Cargar filtro
+
+Nombre Descripción
+
+Fecha Global — Inicial
+
+4/8/2025 o o qa
+4/8/2025 o o qa
+
+Finalizados Visualizar solo viajes finalizados
+
+Reales Visualizar solo viajes reales]
+[Imagen 114 → ElwIs
+
+Tenant
+DEMO_WMS
+
+Email
+
+Contraseña
+
+LOGIN
+
+REGISTRAR USUARIO]
+[Imagen 115 → = +
+
+LISTra:
+
+Detalles empresa cliente
+
+Código: 18
+
+Agente Empresa
+
+MONICA ALICE SAVERO DE AQUINO | San Roque
+
+Descripción: MONICA ALICE SILVERO DE AQUINO
+
+Dirección: Fulgencio Yegros
+
+admin
+
+of]
+[Imagen 116 → (LISTrackin
+
+Detalle tarea
+
+Tarea: Entrega en Farmacia Los Caobos
+
+Realizar acciones sobre la tarea
+
+0 Detalle
+» Post-it
+t Solicitud de entrega
+
+- Solicitud de recepción
+
+Punto de entrega: 1008 - Avenida Don Bosco, Panamá, Provincia de Panamá, Panamá
+
+Postit
+
+Descripción Nivel Estado
+[122] ' ingresar por lateral 2 Postit Activo
+
+Agregar post-it
+
+DO0D0B rio ninguno]
+[Imagen 117 → (O) — - Diana kimetman-apto 505 o
+
+Tarea de Entrega 608-116-44000
+bw.españa 2665, 11300 montevideo, departamento de
+
+O-- -.n ay]
+[Imagen 118 → a SARRIA. e al
+
+; Configuración Visitas Resumen
+
+Ingrese un valor a filtrar
+
+Entrega cliente 00001 - 24/04
+
+Central
+Av Italia 5820,Carrasco
+a 15 5 0.048
+
+, yx
+Pendientes para Macro mercado e
+Macro mercado sa
+33M3+MP8, Estacionamiento MacroMercado, 20000 Punta del Este.
+las E == (o 30 =o
+PRUEBA CREACION TAREA 1
+
+Local cantegril
+0320+H8 Omdraavlei, Sudáfrica
+as 9 mu lito 0 o
+
+Entreaas Centro Maldonado 25/08 íJ
+
+E
+
+ero]
+[Imagen 119 → ElwIs Registrar usuario
+
+Usuario registrado con éxito. Se ha enviado un email a su
+correo con instrucciones para confirmar la dirección y
+comenzar a utilizar el sistema.
+
+Volver]
+[Imagen 120 → Dispositivos móviles
+
+Código
+
+NUEDISP
+
+Desc. dispositivo
+Nuevo cispositivo
+Fecha conexión
+
+Usuario
+
+Bu
+
+Cantidad
+
+Fecha último envio]
+[Imagen 121 → (LISTracking
+
+Zonas
+
+Código
+
+s/6
+
+38
+
+32
+
+200
+
+Descripción
+Sin Geolocalizar
+Prado
+
+ZONA CENTRO
+
+ZONA RESTO PAIS
+
+Fecha inserción
+17/02/2023 10:17
+04/04/2024 17:18
+
+17/03/2023 10:10
+
+17/02/2023 10:17
+
+Fecha modificación
+
+17/02/2023 10:17
+
+21/05/2025 15:19
+
+17/03/2023 10:10
+
+17/02/2023 10:17
+
+Estado
+
+e
+
+o 08]
+[Imagen 122 → ajebiez]
+[Imagen 123 → Entregas 0
+del Só 100.00 5 189.0000
+
+Contenedor 09004 o
+deL a 100 m5 189]
+[Imagen 124 → O) vaso mercado
+33M3:MPB Estacionamiento MacroMercado, 20000 Punta del Ete Departamento de Maldor
+
+Uruguay
+pe
+Subir
+(O) centro de distribución Enviar al inicio
+Arann Delano Roosevelt, 20000 Puré Bajar Urigus
+
+Enviar al final]
+[Imagen 125 → ]
+[Imagen 126 → Configuración
+
+Configuración
+
+Fecha Centro de distribución
+
+| 31/07/2025 | | Centro de distribución [> ]
+Vehiculo
+
+| Seleccionar [o ]
+
+Descricpión]
+[Imagen 127 → Resumen de viajes
+
+0
+
+Lo] DOES so we
+
+Voje 1608 PUN Eo Poda EOL MO AS EMO oO Eo A e
+SR ANS LC PF 1 rosca cuy oa]
+[Imagen 128 → Panel viajes activos
+
+Viaje: 685
+Desc.:Vije par uta 77
+Vehículo
+
+Chofrlogin:
+Ayudame
+
+Disp.]
+[Imagen 129 → Estado Chofer Ve
+
+pan [Es
+
+Fijar a la izquierda
+Viaje finali ISUZ
+
+Fijar a la derecha]
+[Imagen 130 → Descripción
+
+[2]:
+
+4 4 Tracking]
+[Imagen 131 → Eiwis Registrar usuario
+
+Tenant
+
+DEMO.WMS
+
+Nombre
+
+Email
+
+idioma
+Español
+
+Contraseña
+
+Confirmar contraseña
+
+jenta? Ingrese aqui]
+[Imagen 132 → Motivos
+
+Descripción
+Acción
+Motivo]
+[Imagen 133 → Mantenimiento de zonas.]
+[Imagen 134 → ”]
+[Imagen 135 → 08:55  SALEMMA RETAILSA. o
+
+Nro. Pedido: 126692
+PC8H+423, Roque Centurión Miranda, Asunción 001529,
+
+00855 -”nñ ay]
+[Imagen 136 → Entrega cliente 00001 - Central
+
+24)...
+
+Av Italia 5820,Carrasco
+
+1 8615 OD (LO
+
+' E
+none 7 ._
+Y:]
+[Imagen 137 → Recepciones
+
+Ellas 3 O [midis US mn YA A izadas 10) ce ji 26
+
+ve a ve eo e. . —
+Pagó
+Mbsos0 CL eLo. o e 5 tcnuz os Wa Buscar viajes
+UB ramporosia1- 082053 Ll
+“ S Feo OLOR
+
+Paolo Perdomo
+ES O en preso
+
+a
+¿ e , E
+Masoss-cu- mo E ON
+/
+q
+
+ma 7
+
+Zonas
+
+Sa raLuucare O sados
+se ea
+
+AS -
+"Maximiliano Perez. ABS ALNORTE 1 o Select
+Mises O rinainaco 9. ¡50
+
+/
+Bsoss-cu- ox o
+Eraser? Boss
+
+Acuna enempores!
+
+Marvi ca aca
+ea
+
+No
+
+a
+
+aid
+OS O rn progeso
+
+a
+pocas 2 queso]
+[Imagen 138 → Distancia t]
+[Imagen 139 → MÍWIS Recuperar contraseña
+Ingrese el correo electrónico asociado a su cuenta. e le
+enviará un email con instrucciones para recuperar su
+contraseña
+
+DEMO-WMS
+
+ENVIAR EMAIL
+
+Volver]
+[Imagen 140 → Pame Actual Desc Vie
+
+Fetal Fecha MANSO
+
+MANI GUS MANISO 4! MANISO 9! cam VALOR NONE MANI,]
+[Imagen 141 → Post-it
+
+Descripción
+
+Estado
+
+Seleccionar
+
+Nivel
+
+Seleccionar]
+[Imagen 142 → admin
+
+Resumen de viaje
+Viaje 1646
+Pesidos — Entregas — Recepciones — Documentosviaje — Fotos — Fimmas
+
+Cód punto entrega Puntoentrega Referencia Núm pedido Asiganción — Emitido | Recibido Entregado túmmo | hoi | hgnta | ges
+3406, Ciente 04 4J-El Spot (Páde PEDIDOJJODS PEDIDOJAOOS. Total 09/07/202511 Pedido 0008 pá CUENTE 004, San Roque
+3407, Clente 005 > CONECTARTI PEDIDOJJOOS PEDIDOJAGOS Total 03/07/2025 M1 Pedido 0005 pe CLIENTE 005 4 San oque
+3408. Cliente 06 )-FORTIS JOCH PEDIDOJJO0S PEDIDOJUOOS Total 03/07/2028 11 Pedido 0006 pt CLIENTE 006 J San Roque]
+[Imagen 143 → ]
+[Imagen 144 → O Entregas O Recepciones
+(8) Incluir objetos pendientes
+
+Filtros]
+[Imagen 145 → = wis
+
+Resumen de viajes
+
+5 E
+
+[ovas y 0570 a
+us ross | Ema cgis o
+
+o] 7)
+
+Ñ Viaje. L iimeoob Núm.ito. Tipo objeto y Objeto. có bem Camidad | Parton l' 1d. tarea de.
+
+e jaaadas, [e [raras EP
+
+- (lailas [ua [aras a
+
+ldaeslín Esadode  Fectaress ¡es
+
+Vircrta
+
+DODBB rre toos]
+[Imagen 146 → vá]
+[Imagen 147 → Id.Via= Id.Extemo emo Desc
+
+1646 o Viaje 0:]
+[Imagen 148 → Motivos
+
+Motivo
+
+'VISCANREC
+
+Acción
+
+Recepción
+
+Descripción
+
+Visita cancelada
+
+00908 ro vinguno]
+[Imagen 149 → Asavusa Q
+
+Regency Park Hot
+
+Disco Camino
+Maldonado
+
+Summit Trampoline
+Park Montevideo.]
+[Imagen 150 → (L) 1235. FNRMUTUALISTA EVANGELICA) O
+
+Tarea de Entrega 286308539-12447099-9800
+bvjosé batlle y ordóñez 2759, 11600 montevideo, d
+
+01252 -n an]
+[Imagen 151 → Configuración Visitas Resumen
+[> Ass 1257- Camión mediano (Camión )
+Viaje para entregas planificadas e 01-08-2025 - Manual de usuario
+8 cuido Delgado Lives 246881 km
+00349 his
+
+| Elo1os/025 Ooss3-1232
+
+y]
+[Imagen 152 → Resumen de viaje
+
+Viaje 973
+
+Pedidos — Entregas | Recepciones — Documemosviaje — Fotos — Finos
+
+[17] DOBA rw.
+
+Námerood — Tipocbjelo Objeto CA baras Cantidad Cód puto Puntocategs Esatdodet — Fechareso — MatÑo
+coNTEnenOR: euro cortenedorcor2 —— lom12 1 252 Punt opa Completado co 25107/202515
+CONTENEDOR: PUTO Cortenedoros one 1 3 UCURSAL PUNTA DEL ESTE! Compltada en 2/0/202515
+CONTENEDOR: suo ontanederanas 000 1 3% SUCUNSALMALLONADO UE Completado 2507/202515
+Comentarios chofer
+Entrega Maldonado Nuevo
+
+Comentario que aun no Mauro]
+[Imagen 153 → a
+
+sa
+— oescripción
+
+19 po no]
+[Imagen 154 → >
+ELA
+
+empo tot — Distancia t]
+[Imagen 155 → ElwIs Recupérela
+
+Se envió un email a su direccic
+
+1 con instrucciones para
+completar el proceso de recuperación de contraseña
+
+Volver]
+[Imagen 156 → Objetos]
+[Imagen 157 → -Jockey Club, Av. Eusebio Ayala km 4,5, Asunción, Paraguay
+
+Solicitud de entrega
+[e] all =]
+
+Número Tipo Descripción
+
+PAQUETE JJOO6 | BULTO Paquete Pedido 0006
+
+ÓN
+
+Cód barras
+
+33006
+
+Cantidad
+
+Estado detalle
+
+Esperando ser realizada
+
+Motivo]
+[Imagen 158 → WIS Tracking Guido Delgado
+
+dé va 2046 mit 27 at O A Moros 32 a
+
+sio Pd E eafuDos pe E E
+
+BBa090 -CL - PABLO. y
+
+pues ES
+
+MARORAS]
+[Imagen 159 → Filtros
+
+Fecha entrega
+
+Empresa
+
+Seleccionar
+
+Cliente
+
+Seleccionar
+
+Zona
+
+Seleccionar
+
+Tipos punto de entrega
+
+Seleccionar]
+[Imagen 160 → 33 Los Corchos E LOS'AROMOS O
+
+Configuración Visitas Resumen
+
+Configuración Ll
+Fecha Centro de distribución
+
+29/05/2025 Centro de distribución
+Vehiculo
+
+B-ASD488 -4
+
+Descricpión
+
+Prueba 6
+
+4D Entregas O Recepciones
+(8) Incluir objetos pendientes
+
+Filtros
+
+Fecha entrega
+
+Empresa
+
+Glacrionss]
+[Imagen 161 → Resumen de viajes
+
+pese oa
+
+Vales — Pocos — Ego canes Fo Fis
+
+a +] DOBDB ». on
+Va Mimirto Mimosito Duró CA bara Camil Puro Pr Inda Cedo ca os Mo
+
+A Sn rosuados]
+[Imagen 162 → Id.Externo Descripción
+Ocultar
+tos 04
+Fijar a la izquierda
+Fijara la derecha — 504/07]
+[Imagen 163 → Dispositivos móviles
+
+gudo su DQBma rr sra
+
+E es corres
+El mc omnes
+Em . A
+E oeroamos a so ages]
+[Imagen 164 → Mantenimiento de zonas
+
+Zona
+Desc.Zona
+
+Color
+
+Azul
+
+Confirmar]
+[Imagen 165 → Em 2046. nos E)
+
+..]

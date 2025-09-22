@@ -10,7 +10,7 @@ if __name__ == "__main__":
     service = db_start(setup_mode=True)
 
     docs_service = DocsToEmbedService()
-    docs_service.process_pdfs()
+    docs_service.process_docs()
     
     intent_service = IntentToEmbedService()
     intent_service.process_intents()
