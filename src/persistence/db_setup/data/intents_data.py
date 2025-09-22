@@ -209,5 +209,7 @@ INTENT_TRAINING_DATA = [
     { "text": "¿Cómo configurar las grillas de datos?", "intent": "docs" },
     { "text": "¿Cómo reorganizar o filtrar columnas en una grilla?", "intent": "docs" },
     { "text": "¿Cómo guardar y aplicar filtros?", "intent": "docs" },
-    { "text": "¿Cómo exportar datos desde las grillas?", "intent": "docs" }
+    { "text": "¿Cómo exportar datos desde las grillas?", "intent": "docs" },
+
+    { "text": "¿Cómo instalar y configurar la aplicacion android?", "intent": "docs" }
 ]

@@ -5,7 +5,8 @@ import os
 import re
 from typing import List
 import PyPDF2
-from sentence_transformers import SentenceTransformer
+from pathlib import Path
+from llm import embed_model
 
 
 class DocsToEmbedService:
@@ -13,21 +14,32 @@ class DocsToEmbedService:
     
     def __init__(self):
         """Initialize the document embedding service"""
-        self.model = SentenceTransformer('all-mpnet-base-v2')
-        self.docs_path = "persistence/db_setup/data/docs"
+        self.model = embed_model
+
+        BASE_DIR = Path(__file__).parent # src/persistence/db_setup
+        self.docs_path = BASE_DIR / "data" / "docs"
         self.chunk_counter = 0
     
-    def extract_text_from_pdf(self, pdf_path: str) -> str:
+    def extract_text_from_pdf(self, file_path: str) -> str:
         """Extract text from a PDF file"""
         text = ""
         try:
-            with open(pdf_path, 'rb') as file:
+            with open(file_path, 'rb') as file:
                 pdf_reader = PyPDF2.PdfReader(file)
                 for page in pdf_reader.pages:
                     text += page.extract_text()
         except Exception as e:
-            print(f"Error reading PDF {pdf_path}: {e}")
+            print(f"Error reading PDF {file_path}: {e}")
         return text
+    
+    def extract_text_from_txt(self, file_path: str) -> str:
+        """Extract text from a TXT file"""
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                return f.read()
+        except Exception as e:
+            print(f"Error reading TXT {file_path}: {e}")
+            return ""
     
     def chunk_text(self, text: str, max_length: int = 500) -> List[str]:
         """Split text into chunks based on sentences, avoiding cutting ideas"""
@@ -49,46 +61,55 @@ class DocsToEmbedService:
         
         return chunks
     
-    def process_pdfs(self):
-        """Process all PDF files in the docs folder"""
+    def process_docs(self):
+        """Process all PDF and TXT files in the docs folder"""
         if not os.path.exists(self.docs_path):
             print(f"Docs folder not found: {self.docs_path}")
             return
-        
+
         from persistence.db_start import db_start
         vector_service = db_start()
 
-        pdf_files = [f for f in os.listdir(self.docs_path) if f.endswith('.pdf')]
-        
-        for pdf_file in pdf_files:
-            pdf_path = os.path.join(self.docs_path, pdf_file)
-            print(f"Processing: {pdf_file}")
-            
-            text = self.extract_text_from_pdf(pdf_path)
+        # Buscar archivos PDF y TXT (corregido con tupla)
+        files = [f for f in os.listdir(self.docs_path) if f.endswith(('.pdf', '.txt'))]
+        print("Files found:", files)
+
+        for file in files:
+            file_path = os.path.join(self.docs_path, file)
+            print(f"Processing: {file}")
+
+            if file.endswith('.pdf'):
+                text = self.extract_text_from_pdf(file_path)
+            elif file.endswith('.txt'):
+                text = self.extract_text_from_txt(file_path)
+            else:
+                continue
+
+            print(f"Extracted {len(text)} characters from {file}")
+
             if text:
                 chunks = self.chunk_text(text, max_length=500)
-                
-                # Generate embeddings in batch for efficiency
+
                 embeddings = self.model.encode(
-                    chunks, 
-                    show_progress_bar=True, 
-                    convert_to_numpy=True, 
+                    chunks,
+                    show_progress_bar=True,
+                    convert_to_numpy=True,
                     normalize_embeddings=True
                 )
-                
+
                 for i, chunk in enumerate(chunks):
                     vector_service.docs_collection.add(
                         ids=[f"chunk_{self.chunk_counter}"],
                         documents=[chunk],
                         embeddings=[embeddings[i].tolist()],
                         metadatas=[{
-                            "source": pdf_file,
+                            "source": file,
                             "chunk": i,
                             "total_chunks": len(chunks)
                         }]
                     )
                     self.chunk_counter += 1
-                
-                print(f"✅ Added {len(chunks)} chunks from {pdf_file}")
-        
+
+                print(f"✅ Added {len(chunks)} chunks from {file}")
+
         print("✅ All embeddings generated and stored in ChromaDB")
